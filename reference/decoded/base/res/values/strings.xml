@@ -283,10 +283,10 @@ Please install the client application (SSH/VNC/XSDL) associated with the session
     <string name="debug_log_export_failure">Exporting debug log failed!</string>
     <string name="debug_log_export_success">Debug log exported successfully!</string>
     <string name="decrypt">Decrypt Current Key</string>
-    <string name="default_apps_url">https://github.com/CypherpunkArmory/UserLAnd-Assets-Support/raw/test_sep/apps</string>
+    <string name="default_apps_url">https://raw.githubusercontent.com/more-than-just-kyrion/UserLOst-android/main/assets/Support/apps/apps.txt</string>
     <string name="default_custom_apps_enabled">false</string>
     <string name="default_custom_filesystem_enabled">false</string>
-    <string name="default_filesystem_url">https://github.com/CypherpunkArmory/UserLAnd-Assets-Debian/releases/download/v7.7.9</string>
+    <string name="default_filesystem_url">https://github.com/more-than-just-kyrion/UserLOst-android/releases/download/Debian-v7.7.9</string>
     <string name="default_hide_distributions">false</string>
     <string name="default_hide_sessions_filesystems">false</string>
     <string name="default_hide_vnc_extra_keys">false</string>

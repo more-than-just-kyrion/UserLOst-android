@@ -220,7 +220,7 @@
     .locals 13
 
     .line 35
-    const-string v0, "alpine:tags/v0.0.9,arch:tags/v0.0.6,debian:tags/v0.0.15,ubuntu:tags/v0.0.21,kali:tags/v0.0.10"
+    const-string v0, "alpine:tags/Alpine-v0.0.9,arch:tags/Arch-v0.0.6,debian:tags/Debian-v0.0.15,ubuntu:tags/Ubuntu-v0.0.21,kali:tags/Kali-v0.0.10"
 
     move-object v1, v0
 

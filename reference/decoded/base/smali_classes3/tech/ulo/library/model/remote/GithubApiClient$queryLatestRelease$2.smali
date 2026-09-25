@@ -198,7 +198,7 @@
     move-result-object v0
 
     .line 89
-    iget-object v1, p0, Ltech/ulo/library/model/remote/GithubApiClient$queryLatestRelease$2;->$repo:Ljava/lang/String;
+    const-string v1, ""
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -208,7 +208,7 @@
 
     move-result-object v0
 
-    const-string v2, "repos//UserLOst-Assets-"
+    const-string v2, "repos/more-than-just-kyrion/UserLOst-android/releases/"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -218,7 +218,7 @@
 
     move-result-object v0
 
-    const-string v1, "/releases/"
+    const-string v1, ""
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
