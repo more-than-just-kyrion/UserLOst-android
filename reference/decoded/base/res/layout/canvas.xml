@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.iiordanov.bVNC.RemoteCanvas android:layout_gravity="center|bottom" android:id="@id/canvas" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.undatech.opaque.util.RemoteToolbar android:layout_gravity="right|center" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/singleHandOpts" android:padding="0.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center|top" android:orientation="horizontal" android:paddingBottom="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/singleDrag" android:background="@drawable/single_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/singleMiddle" android:background="@drawable/single_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/singleRight" android:background="@drawable/single_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/singleScroll" android:background="@drawable/single_scroll" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/singleZoom" android:background="@drawable/single_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/singleCancel" android:background="@drawable/single_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/layoutKeys" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutMetaKeys" android:padding="0.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_gravity="left|top" android:orientation="horizontal" android:padding="0.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/keyTab" android:background="@drawable/taboff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/keyEsc" android:background="@drawable/escoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/keyShift" android:background="@drawable/shiftoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="0.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/keyCtrl" android:background="@drawable/ctrloff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/keySuper" android:background="@drawable/superoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/keyAlt" android:background="@drawable/altoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutArrowKeys" android:padding="0.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageButton android:layout_gravity="center|top" android:id="@id/keyUpArrow" android:background="@drawable/upoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_gravity="center|bottom" android:padding="0.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/keyLeftArrow" android:background="@drawable/leftoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/keyDownArrow" android:background="@drawable/downoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:id="@id/keyRightArrow" android:background="@drawable/rightoff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fullscreen_content" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TableLayout android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/fullscreen_content_controls" android:background="@color/black_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" style="?buttonBarStyle">
+            <Spinner android:id="@id/layoutMaps" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/audio" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleAudioPlayback" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleAudioPlaybackSetting" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/usb" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleUsbEnabled" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleUsbEnabledSetting" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/auto_rotation" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleAutoRotation" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleAutoRotation" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/auto_request_new_res" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleAutoRequestDisplayResolution" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleAutoRequestDisplayResolution" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutToggleCustomRemoteResolution" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/rdp_geom_custom" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleCustomDisplayResolution" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleCustomDisplayResolution" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutCustomRemoteResolution" android:padding="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/rdpWidth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x" />
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/rdpHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="60.0dp" android:text="@string/ssl_strict" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleSslStrict" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleSslStrict" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutToggleUsingCustomOvirtCa" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/ca_ovirt_use_custom" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleUsingCustomOvirtCa" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleUsingCustomOvirtCa" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutUseLastPositionToolbar" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textUseLastPositionToolbar" android:layout_width="0.0dp" android:layout_height="56.0dp" android:layout_weight="4.0" />
+                <ToggleButton android:id="@id/toggleUseLastPositionToolbar" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="toggleUseLastPositionToolbar" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutManageOvirtCa" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/buttonManageOvirtCa" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ca_ovirt_manage" android:onClick="showManageOvirtCaDialog" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+        </TableLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "box_create.json",
+  "definitions": {
+    "box": {
+      "allOf": [
+        {
+          "$ref": "json-api.json#/definitions/post_data"
+        },
+        {
+          "properties": {
+            "attributes": {
+              "required": [
+                "sshKey"
+              ],
+              "properties": {
+                "sshKey": {
+                  "type": "string"
+                }
+              }
+            },
+            "relationships": {
+              "type": "object",
+              "properties": {
+                "config": {
+                  "$ref": "json-api.json#/definitions/relationship"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": { "$ref": "#/definitions/box" }
+  }
+}

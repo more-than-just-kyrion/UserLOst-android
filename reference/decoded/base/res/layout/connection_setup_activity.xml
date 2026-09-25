@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fullscreen_content" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/fullscreen_content_controls" android:background="@color/black_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" style="?buttonBarStyle">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textViewConnectionType" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/connection_type_text" />
+        <Spinner android:entries="@array/connection_types" android:id="@id/spinnerConnectionType" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@id/hostname" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/connection_setup_host_name" android:ems="10" android:singleLine="true" android:inputType="textVisiblePassword">
+            <requestFocus />
+        </EditText>
+        <EditText android:id="@id/vmname" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/connection_setup_vm_name" android:ems="10" android:singleLine="true" android:inputType="textVisiblePassword" />
+        <EditText android:id="@id/user" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/connection_setup_user" android:ems="10" android:singleLine="true" android:inputType="textVisiblePassword" />
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:singleLine="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/connection_setup_password" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword" />
+                <CheckBox android:textAppearance="?android:textAppearanceMedium" android:id="@id/checkboxKeepPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_password_button" android:singleLine="true" android:layout_weight="0.0" />
+            </LinearLayout>
+        </TableRow>
+        <Button android:id="@id/advancedSettingsButton" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/advanced_settings" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+    </TableLayout>
+</FrameLayout>

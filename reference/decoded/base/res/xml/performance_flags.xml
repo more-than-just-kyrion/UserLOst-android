@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_cat_performance">
+        <CheckBoxPreference android:title="@string/settings_perf_remotefx" android:key="bookmark.perf_remotefx" />
+        <CheckBoxPreference android:title="@string/settings_perf_gfx" android:key="bookmark.perf_gfx" />
+        <CheckBoxPreference android:title="@string/settings_perf_gfx_h264" android:key="@string/preference_key_h264" android:dependency="bookmark.perf_gfx" />
+        <CheckBoxPreference android:title="@string/settings_perf_wallpaper" android:key="bookmark.perf_wallpaper" />
+        <CheckBoxPreference android:title="@string/settings_perf_font_smoothing" android:key="bookmark.perf_font_smoothing" />
+        <CheckBoxPreference android:title="@string/settings_perf_desktop_composition" android:key="bookmark.perf_desktop_composition" />
+        <CheckBoxPreference android:title="@string/settings_perf_full_window_drag" android:key="bookmark.perf_window_dragging" />
+        <CheckBoxPreference android:title="@string/settings_perf_menu_animation" android:key="bookmark.perf_menu_animation" />
+        <CheckBoxPreference android:title="@string/settings_perf_theming" android:key="bookmark.perf_themes" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/something" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchMode="columnWidth"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/search" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/search_connections" android:layout_weight="0.9" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/addNewConnection" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.1" android:title="@string/action_new_connection" android:contentDescription="@string/action_new_connection" app:srcCompat="@drawable/ic_add_connection_48" />
+    </LinearLayout>
+    <GridView android:gravity="center|top" android:id="@id/gridView" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchMode="columnWidth" android:numColumns="2" />
+</LinearLayout>

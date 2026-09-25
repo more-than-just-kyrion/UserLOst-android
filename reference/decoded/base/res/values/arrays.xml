@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string-array name="blacklisted_usernames">
+        <item>adm</item>
+        <item>audio</item>
+        <item>autologin</item>
+        <item>backup</item>
+        <item>bin</item>
+        <item>cdrom</item>
+        <item>daemon</item>
+        <item>dbus</item>
+        <item>dialout</item>
+        <item>dip</item>
+        <item>disk</item>
+        <item>fax</item>
+        <item>floppy</item>
+        <item>ftp</item>
+        <item>games</item>
+        <item>gnats</item>
+        <item>http</item>
+        <item>input</item>
+        <item>irc</item>
+        <item>kmem</item>
+        <item>kvm</item>
+        <item>list</item>
+        <item>locate</item>
+        <item>lock</item>
+        <item>log</item>
+        <item>lp</item>
+        <item>lpadmin</item>
+        <item>mail</item>
+        <item>mem</item>
+        <item>netdev</item>
+        <item>network</item>
+        <item>news</item>
+        <item>nobody</item>
+        <item>nogroup</item>
+        <item>operator</item>
+        <item>optical</item>
+        <item>plugdev</item>
+        <item>postgres</item>
+        <item>power</item>
+        <item>proc</item>
+        <item>proxy</item>
+        <item>rfkill</item>
+        <item>root</item>
+        <item>sambashare</item>
+        <item>sasl</item>
+        <item>scanner</item>
+        <item>shadow</item>
+        <item>smmsp</item>
+        <item>src</item>
+        <item>staff</item>
+        <item>storage</item>
+        <item>sudo</item>
+        <item>sync</item>
+        <item>sys</item>
+        <item>systemd-journal</item>
+        <item>tape</item>
+        <item>tty</item>
+        <item>users</item>
+        <item>utmp</item>
+        <item>uucp</item>
+        <item>uuidd</item>
+        <item>vboxusers</item>
+        <item>video</item>
+        <item>voice</item>
+        <item>wheel</item>
+        <item>www-data</item>
+    </string-array>
+    <string-array name="colors_array">
+        <item>Palette (8 Bit)</item>
+        <item>High Color (15 Bit)</item>
+        <item>High Color (16 Bit)</item>
+        <item>True Color (24 Bit)</item>
+        <item>Highest Quality (32 Bit)</item>
+    </string-array>
+    <string-array name="colors_values_array">
+        <item>8</item>
+        <item>15</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string-array name="debug_array">
+        <item>OFF</item>
+        <item>FATAL</item>
+        <item>ERROR</item>
+        <item>WARN</item>
+        <item>INFO</item>
+        <item>DEBUG</item>
+        <item>TRACE</item>
+    </string-array>
+    <string-array name="debug_values_array">
+        <item>OFF</item>
+        <item>FATAL</item>
+        <item>ERROR</item>
+        <item>WARN</item>
+        <item>INFO</item>
+        <item>DEBUG</item>
+        <item>TRACE</item>
+    </string-array>
+    <string-array name="default_landing_pages">
+        <item>@string/apps</item>
+    </string-array>
+    <string-array name="proot_debug_levels">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="redirect_sound_array">
+        <item>Do not play</item>
+        <item>Play on Server</item>
+        <item>Play on Device</item>
+    </string-array>
+    <string-array name="redirect_sound_values_array">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="resolutions_array">
+        <item>Automatic</item>
+        <item>Fit Screen</item>
+        <item>Custom</item>
+        <item>640x480</item>
+        <item>720x480</item>
+        <item>800x600</item>
+        <item>1024x768</item>
+        <item>1280x1024</item>
+        <item>1440x900</item>
+        <item>1920x1080</item>
+        <item>1920x1200</item>
+    </string-array>
+    <string-array name="resolutions_values_array">
+        <item>automatic</item>
+        <item>fitscreen</item>
+        <item>custom</item>
+        <item>640x480</item>
+        <item>720x480</item>
+        <item>800x600</item>
+        <item>1024x768</item>
+        <item>1280x1024</item>
+        <item>1440x900</item>
+        <item>1920x1080</item>
+        <item>1920x1200</item>
+    </string-array>
+    <string-array name="scaling_factors">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="security_array">
+        <item>Automatic</item>
+        <item>RDP</item>
+        <item>TLS</item>
+        <item>NLA</item>
+    </string-array>
+    <string-array name="security_values_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string-array name="supported_distributions">
+        <item>Debian</item>
+        <item>Ubuntu</item>
+    </string-array>
+    <string-array name="supported_services">
+        <item>ssh</item>
+        <item>vnc</item>
+        <item>xsdl</item>
+    </string-array>
+    <string-array name="supported_services_and_types">
+        <item>SSH - Dropbear</item>
+        <item>VNC - TightVNC</item>
+        <item>SDL - XSDL</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="vnc_input_modes">
+        <item>@string/input_method_direct_swipe_pan</item>
+        <item>@string/input_method_direct_drag_pan</item>
+        <item>@string/input_method_touchpad</item>
+        <item>@string/input_method_single_handed</item>
+    </string-array>
+</resources>

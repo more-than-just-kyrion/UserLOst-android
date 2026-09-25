@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/amountTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contribution_secondary_positive" />
+    <SeekBar android:id="@id/amountSeekBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="3" android:progress="1" style="@style/Widget.AppCompat.SeekBar.Discrete" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/chosenAmountTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="$5 USD" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/frequencyTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0sp" android:text="@string/contribution_frequency" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/frequencyRadioGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="16.0sp" android:id="@id/oneTimeRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/contribution_once" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/yearlyRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contribution_yearly" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/monthlyRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contribution_monthly" android:layout_weight="1.0" />
+    </RadioGroup>
+    <Button android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/processButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contribution_process" />
+</LinearLayout>

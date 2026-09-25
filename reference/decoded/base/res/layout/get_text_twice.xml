@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/message" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@id/textBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/master_password_hint_once" android:inputType="textVisiblePassword|textNoSuggestions">
+        <requestFocus />
+    </EditText>
+    <EditText android:id="@id/textBox2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/master_password_hint_twice" android:inputType="textVisiblePassword|textNoSuggestions" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/buttonCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_x_cancel" android:layout_weight="0.5" />
+        <Button android:id="@id/buttonConfirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_x_confirm" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

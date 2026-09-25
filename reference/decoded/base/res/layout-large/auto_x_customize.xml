@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/instructAutoX" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_x_caption" />
+        <Spinner android:textAppearance="?android:textAppearanceLarge" android:entries="@array/auto_x_type" android:id="@id/spinnerAutoXType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/buttonAutoXHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_help" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ToggleButton android:textAppearance="?android:textAppearanceMedium" android:id="@id/toggleAutoXAdvanced" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@android:string/no" android:textOff="@android:string/yes" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_advanced_settings" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutAdvancedSettings" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textDescriptGeom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_x_descript_geom" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:textAppearance="?android:textAppearanceLarge" android:entries="@array/auto_x_geometry" android:id="@id/spinnerAutoXGeometry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.4" />
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/autoXWidth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x" />
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/autoXHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textDescriptSession" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_x_descript_session" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:textAppearance="?android:textAppearanceLarge" android:entries="@array/auto_x_session" android:id="@id/spinnerAutoXSession" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/autoXSessionProg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:id="@id/checkboxAutoXUnixpw" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_x_unixpw" android:layout_weight="1.0" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:id="@id/checkboxAutoXUnixAuth" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_x_unix_auth" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/autoXCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_x_cancel" android:layout_weight="0.5" />
+            <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/autoXConfirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_x_confirm" android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffff" android:id="@id/welcome_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:id="@id/github_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/github_message" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+        <TextView android:id="@id/text_supported_services" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/supported_services" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/github_message" />
+        <LinearLayout android:orientation="vertical" android:id="@id/list_supported_services" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/layout_terminology" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_supported_services">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/support_dropbear" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/support_tightvnc" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_terminology" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/list_supported_services">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/desc_apps_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/desc_apps_message" android:layout_marginStart="8.0dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/desc_sessions_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/desc_sessions_message" android:layout_marginStart="8.0dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/desc_filesystems_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/desc_filesystems_message" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/github_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" app:layout_constraintEnd_toStartOf="@id/userland_logo" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_terminology" app:srcCompat="@drawable/ic_github_logo" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/userland_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/github_logo" app:layout_constraintTop_toBottomOf="@id/layout_terminology" app:srcCompat="@drawable/ic_browser" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

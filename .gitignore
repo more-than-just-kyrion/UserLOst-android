@@ -1,0 +1,43 @@
+# --- Sensitive files that MUST NOT be committed ---
+# Signing keys: leaking these lets anyone impersonate this fork.
+*.keystore
+*.jks
+*.p12
+keystore/
+# On-device data snapshots (may contain personal rootfs / dotfiles).
+reference/data/
+# Device-identifying metadata (build props, install times, file listings).
+reference/meta/dumpsys-package.txt
+reference/meta/pm-dump.txt
+reference/meta/device-getprop.txt
+reference/meta/private-data-listing.txt
+reference/meta/external-data-listing.txt
+reference/meta/shared-prefs-snapshot.xml
+
+# --- Gradle ---
+app/.gradle/
+app/build/
+app/**/build/
+.gradle/
+build/
+local.properties
+
+# --- apktool framework cache (regenerated as needed) ---
+**/build/apk/
+**/build/res/
+
+# --- Editor / IDE ---
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Java crash dumps ---
+hs_err_pid*.log
+replay_pid*.log
+
+# --- Scratch outputs ---
+*.tmp
+*.bak
+*-backup/

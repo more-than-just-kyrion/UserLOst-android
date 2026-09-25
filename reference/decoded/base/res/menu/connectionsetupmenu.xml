@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@android:drawable/ic_menu_save" android:id="@id/itemSave" android:title="@string/save_button" android:alphabeticShortcut="s" android:numericShortcut="1" android:onClick="save" android:showAsAction="always" app:showAsAction="always" />
+    <item android:icon="@android:drawable/ic_menu_save" android:id="@id/itemSaveAsCopy" android:title="@string/save_as_copy" android:alphabeticShortcut="c" android:numericShortcut="2" android:onClick="saveAsCopy" android:showAsAction="never" app:showAsAction="never" />
+    <item android:icon="@android:drawable/ic_menu_info_details" android:id="@id/actionHelp" android:title="@string/help" android:alphabeticShortcut="h" android:numericShortcut="3" android:onClick="showConnectionScreenHelp" android:showAsAction="always" app:showAsAction="always" />
+</menu>

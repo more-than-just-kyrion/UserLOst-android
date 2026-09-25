@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableLayout android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/connectionTypeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_type_caption" />
+            </TableRow>
+            <TableRow>
+                <Spinner android:textAppearance="?android:textAppearanceLarge" android:entries="@array/rdp_connection_type" android:id="@id/connectionType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow>
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/textNickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/nickname_caption_hint" android:singleLine="true" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/sshCaption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ssh_tunnel_settings" />
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:orientation="horizontal" android:id="@id/sshServerEntry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/sshServer" android:nextFocusDown="@id/sshPort" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/address_caption_ssh_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+                    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/sshPort" android:nextFocusDown="@id/sshUser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22" android:hint="@string/port_ssh_hint" android:singleLine="true" android:layout_weight="0.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:orientation="vertical" android:id="@id/sshCredentials" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true">
+                        <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/sshUser" android:nextFocusDown="@id/sshPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/username_hint_ssh" android:layout_weight="1.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+                        <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/sshPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/password_hint_ssh" android:layout_weight="0.0" android:inputType="textPassword|textNoSuggestions" />
+                    </LinearLayout>
+                    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/sshPassphrase" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/ssh_passphrase_hint" android:singleLine="true" android:inputType="textPassword|textNoSuggestions" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutUseSshPubkey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:textAppearance="?android:textAppearanceLarge" android:id="@id/checkboxUseSshPubkey" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/ssh_use_pubkey" android:singleLine="true" android:layout_weight="0.5" />
+                        <CheckBox android:textAppearance="?android:textAppearanceLarge" android:id="@id/checkboxKeepSshPass" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/keep_password_button" android:singleLine="true" android:layout_weight="0.5" />
+                    </LinearLayout>
+                    <Button android:enabled="true" android:textAppearance="?android:textAppearanceLarge" android:id="@id/buttonGeneratePubkey" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ssh_pubkey_button" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_connection_settings" />
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/textIP" android:nextFocusDown="@id/textPORT" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/rdp_address_caption_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+                    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/textPORT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3389" android:hint="@string/port_hint" android:singleLine="true" android:layout_weight="0.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/textUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/rdp_username_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+            </TableRow>
+            <TableRow>
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/rdpDomain" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/rdp_domain_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+            </TableRow>
+            <TableRow>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/textPASSWORD" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/rdp_password_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword|textNoSuggestions" />
+                    <CheckBox android:textAppearance="?android:textAppearanceLarge" android:id="@id/checkboxKeepPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_password_button" android:singleLine="true" android:layout_weight="0.0" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ToggleButton android:textAppearance="?android:textAppearanceMedium" android:id="@id/toggleAdvancedSettings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/hide" android:textOff="@string/show" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_advanced_settings" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutAdvancedSettings" android:padding="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textDescriptGeom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_descript_geom" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:textAppearance="?android:textAppearanceLarge" android:entries="@array/rdp_geometry" android:id="@id/spinnerRdpGeometry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.4" />
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/rdpWidth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x" />
+                <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/rdpHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+            </LinearLayout>
+            <RadioGroup android:orientation="vertical" android:id="@id/groupRemoteSoundType" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/radioRemoteSoundDisabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_sound_disabled" android:onClick="remoteSoundTypeToggled" />
+                <RadioButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/radioRemoteSoundOnServer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_sound_on_server" android:onClick="remoteSoundTypeToggled" />
+                <RadioButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/radioRemoteSoundOnDevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_sound_on_device" android:onClick="remoteSoundTypeToggled" />
+            </RadioGroup>
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxEnableRecording" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_recording" android:onClick="toggleEnableRecording" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxConsoleMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_console_mode" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxRedirectSdCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_redirect_sdcard" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxRemoteFx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_remotefx" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxDesktopBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_desktop_background" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxFontSmoothing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_font_smoothing" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxDesktopComposition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_desktop_composition" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxWindowContents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_window_contents" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxMenuAnimation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_menu_animation" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxVisualStyles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_visual_styles" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxEnableGfx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_gfx" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxEnableGfxH264" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rdp_adv_gfxh264" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_device_tweaks" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxUseDpadAsArrows" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dpad_as_arrows" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxRotateDpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotate_dpad" />
+            <CheckBox android:textAppearance="?android:textAppearanceLarge" android:gravity="left|center" android:id="@id/checkboxUseLastPositionToolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/position_toolbar_last_used" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cursor_mode" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/radioCursor" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/radioCursorAuto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto" />
+                <RadioButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/radioCursorForceLocal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cursor_force_local" />
+                <RadioButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/radioCursorForceDisable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cursor_force_disable" />
+            </RadioGroup>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/versionAndCode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/buttonImportExport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_export_settings" />
+        <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/copyLogcat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copy_logcat" />
+    </LinearLayout>
+</ScrollView>

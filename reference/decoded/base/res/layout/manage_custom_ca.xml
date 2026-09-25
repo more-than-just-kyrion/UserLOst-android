@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/downloadButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download_from_server" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_ca_import" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:id="@id/caCertPath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.79">
+                <requestFocus />
+            </EditText>
+            <Button android:id="@id/importButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_from_file" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_ca_paste" />
+        <EditText android:id="@id/caCert" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="10" android:ems="10" android:inputType="textMultiLine">
+            <requestFocus />
+        </EditText>
+        <Button android:id="@id/helpButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Help" />
+    </LinearLayout>
+</ScrollView>

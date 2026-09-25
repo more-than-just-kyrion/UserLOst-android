@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "user.json",
+  "definitions": {
+    "user": {
+      "allOf": [
+        {
+          "$ref": "json-api.json#/definitions/data"
+        },
+        {
+          "properties": {
+            "attributes": {
+              "required": [
+                "email",
+                "confirmed",
+                "tier"
+              ],
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "tier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": { "$ref": "#/definitions/user" }
+  }
+}

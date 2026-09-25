@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+</resources>

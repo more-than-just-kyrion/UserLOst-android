@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@android:drawable/ic_menu_preferences" android:id="@id/settings_fragment" android:visible="@string/settings_enabled" android:title="@string/settings" />
+    <item android:id="@id/clear_support_files" android:visible="@string/clear_support_files_enabled" android:title="@string/clear_support_files" app:showAsAction="never" />
+    <item android:icon="@android:drawable/ic_menu_help" android:id="@id/help_fragment" android:visible="@string/help_enabled" android:title="@string/help" />
+    <item android:id="@id/option_wiki" android:visible="@string/wiki_enabled" android:title="@string/wiki" app:showAsAction="never" />
+    <item android:id="@id/terms_and_conditions" android:visible="@string/toc_enabled" android:title="@string/toc" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/settings_ui_hide_status_bar" android:key="@string/preference_key_ui_hide_status_bar" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_ui_hide_zoom_controls" android:key="@string/preference_key_ui_hide_zoom_controls" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_ui_swap_mouse_buttons" android:key="@string/preference_key_ui_swap_mouse_buttons" />
+    <CheckBoxPreference android:title="@string/settings_ui_invert_scrolling" android:key="@string/preference_key_ui_invert_scrolling" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_ui_auto_scroll_touchpointer" android:key="@string/preference_key_ui_auto_scroll_touchpointer" />
+    <CheckBoxPreference android:title="@string/settings_ui_ask_on_exit" android:key="@string/preference_key_ui_ask_on_exit" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_ui_hide_action_bar" android:key="@string/preference_key_ui_hide_action_bar" android:defaultValue="true" />
+</PreferenceScreen>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:freerdp="http://schemas.android.com/apk/res-auto">
+    <com.freerdp.freerdpcore.utils.IntEditTextPreference android:singleLine="true" android:numeric="integer" android:title="@string/settings_power_disconnect_timeout" android:key="@string/preference_key_power_disconnect_timeout" android:inputType="number" freerdp:bounds_default="5" freerdp:bounds_max="30" freerdp:bounds_min="0" />
+</PreferenceScreen>

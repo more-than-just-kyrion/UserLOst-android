@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tv_wizard_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" />
+        <TextView android:id="@id/tv_wizard_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/section_consent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_consent_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" />
+            <TextView android:id="@id/tv_consent_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+            <Button android:id="@id/btn_consent_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/install_wizard_consent_continue" />
+            <Button android:id="@id/btn_consent_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/install_wizard_consent_cancel" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/section_dev_options" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/install_wizard_step1_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/install_wizard_step1_body" />
+            <Button android:id="@id/btn_about_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_wizard_open_about_phone" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/section_wireless_debug" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/install_wizard_step2_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/install_wizard_step2_body" />
+            <Button android:id="@id/btn_open_dev_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_wizard_open_dev_options" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/section_pair" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/install_wizard_step3_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/install_wizard_step3_body" />
+            <Button android:id="@id/btn_open_wd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="@string/install_wizard_open_wireless_debug" />
+            <TextView android:id="@id/tv_pair_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/section_install" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_step4_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" />
+            <ProgressBar android:id="@id/progress_install" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" />
+            <TextView android:id="@id/tv_install_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/section_done" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_done_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+            <Button android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_wizard_btn_done" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/app_list_fragment"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:label="@string/apps" android:name="tech.ulo.library.ui.AppsListFragment" android:id="@id/app_list_fragment">
+        <action android:id="@id/action_app_list_to_app_details" app:destination="@id/app_details_fragment" />
+    </fragment>
+    <fragment android:label="App Description" android:name="tech.ulo.library.ui.AppDetailsFragment" android:id="@id/app_details_fragment">
+        <argument android:name="app" android:defaultValue="@null" app:argType="tech.ulo.library.model.entities.App" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/sessions" android:name="tech.ulo.library.ui.SessionListFragment" android:id="@id/session_list_fragment">
+        <action android:id="@id/action_session_list_to_session_edit" app:destination="@id/session_edit_fragment" />
+    </fragment>
+    <fragment android:label="@string/edit_session" android:name="tech.ulo.library.ui.SessionEditFragment" android:id="@id/session_edit_fragment">
+        <argument android:name="session" android:defaultValue="@null" app:argType="tech.ulo.library.model.entities.Session" app:nullable="true" />
+        <argument android:name="editExisting" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="@string/filesystems" android:name="tech.ulo.library.ui.FilesystemListFragment" android:id="@id/filesystem_list_fragment">
+        <action android:id="@id/action_filesystem_list_to_filesystem_edit" app:destination="@id/filesystem_edit_fragment" />
+    </fragment>
+    <fragment android:label="@string/edit_filesystem" android:name="tech.ulo.library.ui.FilesystemEditFragment" android:id="@id/filesystem_edit_fragment">
+        <argument android:name="filesystem" android:defaultValue="@null" app:argType="tech.ulo.library.model.entities.Filesystem" app:nullable="true" />
+        <argument android:name="editExisting" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_filesystem_edit_to_avf_install_wizard" app:destination="@id/avf_install_wizard_fragment" />
+        <action android:id="@id/action_filesystem_edit_to_qemu_install_wizard" app:destination="@id/qemu_install_wizard_fragment" />
+    </fragment>
+    <fragment android:label="@string/avf_install_wizard_label" android:name="tech.ulo.library.ui.InstallWizardFragment" android:id="@id/avf_install_wizard_fragment">
+        <argument android:name="target" android:defaultValue="avf" app:argType="string" />
+    </fragment>
+    <fragment android:label="@string/qemu_install_wizard_label" android:name="tech.ulo.library.ui.InstallWizardFragment" android:id="@id/qemu_install_wizard_fragment">
+        <argument android:name="target" android:defaultValue="qemu" app:argType="string" />
+    </fragment>
+    <fragment android:label="@string/settings" android:name="tech.ulo.library.ui.SettingsFragment" android:id="@id/settings_fragment" android:visible="@string/settings_enabled" />
+    <fragment android:label="@string/help" android:name="tech.ulo.library.ui.HelpFragment" android:id="@id/help_fragment" />
+</navigation>

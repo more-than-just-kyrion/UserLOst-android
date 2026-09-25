@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="schemas.android.com/apk/res-auto">
+    <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/textEnterText" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="2" android:minEms="18" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout01" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/buttonSendText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_send_text" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:gravity="right|center" android:id="@id/buttonPreviousEntry" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@android:drawable/arrow_up_float" />
+            <androidx.appcompat.widget.AppCompatImageButton android:gravity="right|center" android:id="@id/buttonNextEntry" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="12.0dp" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textAppearance="?android:textAppearanceLarge" android:id="@id/buttonSendWithoutSaving" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_send_without_saving" />
+        <LinearLayout android:gravity="right|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/buttonTextDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

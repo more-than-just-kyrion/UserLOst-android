@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/text_title_flavor_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/prompt_app_flavor_preference" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup android:gravity="center" android:id="@id/radio_filesystem_flavor_preference" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_title_flavor_description" />
+        <TextView android:id="@id/text_title_execution_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/prompt_execution_type_preference" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/radio_filesystem_flavor_preference" />
+        <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@id/radio_execution_type_preference" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_title_execution_type">
+            <RadioButton android:id="@id/radio_proot_preference" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/execution_type_proot" />
+            <RadioButton android:id="@id/radio_avf_preference" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/execution_type_avf" />
+            <RadioButton android:id="@id/radio_qemu_preference" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/execution_type_qemu" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

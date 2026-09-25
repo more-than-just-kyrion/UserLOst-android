@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bookmark_icon1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@id/bookmark_icon1" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/bookmark_text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginTop="6.0dp" android:layout_toRightOf="@id/bookmark_icon1" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/bookmark_text2" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/bookmark_text1" android:layout_alignLeft="@id/bookmark_text1" />
+    <ImageView android:id="@id/bookmark_icon2" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginRight="7.0dp" android:src="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@id/bookmark_icon2" />
+</TwoLineListItem>

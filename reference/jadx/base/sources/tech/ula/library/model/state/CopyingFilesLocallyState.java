@@ -1,0 +1,17 @@
+package tech.ula.library.model.state;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: SessionStartupFsm.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0004¢\u0006\u0002\u0010\u0002\u0082\u0001\u0003\u0003\u0004\u0005¨\u0006\u0006"}, d2 = {"Ltech/ula/library/model/state/CopyingFilesLocallyState;", "Ltech/ula/library/model/state/SessionStartupState;", "()V", "Ltech/ula/library/model/state/CopyingFilesToLocalDirectories;", "Ltech/ula/library/model/state/LocalDirectoryCopyFailed;", "Ltech/ula/library/model/state/LocalDirectoryCopySucceeded;", "UserLOstLibrary_UserLOstRelease"}, k = 1, mv = {1, 9, 0}, xi = 48)
+public abstract class CopyingFilesLocallyState extends SessionStartupState {
+    public /* synthetic */ CopyingFilesLocallyState(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private CopyingFilesLocallyState() {
+        super(null);
+    }
+}

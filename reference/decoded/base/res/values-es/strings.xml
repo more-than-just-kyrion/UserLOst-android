@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Ir a inicio</string>
+    <string name="abc_action_bar_up_description">Desplazarse hacia arriba</string>
+    <string name="abc_action_menu_overflow_description">Más opciones</string>
+    <string name="abc_action_mode_done">Hecho</string>
+    <string name="abc_activity_chooser_view_see_all">Ver todo</string>
+    <string name="abc_activitychooserview_choose_application">Seleccionar una aplicación</string>
+    <string name="abc_capital_off">DESACTIVADO</string>
+    <string name="abc_capital_on">ACTIVADO</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl +</string>
+    <string name="abc_menu_delete_shortcut_label">Suprimir</string>
+    <string name="abc_menu_enter_shortcut_label">Intro</string>
+    <string name="abc_menu_function_shortcut_label">Función +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta +</string>
+    <string name="abc_menu_shift_shortcut_label">Mayús +</string>
+    <string name="abc_menu_space_shortcut_label">Espacio</string>
+    <string name="abc_menu_sym_shortcut_label">Sym +</string>
+    <string name="abc_prepend_shortcut_label">Menú +</string>
+    <string name="abc_search_hint">Buscar…</string>
+    <string name="abc_searchview_description_clear">Borrar consulta</string>
+    <string name="abc_searchview_description_query">Consulta de búsqueda</string>
+    <string name="abc_searchview_description_search">Buscar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Búsqueda por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartir con</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartir con %s</string>
+    <string name="abc_toolbar_collapse_description">Ocultar</string>
+    <string name="action_delete_connection">Eliminar conexión</string>
+    <string name="action_edit_default_settings">Editar la configuración predeterminada</string>
+    <string name="action_export_settings">Exportar ajustes</string>
+    <string name="action_import_settings">Importar ajustes</string>
+    <string name="action_new_connection">Nueva conexión</string>
+    <string name="ad_donate_text0">La versión Pro ahora tiene soporte para autenticación SSH multifactor. Además, es compatible con la muy solicitada función de contraseña maestra que evita el uso no autorizado y también encripta todas las configuraciones de conexión, incluidas las contraseñas y claves SSH para protegerse contra el robo. Habilítelo desde el menú principal. Si falta el botón Menú, mantenga presionado el botón de aplicaciones en ejecución para el Menú.</string>
+    <string name="ad_donate_text1">Toque aquí para apoyar el proyecto con una pequeña donación comprando la versión Pro.</string>
+    <string name="ad_donate_text2">La versión Pro le permite desactivar este cuadro de diálogo y le da acceso a funcionalidades adicionales.</string>
+    <string name="ad_donate_text3">Si desea seguir apoyando el proyecto, siga los siguientes enlaces para acceder a las aplicaciones cliente para:</string>
+    <string name="ad_donate_text_rdp">¡La versión Pro de aRDP ahora admite la redirección de sonido!</string>
+    <string name="ad_donate_text_spice" />
+    <string name="add">Agregar</string>
+    <string name="address_caption">Servidor VNC</string>
+    <string name="address_caption_hint">Servidor VNC</string>
+    <string name="address_caption_hint_tunneled">Servidor VNC</string>
+    <string name="address_caption_ssh">Servidor SSH</string>
+    <string name="address_caption_ssh_hint">Servidor SSH</string>
+    <string name="advanced_settings">Ajustes avanzados</string>
+    <string name="alert_clear_support_files_clear_button">Borrar</string>
+    <string name="alert_clear_support_files_message">Esto borrará todos los archivos de soporte. Esto no afectará nada de lo que hayas creado en tus sistemas de archivos. Esto hará que los recursos sean descargados de nuevo la próxima vez que una sesión o aplicación sea ejecutada.</string>
+    <string name="alert_clear_support_files_title">¿Borrar todos los archivos de soporte?</string>
+    <string name="alert_need_client_app_message">Necesitará una aplicación cliente de SSH o VNC para completar esta acción, pero parece que no tiene instalado Google Play Store. Por favor, instale una aplicación cliente para continuar.</string>
+    <string name="alert_need_client_app_title">¡No se ha encontrado una aplicación de cliente!</string>
+    <string name="alert_network_required_for_refresh">Actualizar la lista de aplicaciones requiere una conexión a Internet disponible o una más fuerte.</string>
+    <string name="alert_notification_documents_permission_necessary_message">Para continuar, concede a %1$s permisos para acceder al directorio %2$s.</string>
+    <string name="alert_notification_permission_necessary_message">Para continuar, habilita los permisos de notificación para permitir que %1$s publique una notificación de servicio.</string>
+    <string name="alert_permissions_necessary_cancel_button">Cancelar</string>
+    <string name="alert_permissions_necessary_message">Para continuar, habilite los permisos de almacenamiento para que %1$s pueda descargar los archivos requeridos y moverlos del almacenamiento externo al almacenamiento local de la app.</string>
+    <string name="alert_permissions_necessary_title">¡%1$s requiere la concesión de permisos para funcionar!</string>
+    <string name="alert_permissions_refused_message">Has rechazado un permiso necesario. Serás redirigido a los ajustes de la app, donde deberás pulsar en Permisos y luego pulsar y activar cualquier permiso que aparezca como No permitido.</string>
+    <string name="alert_play_service_error_message">Estamos teniendo problemas para acceder a los servicios de Google Play para completar esta acción. Inténtalo de nuevo más tarde y, si el problema continúa, repórtalo a un desarrollador.</string>
+    <string name="alert_play_store_required">Las apps de pago requieren acceso a Google Play Store para verificar el pago. Por favor, instálala para continuar.</string>
+    <string name="alert_pro_features_request_message">"¿Te gustaría activar las funciones pro y apoyar el desarrollo? 
+ 
+\tLas funciones pro incluyen: 
+\t\tAcceso a archivos fuera de UserLOst 
+\t\t\tcomo /sdcard/Documents 
+\t\tEscritorios gráficos avanzados 
+\t\t\tcomo LXDE o XFCE 
+\t\tSoporte de sonido 
+\t\tSoporte de micrófono 
+ 
+\tLas funciones pro pronto incluirán: 
+\t\tRespaldo y restauración adecuados 
+\t\tConexiones remotas 
+\t\tConectar a pantallas adicionales 
+\t\ty más"</string>
+    <string name="alert_pro_features_request_title">Solicitud de Funciones Pro</string>
+    <string name="alert_pro_features_required_message">Acceder a archivos en /sdcard es una función pro. Para continuar, adquiere nuestras funciones pro.</string>
+    <string name="alert_pro_features_required_title">Se Requieren las Funciones Pro</string>
+    <string name="alert_storage_low_message">Para asegurar el buen funcionamiento de un sistema de archivos en %1$s, asegúrate de tener al menos 1 GB de espacio libre.</string>
+    <string name="alert_storage_low_title">Poca capacidad de almacenamiento</string>
+    <string name="alert_subscriptions_unsupported_message">Parece que tu versión de Play Store es demasiado antigua para admitir suscripciones. Por favor, actualízala para continuar.</string>
+    <string name="alert_unreachable_app">App inalcanzable:</string>
+    <string name="alert_wifi_disabled_cancel_button">Cancelar</string>
+    <string name="alert_wifi_disabled_continue_button">Continuar</string>
+    <string name="alert_wifi_disabled_message">Un archivo grande (~80MB) necesita ser descargado.</string>
+    <string name="alert_wifi_disabled_title">¡El Wi-Fi está desactivado!</string>
+    <string name="alert_wifi_disabled_turn_on_wifi_button">Encender Wi-Fi</string>
+    <string name="alt_check">Alt</string>
+    <string name="app_info">Información de Aplicación</string>
+    <string name="app_name">UserLOst</string>
+    <string name="apps">Apps</string>
+    <string name="apps_sessions">Sesiones de Aplicaciones</string>
+    <string name="ardp_app_name">aRDP Pro</string>
+    <string name="arrow_down">Flecha hacia abajo</string>
+    <string name="arrow_left">Flecha izquierda</string>
+    <string name="arrow_right">Flecha derecha</string>
+    <string name="arrow_up">Flecha hacia arriba</string>
+    <string name="aspice_app_name">aSPICE Pro</string>
+    <string name="audio">Audio</string>
+    <string name="auto">Auto</string>
+    <string name="auto_request_new_res">Sincronizar el control remoto para mostrar la resolución</string>
+    <string name="auto_rotation">Rotación de la pantalla mientras se está conectado</string>
+    <string name="auto_start_checkbox">Activar Inicio Automático</string>
+    <string name="auto_x_cancel">Cancelar</string>
+    <string name="auto_x_caption">La aplicación puede descubrir automáticamente X sesiones existentes y crear nuevas en sistemas Linux/UNIX (similar a NX). Necesita x11vnc para buscar y Xvfb, Xvnc o Xdummy para crear sesiones. Si tiene problemas para conectarse, intente seleccionar un tipo de sesión remota específico en la configuración avanzada de AutoX.</string>
+    <string name="auto_x_confirm">Confirmar</string>
+    <string name="auto_x_descript_geom">Tamaño del escritorio remoto (ancho x alto)</string>
+    <string name="auto_x_descript_session">Tipo de sesión remota</string>
+    <string name="auto_x_disabled">Deshabilitada</string>
+    <string name="auto_x_disabled_selection">AutoX Deshabilitado</string>
+    <string name="auto_x_enabled">Habilitado</string>
+    <string name="auto_x_find">Solo buscar, no crear</string>
+    <string name="auto_x_find_login">Buscar X Login (necesita sudo)</string>
+    <string name="auto_x_geom_custom">Personalizado</string>
+    <string name="auto_x_geom_native">Nativo</string>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="auto_x_session_custom">Personalizado</string>
+    <string name="auto_x_session_gnome">GNOME</string>
+    <string name="auto_x_session_gnome_cl">GNOME Classic</string>
+    <string name="auto_x_session_kde">KDE</string>
+    <string name="auto_x_session_mate">MATE</string>
+    <string name="auto_x_session_trinity">Trinity</string>
+    <string name="auto_x_session_unity">Unity</string>
+    <string name="auto_x_session_unity_2d">Unity2D</string>
+    <string name="auto_x_session_xfce">Xfce</string>
+    <string name="auto_x_title">Configure AutoX</string>
+    <string name="auto_x_unix_auth">Autentíquese automáticamente utilizando el nombre de usuario/contraseña SSH suministrado (en la pantalla de inicio de sesión negra).</string>
+    <string name="auto_x_unixpw">Utilice credenciales de UNIX en lugar del mecanismo de seguridad integrado. El usuario debe poder ejecutar /bin/su.</string>
+    <string name="auto_x_xdummy">Buscar o crear con Xdummy</string>
+    <string name="auto_x_xvfb">Buscar o crear con Xvfb</string>
+    <string name="auto_x_xvnc">Buscar o crear con Xvnc</string>
+    <string name="avf_disk_corrupted_message">El disco de esta máquina virtual está dañado y no se pudo reparar automáticamente. Repararlo borrará el contenedor y lo reinstalará desde cero, perdiendo cualquier cambio que hayas hecho dentro de él.</string>
+    <string name="avf_disk_corrupted_repair_button">Reparar (borrar y reinstalar)</string>
+    <string name="avf_disk_corrupted_title">Disco de la máquina virtual dañado</string>
+    <string name="avf_install_wizard_label">Configurar UserLOst VM</string>
+    <string name="avf_runner_not_installed">UserLOst VM no está instalado. Abre un sistema de archivos de tipo AVF para ejecutar el asistente de configuración.</string>
+    <string name="avf_session_start_failed">No se pudo iniciar la sesión de la máquina virtual. Asegúrate de que UserLOst VM esté instalado y en ejecución.</string>
+    <string name="back_button">Volver</string>
+    <string name="backup">Exportar</string>
+    <string name="backup_export_success">¡Respaldo exportado correctamente!</string>
+    <string name="bottomsheet_action_expand_halfway">Desplegar hasta la mitad</string>
+    <string name="button_advanced_options_hide">Ocultar opciones avanzadas</string>
+    <string name="button_advanced_options_show">Mostrar opciones avanzadas</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_continue">Continuar</string>
+    <string name="button_negative">La verdad que no</string>
+    <string name="button_never">Nunca</string>
+    <string name="button_no">No</string>
+    <string name="button_ok">¡OK!</string>
+    <string name="button_positive">Vale, claro</string>
+    <string name="button_refuse">No, gracias</string>
+    <string name="button_select_backup_import">Elije el archivo de respaldo a importar</string>
+    <string name="button_send_text">Enviar texto</string>
+    <string name="button_send_without_saving">Enviar texto/No lo guardes</string>
+    <string name="button_yes">Sí</string>
+    <string name="bvnc_app_name">bVNC Pro</string>
+    <string name="ca_file_error_reading">Error al leer el archivo CA Asegúrese de que sea legible.</string>
+    <string name="ca_file_not_found">Archivo no encontrado. Ingrese un nombre de archivo válido en el campo de texto (ej, /sdcard/ca.crt).</string>
+    <string name="ca_new_or_changed">Certificado de servidor nuevo o modificado</string>
+    <string name="ca_ovirt_manage">Administrar RHEV/oVirt CA</string>
+    <string name="ca_ovirt_use_custom">RHEV/oVirt CA personalizado</string>
+    <string name="ca_spice_manage">Administrar SPICE CA</string>
+    <string name="ca_spice_use_ovirt">Utilice RHEV/oVirt CA para SPICE</string>
+    <string name="ca_subject">Introduzca aquí el nombre del sujeto del certificado. Puede que no sea necesario si el nombre común del certificado (CN) coincide con el nombre de host del servidor.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cd_close_button">Atrás</string>
+    <string name="cd_flash_button">Alternar flash de la cámara</string>
+    <string name="cd_settings_button">Ajustes</string>
+    <string name="center_mouse">Ratón @</string>
+    <string name="cert_fingerprint">Certificado de huella digital</string>
+    <string name="cert_issuer">Emisor de certificado</string>
+    <string name="cert_subject">Asunto del certificado</string>
+    <string name="character_counter_content_description">Caracteres introducidos: %1$d de %2$d</string>
+    <string name="character_counter_overflowed_content_description">Límite de caracteres superado (%1$d de %2$d)</string>
+    <string name="clear_support_files">Limpiar Todos los Archivos de Soporte</string>
+    <string name="clear_text_end_icon_content_description">Borrar texto</string>
+    <string name="client_ssh">Terminal</string>
+    <string name="client_vnc">Graphical</string>
+    <string name="client_xsdl">XSDL</string>
+    <string name="close">Cerrar</string>
+    <string name="color_24_bit">Color de 24 bits (24 bpp)</string>
+    <string name="color_256">256 colores (8 bpp)</string>
+    <string name="color_64">64 colores (4 bpp)</string>
+    <string name="color_8">8 colores (2 bpp)</string>
+    <string name="color_black_and_white">Blanco y Negro (1 bpp)</string>
+    <string name="color_format_caption">Modo color</string>
+    <string name="color_greyscale">Escala de grises (1 bpp)</string>
+    <string name="color_mode">Modo color</string>
+    <string name="common_google_play_services_enable_button">Habilitar</string>
+    <string name="common_google_play_services_enable_text">%1$s no funcionará hasta que no habilites Servicios de Google Play.</string>
+    <string name="common_google_play_services_enable_title">Habilita Servicios de Google Play</string>
+    <string name="common_google_play_services_install_button">Instalar</string>
+    <string name="common_google_play_services_install_text">%1$s no se ejecutará si los Servicios de Google Play no están instalados en tu dispositivo.</string>
+    <string name="common_google_play_services_install_title">Descargar Servicios de Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilidad Servicios de Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Error de Servicios de Google Play</string>
+    <string name="common_google_play_services_unknown_issue">La aplicación %1$s tiene problemas con los Servicios de Google Play. Vuelve a intentarlo.</string>
+    <string name="common_google_play_services_unsupported_text">No es posible ejecutar la aplicación %1$s sin los Servicios de Google Play, que no son compatibles con tu dispositivo.</string>
+    <string name="common_google_play_services_update_button">Actualizar</string>
+    <string name="common_google_play_services_update_text">%1$s no funcionará hasta que no actualices Servicios de Google Play.</string>
+    <string name="common_google_play_services_update_title">Actualiza Servicios de Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s no se ejecutará hasta que finalice la actualización en curso de Servicios de Google Play.</string>
+    <string name="common_google_play_services_wear_update_text">Se necesita una nueva versión de Servicios de Google Play. Se actualizará en breve.</string>
+    <string name="common_open_on_phone">Abrir en teléfono</string>
+    <string name="common_signin_button_text">Iniciar sesión</string>
+    <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
+    <string name="companion_app_update_button">Actualizar</string>
+    <string name="companion_app_update_message">El backend de esta sesión debe actualizarse antes de poder iniciarse. ¿Actualizar ahora mediante depuración inalámbrica ADB?</string>
+    <string name="companion_app_update_title">Actualización obligatoria</string>
+    <string name="connect_button">Conectar</string>
+    <string name="connection_caption">Conexión</string>
+    <string name="connection_delete">Eliminar</string>
+    <string name="connection_edit">Editar</string>
+    <string name="connection_edit_delete_prompt">¿Quieres editar o eliminar la conexión?</string>
+    <string name="connection_setup_host_name">Dirección del servidor</string>
+    <string name="connection_setup_password">Contraseña</string>
+    <string name="connection_setup_user">Usuario@dominio</string>
+    <string name="connection_setup_vm_name">Nombre de la máquina virtual (opcional)</string>
+    <string name="connection_type_caption">Tipo de conexión</string>
+    <string name="connection_type_ovirt">oVirt/RHEV</string>
+    <string name="connection_type_pve">Proxmox VE</string>
+    <string name="connection_type_rdp">RDP</string>
+    <string name="connection_type_rdp_over_ssh">RDP sobre SSH</string>
+    <string name="connection_type_spice">SPICE</string>
+    <string name="connection_type_spice_over_ssh">SPICE sobre SSH</string>
+    <string name="connection_type_text">Entorno de virtualización (RHEV/oVirt o Proxmox)</string>
+    <string name="connection_type_ultravnc">UltraVNC</string>
+    <string name="connection_type_vnc">Basic VNC</string>
+    <string name="connection_type_vnc_over_ssh">VNC seguro a través de SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC seguro a través de AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC seguro a través de SSL Tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC seguro a través de VeNCrypt</string>
+    <string name="cont">Continuar</string>
+    <string name="contribution_amount_invalid">inválido</string>
+    <string name="contribution_frequency">¿Con qué frecuencia?</string>
+    <string name="contribution_monthly">Mensualmente</string>
+    <string name="contribution_once">Una vez</string>
+    <string name="contribution_primary">¿Puedes ayudar a apoyar el desarrollo de %1$s?</string>
+    <string name="contribution_process">Procesar</string>
+    <string name="contribution_secondary_negative">¿Quieres ver otras formas en las que puedes ayudar al proyecto?</string>
+    <string name="contribution_secondary_positive">¿Cuánto puedes contribuir?</string>
+    <string name="contribution_thanks">Gracias por tu contribución</string>
+    <string name="contribution_yearly">Anualmente</string>
+    <string name="control_check">Ctrl</string>
+    <string name="copied_to_clipboard">La clave pública se copió en el portapapeles.</string>
+    <string name="copy">Copiar</string>
+    <string name="copy_list_button">Copiar lista</string>
+    <string name="copy_logcat">Copiar Logcat</string>
+    <string name="copy_of">Copia de</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="cursor_force_disable">Deshabilitar</string>
+    <string name="cursor_force_local">Local</string>
+    <string name="cursor_mode">Modo de cursor:</string>
+    <string name="custom_ca_import">Alternativamente, introduzca la ruta completa a su CA y toque Importar</string>
+    <string name="custom_ca_paste">Pegue (si no está importando) el CA aquí</string>
+    <string name="custom_ca_subject">Asunto del certificado opcional. No es necesario si el certificado CN coincide con el nombre de host</string>
+    <string name="custom_sessions">Sesiones Personalizadas</string>
+    <string name="deactivate_sessions">Todas las sesiones deben estar desactivadas para continuar esta acción.</string>
+    <string name="debug_level">Debug Level</string>
+    <string name="debug_log_deleted">¡El archivo de registro de depuración fue eliminado o es inexistente!</string>
+    <string name="debug_log_export_failure">¡La exportación del registro de depuración ha fallado!</string>
+    <string name="debug_log_export_success">¡El registro de depuración se exportó correctamente!</string>
+    <string name="decrypt">Descifrar clave actual</string>
+    <string name="default_input_mode">Modo de entrada predeterminado</string>
+    <string name="delete">Borrar</string>
+    <string name="delete_connection">Eliminar conexión</string>
+    <string name="delete_key">Eliminar clave seleccionada</string>
+    <string name="delete_key_list">Eliminar lista de claves</string>
+    <string name="desc_apps_message">Las Aplicaciones son la forma más fácil de lanzar programas comunes y distribuciones de GNU/Linux.</string>
+    <string name="desc_apps_title">Aplicaciones:</string>
+    <string name="desc_arrow">Imagen: La flecha indica la conexión entre la sesión y el sistema de archivos.</string>
+    <string name="desc_default_app_icon">Imagen: Marcador de posición del ícono de la app</string>
+    <string name="desc_filesystem_type">Imagen: Logotipo de distribución</string>
+    <string name="desc_filesystems_message">Los sistemas de archivos son lo que parecen: una estructura de archivos y directorios que contienen los programas y archivos necesarios que permiten el uso de aplicaciones estándar de GNU/Linux.</string>
+    <string name="desc_filesystems_title">Sistemas de Archivos:</string>
+    <string name="desc_import_backups_should_use_same_settings">"Completa lo mismo: 
+
+• nombre de usuario 
+• contraseña 
+• contraseña de VNC 
+• distribución 
+
+ que en el respaldo para asegurar un buen funcionamiento"</string>
+    <string name="desc_sessions_message">Las sesiones inician un servidor en un sistema de archivos, al que luego se podrá conectar utilizando una aplicación cliente de terceros.</string>
+    <string name="desc_sessions_title">Sesiones:</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="dlg_dont_show_again">No volver a preguntar</string>
+    <string name="dlg_msg_clear_cert_cache">Esta seguro que desea borrar todos los certificados?</string>
+    <string name="dlg_msg_connecting">Conectando ...</string>
+    <string name="dlg_msg_create_bookmark_after_qc">La configuración de conexión no se han guardado! ¿Quieres guardarlos?</string>
+    <string name="dlg_msg_create_shortcut">Nombre corto:</string>
+    <string name="dlg_msg_exit">Esta seguro que desea salir del programa?</string>
+    <string name="dlg_msg_logging_in">Ingresando a ...</string>
+    <string name="dlg_msg_verify_certificate">The identity of the remote computer cannot be verified. Do you want to connect anyway?</string>
+    <string name="dlg_save_bookmark">¿Desea guardar los cambios realizados en la configuración de conexión?</string>
+    <string name="dlg_title_about">Sobre aFreeRDP</string>
+    <string name="dlg_title_clear_cert_cache">Borrar Certificados?</string>
+    <string name="dlg_title_create_bookmark_after_qc">Guardar configuración de conexión?</string>
+    <string name="dlg_title_create_shortcut">Crear acceso directo</string>
+    <string name="dlg_title_credentials">Por favor, introduzca sus credenciales</string>
+    <string name="dlg_title_exit">Salir del programa?</string>
+    <string name="dlg_title_save_bookmark">Guardar Conexión</string>
+    <string name="dlg_title_verify_certificate">verificar el certificado</string>
+    <string name="download_failure_cannot_resume">No se puede reanudar la descarga.</string>
+    <string name="download_failure_destination_exists">El destino ya existe.</string>
+    <string name="download_failure_finished_wrong_items">Se intentó finalizar el proceso de descarga con elementos que no habíamos puesto en cola.</string>
+    <string name="download_failure_http_error">Error HTTP: %1$s</string>
+    <string name="download_failure_http_processing">Error de procesamiento de datos HTTP.</string>
+    <string name="download_failure_insufficient_external_storage">Espacio insuficiente en el almacenamiento externo.</string>
+    <string name="download_failure_md5">La suma de comprobación md5 del sistema de archivos no coincide con el valor esperado.</string>
+    <string name="download_failure_missing_error">Código de error desconocido.</string>
+    <string name="download_failure_no_external_devices">No se encontraron dispositivos externos (almacenamiento).</string>
+    <string name="download_failure_reason_not_found">Motivo no disponible.</string>
+    <string name="download_failure_too_many_redirects">Demasiadas redirecciones.</string>
+    <string name="download_failure_unhandled_http_response">Código de respuesta HTTP no gestionado.</string>
+    <string name="download_failure_unknown_error">Error desconocido.</string>
+    <string name="download_failure_unknown_file_error">Error de archivo desconocido.</string>
+    <string name="download_from_server">Descargar desde el servidor</string>
+    <string name="dpad_as_arrows">Utilice D-Pad para flechas y haga clic en D-Pad para Ctrl.</string>
+    <string name="edit">Editar</string>
+    <string name="edit_filesystem">Editar Sistema de Archivos</string>
+    <string name="edit_session">Editar Sesión</string>
+    <string name="enable_recording">Habilitar grabación</string>
+    <string name="enable_sound">Habilitar sonido</string>
+    <string name="enter_filename">Ingrese el nombre del archivo.</string>
+    <string name="enter_otp_code">Por favor, ingrese el código OTP</string>
+    <string name="enter_passphrase">Introduzca la passphrase de la clave</string>
+    <string name="enter_passphrase_title">Introduzca la passphrase de la clave</string>
+    <string name="enter_password">Por favor, ingrese contraseña</string>
+    <string name="enter_rdp_credentials">Introduzca las credenciales de RDP</string>
+    <string name="enter_spice_password">Introduzca la contraseña de SPICE</string>
+    <string name="enter_ssh_credentials">Introduzca las credenciales SSH</string>
+    <string name="enter_text">Enviar texto</string>
+    <string name="enter_text_title">Ingrese texto para enviar</string>
+    <string name="enter_vnc_credentials">Introduzca las credenciales VNC</string>
+    <string name="enter_vnc_password">Introduzca la contraseña de VNC</string>
+    <string name="error">Error</string>
+    <string name="error_anon_dh_unsupported">El servidor VNC está intentando utilizar cifrados Diffie Hellman anónimos que no son compatibles con su dispositivo Android. Si utiliza el servidor Vino VNC de GNOME, puede desactivar AnonTLS ejecutando el siguiente comando en una terminal y luego reiniciando: \"gsettings set org.gnome.Vino require-encryption false\". Si ejecuta x11vnc, puede agregar las siguientes opciones: \"- vencrypt nodh: only -ssl\".</string>
+    <string name="error_app_description_not_found">No se ha encontrado la descripción de esta aplicación. Prueba actualizando la lista.</string>
+    <string name="error_bookmark_incomplete">"Pulse el botón Cancelar para abortar!  NPulse Continuar para especificar los campos obligatorios!"</string>
+    <string name="error_bookmark_incomplete_title">Cancelar sin guardar?</string>
+    <string name="error_connection_failed">Conexión fallida.</string>
+    <string name="error_connection_failure">Failed to establish a connection to the server!</string>
+    <string name="error_connection_interrupted">Conexión interrumpida.</string>
+    <string name="error_decrypting">No se pudo descifrar PEM. Está cifrado, pero se especificó una passphrase incorrecta. Especifique la passphrase correcta en el campo correspondiente y vuelva a importar.</string>
+    <string name="error_decrypting_key">No se pudo descifrar la clave. Ingrese la passphrase correcta e intente descifrar nuevamente.</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="error_empty_field">¡Todos los campos deben ser rellenados!</string>
+    <string name="error_export_copy_public_external_failure">La copia del respaldo al almacenamiento externo público ha fallado.</string>
+    <string name="error_export_execution_failure">La exportación falló, Razón: %1$s</string>
+    <string name="error_export_filesystem_not_found">No se pudo determinar el sistema de archivos a respaldar. Inténtalo de nuevo.</string>
+    <string name="error_export_local_failure">La exportación al almacenamiento local ha fallado.</string>
+    <string name="error_failed_to_download_vv_http">No se pudo descargar el archivo .vv a través de HTTP. Quizás su servidor no esté disponible.</string>
+    <string name="error_failed_to_download_vv_https">No se pudo descargar el archivo .vv a través de HTTPS. Quizás su certificado de servidor no sea de confianza (vencido o autofirmado) o su servidor no sea accesible.</string>
+    <string name="error_failed_to_obtain_vv_content">No se pudo obtener el archivo .vv. Por favor descárguelo de nuevo, pero esta vez ábralo rápidamente desde la carpeta Descargas en un Administrador de archivos.</string>
+    <string name="error_failed_to_obtain_vv_file">No se pudo encontrar el archivo .vv. Por favor descárguelo de nuevo, pero esta vez intente abrirlo desde el área de notificaciones o directamente desde el navegador si es posible.</string>
+    <string name="error_filesystem_delete">¡La eliminación del sistema de archivos ha fallado! Intenta detener todas las sesiones y vuelve a intentarlo.</string>
+    <string name="error_filesystem_extraction">Ha fallado la extracción del sistema de archivos.</string>
+    <string name="error_filesystem_name">Debes especificar un nombre de sistema de archivos</string>
+    <string name="error_filesystem_name_invalid_characters">La longitud de el nombre del sistema de archivos debe ser entre 1 y 50 caracteres excluyendo caracteres como \"/:*\\|</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_importing">"No se pudo recuperar el par de claves del archivo. Los formatos admitidos son clave RSA cifrada/no cifrada en formato PEM o clave RSA/DSA no cifrada en formato PKCS8. Se sabe que las claves generadas con 'ssh-keygen -t rsa -m PEM' funcionan."</string>
+    <string name="error_library_file_missing">¡Parece que nos falta una biblioteca necesaria!</string>
+    <string name="error_library_setup_failure">Parece que la configuración inicial ha fallado. Por favor, contáctanos en GitHub.</string>
+    <string name="error_no_lib_directory">Parece que el directorio de la biblioteca que buscamos no existe. Por favor, contáctanos en GitHub.</string>
+    <string name="error_no_such_vm_found_for_user">No se encontró ninguna máquina virtual con el ID proporcionado para el usuario dado. Borre la ID para obtener una lista de VMs.</string>
+    <string name="error_no_user_hostname">Por favor ingrese al menos un usuario y un nombre de host o dirección IP.</string>
+    <string name="error_no_vm_found_for_user">No hay máquinas virtuales disponibles para este usuario.</string>
+    <string name="error_no_vnc_support_yet">El tipo de pantalla VNC aún no es compatible, pero es una característica próxima. ¡Gracias por su comprensión!</string>
+    <string name="error_not_connected_to_network">No parece estar conectado a Internet. ¡No se puede continuar sin estar conectado!</string>
+    <string name="error_out_of_memory">No se puede asignar suficiente memoria para dibujar la pantalla remota. Intente reiniciar la aplicación, luego reinicie su dispositivo. También puede intentar reducir el tamaño del escritorio remoto a través de la configuración de la aplicación.</string>
+    <string name="error_ovirt_auth_failure">Fallo de autentificacion. Por favor compruebe el usuario y la contraseña proporcionados.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Fallo del protocolo de enlace SSL. Hay un problema con el certificado SSL del servidor. Si está utilizando un certificado autofirmado, debe (re)importar su autoridad de certificación.</string>
+    <string name="error_ovirt_timeout">Se agotó el tiempo de espera de la conexión a su VM. Por favor verifique que la dirección del nodo que ejecuta su VM sea correcta, que sea accesible desde su red actual y que ningún firewall esté bloqueando la conexión.</string>
+    <string name="error_ovirt_unable_to_connect">No se puede conectar o autenticar, verifique la dirección del servidor, el usuario, la contraseña y la autoridad de certificación y el asunto.</string>
+    <string name="error_password_invalid">La contraseña contiene caracteres inválidos.</string>
+    <string name="error_pick_correct_item">Asegúrese de haber elegido el elemento correcto en Tipo de conexión.</string>
+    <string name="error_pve_api_io_error">Error de conexión al entorno virtual Proxmox:</string>
+    <string name="error_pve_api_unexpected_code">Respuesta inesperada del entorno virtual Proxmox:</string>
+    <string name="error_pve_failed_to_authenticate">No se pudo autenticar a Proxmox Virtual Environment. Por favor asegúrese de ingresar su nombre de usuario en formato usuario@dominio y que su contraseña sea correcta.</string>
+    <string name="error_pve_failed_to_parse_json">No se pudo analizar la respuesta del entorno virtual de Proxmox.</string>
+    <string name="error_pve_null_data">El entorno virtual Proxmox devolvió datos nulos.</string>
+    <string name="error_pve_timeout_communicating">Tiempo de espera agotado para comunicarse con el entorno virtual de Proxmox.</string>
+    <string name="error_pve_vmid_not_numeric">ID de la VM no numérico. Ingrese un ID de VM numérico o déjelo en blanco para elegir la VM de una lista.</string>
+    <string name="error_rdp_authentication_failed">¡La autenticación RDP falló! Verifique el nombre de usuario y la contraseña de RDP e intente nuevamente.</string>
+    <string name="error_rdp_connection_failed">¡La conexión RDP falló! Se interrumpió la conectividad de la red, se apagó o deshabilitó el servidor RDP o se tomó el control de su sesión.</string>
+    <string name="error_rdp_unable_to_connect">¡No se pudo conectar al servidor RDP! Asegúrese de que la configuración del servidor RDP sea correcta, que el servidor esté encendido, que RDP esté habilitado y que el servidor esté en la misma red que este dispositivo.</string>
+    <string name="error_reading_file">"No se pudo leer el archivo especificado. Asegúrese de que esté presente en su directorio de descargas. El nombre de archivo especificado es: "</string>
+    <string name="error_security_type">El servidor no ofrece un tipo de seguridad compatible.</string>
+    <string name="error_session_name">Debes especificar un nombre de sesión</string>
+    <string name="error_spice_unable_to_connect">No se puede conectar o autenticar, verifique la dirección y el puerto del servidor.</string>
+    <string name="error_ssh_could_not_exec_command">No se pudo ejecutar el comando remoto.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">No se pudo enviar la contraseña sudo.</string>
+    <string name="error_ssh_hostkey_changed">¡ERROR! La clave de host del servidor ha cambiado. Si es intencional, elimine y vuelva a crear la conexión. De lo contrario, este puede ser un hombre en el medio del ataque. No continuando.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">El servidor SSH no admite métodos de autenticación de \"contraseña\" ni \"teclado interactivo\" o requiere primero el método \"publickey\". Configúrelo para permitir al menos uno de los dos métodos o reconfigure la aplicación. Métodos de autenticación disponibles:</string>
+    <string name="error_ssh_key_auth_fail">No se pudo autenticar en el servidor SSH con un key-pair. Verifique su nombre de usuario SSH y asegúrese de que su clave pública esté en el archivo authorized_keys en el lado remoto.</string>
+    <string name="error_ssh_keypair_decryption_failure">"No se pudo descifrar el key-pair. Asegúrese de haber ingresado su contraseña correctamente en el campo 'SSH Passphrase' en la pantalla principal."</string>
+    <string name="error_ssh_keypair_missing">¡Par de claves SSH aún no generado! Genere uno y coloque (su parte pública) authorized_keys en el servidor SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Se proporcionó una passphrase, pero el key-pair no está encriptado. Elimina la passphrase.</string>
+    <string name="error_ssh_port_forwarding_failure">No se pudo configurar el reenvío de puertos para tunelizar el tráfico VNC a través de SSH. Asegúrese de que su servidor SSH esté configurado para permitir el reenvío de puertos y vuelva a intentarlo.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">El servidor SSH no admite el método de autenticación \"publickey\", y estamos intentando utilizar un key-pair para autenticar. Configúrelo para permitir la autenticación de publickey y vuelva a intentarlo. Métodos de autenticación disponibles:</string>
+    <string name="error_ssh_pwd_auth_fail">No se pudo autenticar en el servidor SSH con una contraseña. Verifique su nombre de usuario SSH y contraseña SSH.</string>
+    <string name="error_ssh_unable_to_connect">No se pudo conectar al servidor SSH. Verifique la conectividad de la red y la dirección y el puerto del servidor SSH.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">No se pudo obtener el puerto VNC remoto de x11vnc. Asegúrese de que x11vnc esté instalado. Para estar seguro, intente ejecutar x11vnc manualmente en la línea de comandos.</string>
+    <string name="error_uri_noinfo_nosave">Información insuficiente especificada para conectarse.</string>
+    <string name="error_username">Debes especificar un nombre de usuario</string>
+    <string name="error_username_in_blacklist">Este nombre de usuario puede estar reservado por Linux y no puede ser usado como nombre de usuario para el sistema de archivos.</string>
+    <string name="error_username_invalid">El nombre de usuario contiene caracteres inválidos.</string>
+    <string name="error_username_invalid_characters">La longitud del nombre de usuario deben ser de entre 1 y 30 caracteres y solo contener minúsculas y/o números</string>
+    <string name="error_vm_lookup_failed">No se pudo encontrar una máquina virtual con el nombre especificado asignado a su usuario. Por favor borre el nombre de la VM especificado para ver una lista de VM asignadas al usuario.</string>
+    <string name="error_vnc_authentication">¡La autenticación VNC falló! Verifique la contraseña de VNC (y el usuario si corresponde).</string>
+    <string name="error_vnc_password_invalid">La contraseña de VNC contiene caracteres inválidos.</string>
+    <string name="error_vnc_password_length_incorrect">¡La contraseña de VNC debe tener entre 6 y 8 caracteres!</string>
+    <string name="error_vnc_unable_to_connect">"La conexión al servidor VNC falló por motivo: "</string>
+    <string name="error_vv_download_timeout">Se agotó el tiempo de descarga del archivo vv.</string>
+    <string name="error_writing_file">"No se pudo escribir el archivo: "</string>
+    <string name="error_x509_could_not_generate_encoding">No se pudo generar la codificación del certificado.</string>
+    <string name="error_x509_could_not_generate_signature">No se pudo generar la firma de certificado SHA1 o MD5. No se encontró ningún algoritmo SHA1/MD5.</string>
+    <string name="execution_type_avf">Máquina Virtual (pro)</string>
+    <string name="execution_type_label">Backend de ejecución:</string>
+    <string name="execution_type_proot">Estándar (proot)</string>
+    <string name="execution_type_qemu">Emulación QEMU (pro)</string>
+    <string name="expand_button_title">Avanzado</string>
+    <string name="export_failure">No se pudo exportar el respaldo</string>
+    <string name="export_settings">Exportar</string>
+    <string name="export_settings_path" />
+    <string name="export_started">Exportación iniciada, por favor espera</string>
+    <string name="export_success">Respaldo exportado correctamente</string>
+    <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
+    <string name="extra_keys_disable">Deshabilitar claves adicionales</string>
+    <string name="extra_keys_enable">Habilitar claves adicionales</string>
+    <string name="filesystem_credentials_reasoning">Estamos creando un sistema de archivos para tus aplicaciones. Ingrese la información requerida para que la usemos como valores predeterminados para este sistema de archivos.</string>
+    <string name="filesystem_protected_text">Protegido:</string>
+    <string name="filesystem_unique_name_required">¡Los sistemas de archivos requieren un nombre único!</string>
+    <string name="filesystems">Sistemas de Archivos</string>
+    <string name="fit_to_screen">Ajustar a la pantalla</string>
+    <string name="force">Bitmap de pantalla completa</string>
+    <string name="freeardp_app_name">aRDP Free</string>
+    <string name="freeaspice_app_name">aSPICE Free</string>
+    <string name="freebvnc_app_name">bVNC Free</string>
+    <string name="gather_entropy">Mejorando la aleatoriedad</string>
+    <string name="general_error_title">¡Ha ocurrido algo inesperado!</string>
+    <string name="generate">Generar nueva clave</string>
+    <string name="generated">Clave generada con éxito</string>
+    <string name="generating">Generando key pair...</string>
+    <string name="github_message">¿Encontraste un bug? ó ¿Quieres sugerir una nueva función? Nuestra página de GitHub es el mejor lugar para obtener una respuesta rápida.</string>
+    <string name="help">Ayuda</string>
+    <string name="hide">Esconder</string>
+    <string name="hide_toolbar">Esconder barra de herramientas</string>
+    <string name="hint_filesystem_name">Nombre de Sistema de Archivos</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_session_name">Nombre de Sesión</string>
+    <string name="hint_username">Nombre de Usuario</string>
+    <string name="hint_vnc_password">Contraseña de VNC</string>
+    <string name="icon_content_description">Icono del cuadro de diálogo</string>
+    <string name="illegal_state_assets_have_not_been_downloaded">Los recursos deben copiarse a tu sistema de archivos, pero parece que no han sido descargados. Intenta borrar los archivos de soporte.</string>
+    <string name="illegal_state_busybox_missing">Busybox es necesario para esta operación. Intenta ejecutar una sesión para asegurarte de que está instalado.</string>
+    <string name="illegal_state_downloads_did_not_complete_successfully">Las descargas han fallado debido a: %1$s.</string>
+    <string name="illegal_state_empty_download_cache_access">La caché de descargas estaba vacía cuando se intentó acceder a ella.</string>
+    <string name="illegal_state_error_copying_app_script">No se pudo copiar el script de la aplicación.</string>
+    <string name="illegal_state_error_fetching_app_database_entries">No se pudieron obtener las entradas de las bases de datos de las aplicaciones.</string>
+    <string name="illegal_state_error_fetching_asset_lists">Ha fallado la recuperación de la lista de recursos.</string>
+    <string name="illegal_state_failed_to_clear_support_files">Ha fallado la copia de los archivos de soporte.</string>
+    <string name="illegal_state_failed_to_copy_assets_to_filesystem">Ha fallado la copia de los recursos al sistema de archivos.</string>
+    <string name="illegal_state_failed_to_copy_assets_to_local">Ha fallado la copia de los recursos al almacenamiento local.</string>
+    <string name="illegal_state_failed_to_extract_filesystem">Ha fallado la extracción del sistema de archivos.</string>
+    <string name="illegal_state_github_message">"%1$s 
+Estamos trabajando para resolver estos problemas. Puedes avisarnos sobre esto en GitHub si te gustaría ayudar."</string>
+    <string name="illegal_state_insufficient_storage">No se pudo detectar almacenamiento suficiente. Intenta aumentar el almacenamiento disponible en tu dispositivo a al menos 250 MB.</string>
+    <string name="illegal_state_no_app_selected_when_preference_submitted">Los ajustes de la Aplicación fueron guardados, pero ninguna app fue seleccionada.</string>
+    <string name="illegal_state_no_app_selected_when_preparation_started">Intentando iniciar la preparación de la aplicación, pero ninguna app fue seleccionada.</string>
+    <string name="illegal_state_no_filesystem_selected_when_credentials_selected">Las credenciales fueron guardadas para un sistema de archivos, pero ningún sistema de archivos fue seleccionado.</string>
+    <string name="illegal_state_no_filesystem_selected_when_flavor_selected">Se ha enviado una variante de escritorio para un sistema de archivos, pero no se ha seleccionado ninguno.</string>
+    <string name="illegal_state_no_selections_when_permissions_granted">Ninguna sesión ó aplicación fueron seleccionadas cuando los permisos fueron concedidos.</string>
+    <string name="illegal_state_no_session_selected_when_preparation_started">Está intentando iniciar la preparación de la sesión sin haber seleccionado una anteriormente.</string>
+    <string name="illegal_state_remote_unreachable_during_generation">No se pudo contactar con el host remoto al generar los requisitos de descarga. Asegúrate de tener una conexión de red estable e inténtalo de nuevo.</string>
+    <string name="illegal_state_title">¡%1$s ha entrado en un estado ilegal!</string>
+    <string name="illegal_state_too_many_selections_when_permissions_granted">Tanto una sesión como una aplicación fueron seleccionadas cuando los permisos fueron concedidos.</string>
+    <string name="illegal_state_transition">Mala transición de estado: %1$s</string>
+    <string name="illegal_state_unhandled_session_service_type">Intentando iniciar una sesión con un tipo de servicio desconocido.</string>
+    <string name="immersive_mode_disable">Desactivar el modo inmersivo</string>
+    <string name="import_export_settings">Configuración de importación/exportación</string>
+    <string name="import_failure">No se pudo importar el respaldo</string>
+    <string name="import_from_file">Importar desde archivo</string>
+    <string name="import_settings">Importar</string>
+    <string name="import_settings_file_url" />
+    <string name="import_success">Respaldo importado correctamente</string>
+    <string name="info">Info</string>
+    <string name="info_capabilities_changed">Los ajustes de pantalla se han cambiado porque el escritorio virtual no es compatible con la configuración especificada!</string>
+    <string name="info_cert">"¿Acepta este certificado de host nuevo o modificado?
+
+Fingerprints:
+MD5: %1$s
+SHA1: %2$s
+SHA256: %3$s
+
+Issued to: %4$s
+Issued by: %5$s
+
+Valid from: %6$s
+Valid until: %7$s
+"</string>
+    <string name="info_cert_signatures">"La información del certificado es: "</string>
+    <string name="info_cert_signatures_identical">"
+
+Puede asegurarse de que la información coincida con el certificado del servidor para evitar un ataque man-in-the-middle."</string>
+    <string name="info_cert_tunnel">"¿Desea conectarse al host identificado por el siguiente certificado?
+
+Fingerprint: %1$s
+
+Emitido para:
+%2$s
+
+Emitido de:
+%3$s
+
+Válido desde:
+%4$s
+
+Válid hasta:
+%5$s
+
+Nota: La aplicación no verifica las autoridades de certificación ni comprueba la revocación del certificado."</string>
+    <string name="info_continue_connecting">"Continuar conectándose a: "</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_encoding">" codificando, "</string>
+    <string name="info_finish_app_setup">Termina la configuración de la app para que estas opciones estén disponibles.</string>
+    <string name="info_progress_dialog_aborted">Conexión abortada!</string>
+    <string name="info_progress_dialog_connecting">Conectando…</string>
+    <string name="info_progress_dialog_downloading">"Descargando el primer fotograma.
+Por favor espere…"</string>
+    <string name="info_progress_dialog_establishing">"Estableciendo protocolo handshake.
+Por favor espere…"</string>
+    <string name="info_reset_failed">No se pudo borrar el caché del certificado!</string>
+    <string name="info_reset_success">Eliminado el cache del certificado!</string>
+    <string name="info_set_touchpad_input_mode">El servidor informa que no admite la entrada de ratón en modo cliente y que el modo de entrada de ratón actual no funcionará correctamente. Si esto persiste, asegúrese de que las herramientas de especias estén instaladas en la máquina virtual o cambie al modo de entrada de panel táctil simulado desde el menú.</string>
+    <string name="info_ssh_initializing_hostkey">Intentando inicializar SSH HostKey.</string>
+    <string name="info_ssh_key_fingerprint">"La fingerprint de la clave del host es: "</string>
+    <string name="info_ssh_key_fingerprint_identical">"
+
+Puede asegurarse de que sea idéntica a la fingerprint conocida del certificado del servidor para evitar un ataque de man-in-the-middle."</string>
+    <string name="info_stop_app">Detén esta app para cambiar sus ajustes.</string>
+    <string name="info_update_color_model_to">"Actualizando el modelo de color a "</string>
+    <string name="info_vm_launched_on_stand_by">Su MV se encontró apagada y se ha iniciado. Por favor vuelva a intentarlo en un par de minutos. Si lo intenta demasiado pronto y falla la conexión, vuelva a intentarlo más tarde.</string>
+    <string name="info_xsdl_support">XSDL aún no es totalmente compatible con Android 9.0 y versiones posteriores</string>
+    <string name="input_method_direct_drag_pan">Directo, Agarre para desplazar</string>
+    <string name="input_method_direct_drag_pan_description">Directo, Agarre para desplazar: Desliza para arrastrar y soltar. Toque con un dedo donde desee hacer clic con el botón izquierdo, dos dedos para hacer clic con el botón derecho y tres dedos para hacer clic con el botón central. Desliza dos dedos para desplazarte verticalmente. Toque largo para comenzar a desplazarse.</string>
+    <string name="input_method_direct_swipe_pan">Directo, Deslice para desplazar</string>
+    <string name="input_method_direct_swipe_pan_description">Directo, Deslice para desplazar: Deslice para desplazarse. Toque con un dedo donde desee hacer clic con el botón izquierdo, dos dedos para hacer clic con el botón derecho y tres dedos para hacer clic con el botón central. Desliza dos dedos para desplazarte verticalmente. Toque largo para arrastrar y soltar.</string>
+    <string name="input_method_help">Ayuda del método de entrada</string>
+    <string name="input_method_help_text">"En cualquier método de entrada, toque el icono del teclado para obtener el teclado en pantalla. Además, su dispositivo puede tener su propio gesto para abrir el teclado.
+
+Utilice los modos de entrada directa para un control de pantalla táctil más intuitivo. Utilice el modo de panel táctil simulado para un control más preciso del ratón.
+
+Método Directo, Deslice para desplazar:
+ - Controle el ratón directamente a través del tacto.
+ - Desliza para desplazarte.
+ - Tocar hace que el ratón haga clic en el lugar donde tocó.
+ - Los eventos de desplazamiento vertical se envían entre los dos dedos donde comenzó un deslizamiento de dos dedos.
+
+Método Directo, Agarre para desplazar:
+ - Controle el ratón directamente a través del tacto.
+ - Toque largo para iniciar el modo panorámico.
+ - Tocar hace que el ratón haga clic en el lugar donde tocó.
+ - Los eventos de desplazamiento vertical se envían entre los dos dedos donde comenzó un deslizamiento de dos dedos.
+
+Método Panel táctil simulado:
+ - Utilice su pantalla como un panel táctil.
+ - Desliza para mover el puntero del ratón.
+ - Mueva el ratón más allá del borde de la pantalla para desplazarse.
+ - Al tocar, el ratón hace clic donde está el puntero.
+ - Los eventos de desplazamiento vertical se envían donde se encuentra el puntero del ratón.
+
+Método De una mano:
+ - Igual que el método Directo, Deslice para desplazar, excepto que un toque prolongado abre el menú con una selección de modos.
+ - Después de elegir el modo, deslizar el dedo en la pantalla realiza el gesto seleccionado.
+ - Levantar el dedo completa el gesto.
+
+Todos los métodos de entrada:
+ - Clic izquierdo: toque una vez.
+ - Doble clic: toque dos veces.
+ - Clic derecho: mantenga pulsado y toque con un segundo dedo (en cualquier otro lugar de la pantalla).
+ - Clic derecho alternativo: use el botón o gesto \"Atrás\" para su dispositivo.
+ - Clic central: mantenga pulsado y toque con dos dedos más (en cualquier otro lugar de la pantalla).
+ - Arrastre del ratón: mantenga presionado y deslice.
+ - Rueda de desplazamiento: arrastre con dos dedos hacia arriba/abajo e izquierda/derecha. El arrastre rápido se desplaza más rápido.
+ - Acercar/alejar: pellizcar y acercar para controlar la escala.
+ - Tecla Ctrl/Alt: Menú->Botones Ctrl/Alt. ¡No olvide desactivar cuando haya terminado!
+ - Combinaciones de teclas: Menú->Más->Enviar teclas.
+ - Enviar texto: escriba en el teclado en pantalla o use Menú->Más->Enviar texto . "</string>
+    <string name="input_method_mouse">Control del puntero del ratón</string>
+    <string name="input_method_single_handed">De una mano</string>
+    <string name="input_method_single_handed_description">De una mano: desliza el dedo para desplazarte. Toque con un dedo donde desee hacer clic con el botón izquierdo. Toque largo para elegir el modo de zoom/desplazamiento/arrastre izquierdo/derecho/medio. Los controles multitáctiles habituales también funcionan.</string>
+    <string name="input_method_touchpad">Panel táctil simulado</string>
+    <string name="input_method_touchpad_description">Panel táctil simulado: deslice para mover el puntero. Toque en cualquier lugar con un dedo para hacer clic izquierdo, dos dedos para hacer clic derecho y tres dedos para hacer clic en el medio. Desliza dos dedos para desplazarte. Toque largo para arrastrar y soltar.</string>
+    <string name="input_methods">Método de entrada</string>
+    <string name="input_mode">Modo de entrada</string>
+    <string name="input_mode_drag_pan_zoom_mouse">Directo, Agarre para desplazar</string>
+    <string name="input_mode_fit_to_screen">Sin desplazamiento; Ratón de bola</string>
+    <string name="input_mode_help">Ayuda del modo de entrada</string>
+    <string name="input_mode_help_text">"En cualquier método de entrada, toque el icono del teclado para obtener el teclado en pantalla. Además, su dispositivo puede tener su propio gesto para abrir el teclado.
+
+Utilice los modos de entrada directa para un control de pantalla táctil más intuitivo. Utilice el modo de panel táctil simulado para un control más preciso del ratón.
+
+Método Directo, Deslice para desplazar:
+ - Controle el ratón directamente a través del tacto.
+ - Desliza para desplazarte.
+ - Tocar hace que el ratón haga clic en el lugar donde tocó.
+ - Los eventos de desplazamiento vertical se envían entre los dos dedos donde comenzó un deslizamiento de dos dedos.
+
+Método Directo, Agarre para desplazar:
+ - Controle el ratón directamente a través del tacto.
+ - Toque largo para iniciar el modo panorámico.
+ - Tocar hace que el ratón haga clic en el lugar donde tocó.
+ - Los eventos de desplazamiento vertical se envían entre los dos dedos donde comenzó un deslizamiento de dos dedos.
+
+Método Panel táctil simulado:
+ - Utilice su pantalla como un panel táctil.
+ - Desliza para mover el puntero del ratón.
+ - Mueva el ratón más allá del borde de la pantalla para desplazarse.
+ - Al tocar, el ratón hace clic donde está el puntero.
+ - Los eventos de desplazamiento vertical se envían donde se encuentra el puntero del ratón.
+
+Método De una mano:
+ - Igual que el método Directo, Deslice para desplazar, excepto que un toque prolongado abre el menú con una selección de modos.
+ - Después de elegir el modo, deslizar el dedo en la pantalla realiza el gesto seleccionado.
+ - Levantar el dedo completa el gesto.
+
+Todos los métodos de entrada:
+ - Clic izquierdo: toque una vez.
+ - Doble clic: toque dos veces.
+ - Clic derecho: mantenga pulsado y toque con un segundo dedo (en cualquier otro lugar de la pantalla).
+ - Clic derecho alternativo: use el botón o gesto \"Atrás\" para su dispositivo.
+ - Clic central: mantenga pulsado y toque con dos dedos más (en cualquier otro lugar de la pantalla).
+ - Arrastre del ratón: mantenga presionado y deslice.
+ - Rueda de desplazamiento: arrastre con dos dedos hacia arriba/abajo e izquierda/derecha. El arrastre rápido se desplaza más rápido.
+ - Acercar/alejar: pellizcar y acercar para controlar la escala.
+ - Tecla Ctrl/Alt: Menú->Botones Ctrl/Alt. ¡No olvide desactivar cuando haya terminado!
+ - Combinaciones de teclas: Menú->Más->Enviar teclas.
+ - Enviar texto: escriba en el teclado en pantalla o use Menú->Más->Enviar texto . "</string>
+    <string name="input_mode_mouse">Control del puntero del ratón</string>
+    <string name="input_mode_panning">Modo de desplazamiento de escriptorio</string>
+    <string name="input_mode_single_handed">Con una mano</string>
+    <string name="input_mode_touch_pan_zoom_mouse">Directo, Deslice para desplazar</string>
+    <string name="input_mode_touchpad">Panel táctil simulado</string>
+    <string name="install_notif_channel_name">Configuración de %1$s</string>
+    <string name="install_notif_pair_action">Vincular</string>
+    <string name="install_notif_pair_failed_title">Vinculación fallida ✗</string>
+    <string name="install_notif_pair_ready_body">Despliega esta notificación e introduce el código de 6 dígitos que se muestra en Depuración Inalámbrica, luego toca Vincular.</string>
+    <string name="install_notif_pair_ready_title">Configuración de %1$s — puerto %2$s listo</string>
+    <string name="install_notif_pair_waiting_body">En Depuración Inalámbrica, toca Vincular dispositivo con código de vinculación. El puerto se detectará automáticamente.</string>
+    <string name="install_notif_pair_waiting_title">Configuración de %1$s — esperando puerto de vinculación…</string>
+    <string name="install_notif_paired_title">Vinculado ✓ — toca para continuar</string>
+    <string name="install_notif_pairing_title">Vinculando…</string>
+    <string name="install_notif_step1_action">Abrir Información del Teléfono</string>
+    <string name="install_notif_step1_body">Toca el Número de Compilación 7 veces. Verás ¡Ahora eres desarrollador!</string>
+    <string name="install_notif_step1_title">Paso 1 — Activa las Opciones de Desarrollador</string>
+    <string name="install_notif_step2_action">Abrir Opciones de Desarrollador</string>
+    <string name="install_notif_step2_body">Las Opciones de Desarrollador están activadas. Abre Opciones de Desarrollador y activa la Depuración Inalámbrica.</string>
+    <string name="install_notif_step2_title">Paso 2 — Activa la Depuración Inalámbrica</string>
+    <string name="install_wizard_adb_init_failed">No se pudo iniciar el servidor ADB integrado.</string>
+    <string name="install_wizard_apk_missing">No se pudo descargar el instalador de %1$s. Comprueba tu conexión e inténtalo de nuevo.</string>
+    <string name="install_wizard_btn_done">Listo</string>
+    <string name="install_wizard_checking_paired">Comprobando si ya existe un emparejamiento…</string>
+    <string name="install_wizard_connect_failed">"No se pudo conectar al dispositivo: %1$s
+
+Asegúrate de que la Depuración Inalámbrica siga activada."</string>
+    <string name="install_wizard_connecting">Conectando al dispositivo…</string>
+    <string name="install_wizard_consent_body">%1$s es una aplicación independiente, no forma parte de UserLOst. Si continúas, se vinculará con tu dispositivo mediante depuración inalámbrica ADB, instalará %1$s automáticamente y le concederá lo siguiente sin más avisos: %2$s.</string>
+    <string name="install_wizard_consent_cancel">Cancelar</string>
+    <string name="install_wizard_consent_continue">Continuar</string>
+    <string name="install_wizard_consent_title">¿Instalar %1$s?</string>
+    <string name="install_wizard_done">✓ ¡%1$s está instalado y configurado! Las sesiones ya están disponibles.</string>
+    <string name="install_wizard_downloading_pack">Descargando %1$s…</string>
+    <string name="install_wizard_downloading_pack_progress">Descargando %1$s… %2$d%%</string>
+    <string name="install_wizard_grant_failed">"La concesión de permisos falló:
+%1$s
+
+Inténtalo de nuevo o concede los permisos manualmente mediante ADB."</string>
+    <string name="install_wizard_granting">Concediendo permisos de máquina virtual…</string>
+    <string name="install_wizard_install_failed">La instalación falló: %1$s</string>
+    <string name="install_wizard_installing">Instalando %1$s… (puede tardar 10–30 s)</string>
+    <string name="install_wizard_keepalive_title">Configuración en curso…</string>
+    <string name="install_wizard_open_about_phone">Abrir Información del Teléfono</string>
+    <string name="install_wizard_open_dev_options">Abrir Opciones de Desarrollador</string>
+    <string name="install_wizard_open_wireless_debug">Abrir Depuración Inalámbrica</string>
+    <string name="install_wizard_pair_failed">La vinculación falló: %1$s</string>
+    <string name="install_wizard_pairing_detected">Puerto de vinculación detectado. Despliega la notificación e introduce el código de 6 dígitos que se muestra en Depuración Inalámbrica.</string>
+    <string name="install_wizard_permission_custom_vm">iniciar una imagen de máquina virtual personalizada</string>
+    <string name="install_wizard_permission_manage_vm">ejecutar y administrar una máquina virtual</string>
+    <string name="install_wizard_permission_notifications">mostrar notificaciones</string>
+    <string name="install_wizard_permission_storage">acceder al almacenamiento compartido</string>
+    <string name="install_wizard_reinstalling_incompatible">El %1$s instalado se firmó con una clave diferente y no se puede actualizar en el mismo lugar; reinstalándolo desde cero…</string>
+    <string name="install_wizard_step1_body">Ve a Ajustes → Información del Teléfono y toca el Número de Compilación 7 veces hasta que veas ¡Ahora eres desarrollador!</string>
+    <string name="install_wizard_step1_title">Paso 1: Activa las Opciones de Desarrollador</string>
+    <string name="install_wizard_step2_body">Abre Opciones de Desarrollador y activa la Depuración Inalámbrica.</string>
+    <string name="install_wizard_step2_title">Paso 2: Activa la Depuración Inalámbrica</string>
+    <string name="install_wizard_step3_body">Toca el botón de abajo para abrir la Depuración Inalámbrica. Dentro de la Depuración Inalámbrica, toca Vincular dispositivo con código de vinculación. Aparecerá una notificación — despliégala e introduce el código de 6 dígitos sin salir de la pantalla de Depuración Inalámbrica.</string>
+    <string name="install_wizard_step3_title">Paso 3: Vincula tu dispositivo</string>
+    <string name="install_wizard_step4_title">Instalando %1$s…</string>
+    <string name="install_wizard_subtitle">Esta configuración única instala %1$s mediante depuración inalámbrica ADB para habilitar la compatibilidad con máquinas virtuales.</string>
+    <string name="install_wizard_title">Configurar %1$s</string>
+    <string name="install_wizard_waiting_pairing">Esperando el servicio de vinculación — toca Vincular dispositivo con código de vinculación dentro de Depuración Inalámbrica…</string>
+    <string name="intro_close">Cerrar</string>
+    <string name="intro_dont_show">No vuelvas a mostrar</string>
+    <string name="intro_header" />
+    <string name="intro_text">"Lista actual de características de bVNC:
+&lt;br>
+- VNC simple, VNC seguro a través de SSH, AnonTLS, VeNCrypt y UltraVNC Windows Logon con Repeater opcional.
+&lt;br>
+- AutoX mode: En el modo VNC sobre SSH, ¡Descubra automáticamente las X-sessions existentes y/o cree nuevas utilizando x11vnc! Funciona como el cliente NX.
+&lt;br>
+- Soporte de rotación libre. Utilice el sistema operativo para limitar la rotación si es necesario.
+&lt;br>
+- Generación y exportación de SSH Public/Private key-pair.
+&lt;br>
+- Todas las codificaciones VNC estándar, incluidas Tight, ZRLE y CopyRect.
+&lt;br>
+- Guardado automático de sesiones.
+&lt;br>
+- Ampliable, Ajustar a pantalla y Modos de escala One to One.
+&lt;br>
+- Control multitáctil sobre el ratón remoto en los modos de entrada de panel táctil simulado y directo.
+&lt;br>
+- Control total con una sola mano sobre el ratón remoto en el modo de entrada con una sola mano.
+&lt;br>
+- Clics de ratón multitáctil: toque para hacer clic con el botón izquierdo, toque con dos dedos para hacer clic con el botón derecho, toque con tres dedos para hacer clic en el medio.
+&lt;br>
+- Desplazamiento multitáctil: arrastre con dos dedos hacia arriba/abajo e izquierda/derecha para desplazarse.
+&lt;br>
+- Meta en pantalla and y flechas de teclado que pueden desactivarse por completo desde el menú o guardarse con el botón en pantalla.
+&lt;br>
+- Envío de texto y combinaciones de teclas arbitrarias cuando está conectado.
+&lt;br>
+- Ayuda para crear conexiones (\"Menú->Ayuda para conexión\") en la pantalla de conexión.
+&lt;br>
+- Ayuda con los modos de entrada (\"Menú->Más->Ayuda para modo de entrada\") cuando conectado.
+&lt;br>
+- Usar un trackpad disponible como flechas en lugar de mover el ratón y hacer clic en el trackpad como Ctrl.
+&lt;br>
+- Cambio al modo vertical durante las conexiones, pad direccional/trackpad giratorio para teclados BT.
+&lt;br>
+- Soporte en varios idiomas, siempre que el servidor VNC tenga habilitada la capa de idioma necesaria.
+&lt;br>
+- Integración Copiar/Pegar
+&lt;br>
+- Cambios en la resolución de la máquina remota
+&lt;br>
+- Compatibilidad total con el ratón en dispositivos con Android 4.0+, incluido el clic derecho y central y la rueda de desplazamiento.
+&lt;br>
+&lt;br>
+Problemas conocidos:
+&lt;br>"</string>
+    <string name="intro_title">bVNC: Intuitivo, cliente VNC seguro</string>
+    <string name="intro_version_text" />
+    <string name="item_view_role_description">Pestaña</string>
+    <string name="keep_password_button">Guardar</string>
+    <string name="keep_screen_awake_enable">Mantener la pantalla activa</string>
+    <string name="key_import">Importar</string>
+    <string name="key_not_generated_yet">"Aún no se generó la clave. Configure los parámetros y toque 'Generar nueva clave'."</string>
+    <string name="keys_caption">Teclas</string>
+    <string name="landscape_force">Forzar orientación horizontal</string>
+    <string name="left_handed_mode">Modo para zurdos</string>
+    <string name="list_caption">Lista</string>
+    <string name="list_name_caption">Nombre de la lista</string>
+    <string name="list_placeholder_add_bookmark">Add Connection</string>
+    <string name="list_placeholder_connecting">Conectando ...</string>
+    <string name="list_placeholder_connection_error">Conexión perdida</string>
+    <string name="list_placeholder_disconnecting">Desconectando ...</string>
+    <string name="list_placeholder_invalid_username">Usuario Invalido</string>
+    <string name="list_placeholder_login">Login</string>
+    <string name="list_placeholder_no_servers">No hay escritorios virtuales</string>
+    <string name="list_placeholder_wrong_password">Contraseña equivocada</string>
+    <string name="local_device_tweaks">Ajustes de dispositivos locales</string>
+    <string name="local_mouse_check">Puntero del ratón local (seleccione si el puntero es invisible)</string>
+    <string name="log_copied">Logcat copiado al portapapeles. Ahora puede pegarlo en un correo electrónico o en el foro de soporte. Consulte los datos personales antes de publicarlos.</string>
+    <string name="login">Ingresar</string>
+    <string name="logout">Salir</string>
+    <string name="main_screen_help">Ayuda para conexión</string>
+    <string name="main_screen_help_text">"
+Cuando se inicia la aplicación, muestra una pantalla con las conexiones guardadas.
+
+Si no hay conexiones guardadas, la parte inferior de la pantalla está vacía y tendrá que presionar el botón más para crear una nueva. También puede controlar otros aspectos de la configuración desde esta pantalla tocando otras opciones de la barra de herramientas o del menú en la parte superior, por ejemplo, para editar la configuración predeterminada o importar y exportar la configuración.
+
+Una vez que haya guardado una conexión, puede conectarse al servidor remoto tocándolo una vez. También tendrá la opción de eliminarlo o editarlo con un toque prolongado.
+
+Finalmente, puede utilizar el campo Buscar conexiones para encontrar rápidamente conexiones mediante el filtro de conexiones mostradas."</string>
+    <string name="manage_custom_ca_title">Administrar CA personalizada</string>
+    <string name="master_password_enable">Habilitar contraseña maestra</string>
+    <string name="master_password_error_failed_to_disable">No se pudo deshabilitar la contraseña maestra. Verifique el espacio libre en su dispositivo y vuelva a intentarlo.</string>
+    <string name="master_password_error_failed_to_enable">No se pudo habilitar la contraseña maestra. Verifique el espacio libre en su dispositivo y vuelva a intentarlo.</string>
+    <string name="master_password_error_intents_not_supported">Los intentos de conexión aún no son compatibles cuando la contraseña maestra está habilitada.</string>
+    <string name="master_password_error_password_necessary">Se requiere contraseña maestra para continuar.</string>
+    <string name="master_password_error_password_not_set">Se canceló la configuración de la contraseña maestra.</string>
+    <string name="master_password_error_shortcuts_not_supported">Los accesos directos aún no son compatibles cuando la contraseña maestra está habilitada.</string>
+    <string name="master_password_error_wrong_password">No se pudo autenticar con la contraseña maestra proporcionada.</string>
+    <string name="master_password_hint_once">Introducir la contraseña</string>
+    <string name="master_password_hint_twice">Repite la contraseña</string>
+    <string name="master_password_set">Establecer contraseña maestra</string>
+    <string name="master_password_set_error">Las contraseñas no coinciden, tenga cuidado!</string>
+    <string name="master_password_set_message">Ingrese y memorice una contraseña maestra. Cuanto más larga sea su contraseña, más difícil será descifrarla. Si establece una contraseña incorrecta o la olvida, ¡perderá todas sus configuraciones! Es posible que desee exportar su configuración ahora para hacer una copia de seguridad (desde el menú). Guárdelos de forma segura ya que la configuración exportada no está encriptada.</string>
+    <string name="master_password_verify">Verificar contraseña maestra</string>
+    <string name="master_password_verify_message">Ingrese la contraseña maestra correcta para continuar.</string>
+    <string name="material_clock_toggle_content_description">Selecciona AM o PM</string>
+    <string name="material_hour_selection">Seleccionar hora</string>
+    <string name="material_hour_suffix">%1$s en punto</string>
+    <string name="material_minute_selection">Seleccionar minutos</string>
+    <string name="material_minute_suffix">%1$s minutos</string>
+    <string name="material_timepicker_am">A.M.</string>
+    <string name="material_timepicker_clock_mode_description">Cambia al modo de reloj para escribir la hora.</string>
+    <string name="material_timepicker_hour">Hora</string>
+    <string name="material_timepicker_minute">Minuto</string>
+    <string name="material_timepicker_pm">P.M.</string>
+    <string name="material_timepicker_select_time">Seleccionar la hora</string>
+    <string name="material_timepicker_text_input_mode_description">Cambia al modo de introducción de texto para escribir la hora.</string>
+    <string name="menu_about">Sobre</string>
+    <string name="menu_app_settings">Configuracion</string>
+    <string name="menu_connect">Conectar</string>
+    <string name="menu_delete">Borrar</string>
+    <string name="menu_disconnect">Desconectart</string>
+    <string name="menu_edit">Editar</string>
+    <string name="menu_exit">Salida</string>
+    <string name="menu_ext_keyboard">Funcion teclado</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_new_bookmark">Nueva conexión</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_sys_keyboard">Teclado</string>
+    <string name="menu_title_bookmark">Conexión</string>
+    <string name="menu_touch_pointer">Puntero Tactil</string>
+    <string name="message_please_install_bvnc">Por favor instale &lt;a href=market://details?id=com.iiordanov.bVNC>bVNC&lt;/a> de Google Play para conectarse a la consola VNC de esta VM.</string>
+    <string name="message_please_wait">Por favor espera</string>
+    <string name="meta_key_title">Enviar teclas especiales</string>
+    <string name="mode_barcode_live_subtitle">Lee datos codificados en la mayoría de los formatos estándar de códigos de barras.</string>
+    <string name="mode_barcode_live_title">Escaneo de Códigos de Barras</string>
+    <string name="mouse_follow_pan">El ratón sigue al desplazamiento</string>
+    <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>
+    <string name="mtrl_chip_close_icon_content_description">Retirar %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Más de %1$d notificaciones nuevas</string>
+    <string name="mtrl_picker_a11y_next_month">Cambiar al mes siguiente</string>
+    <string name="mtrl_picker_a11y_prev_month">Cambiar al mes anterior</string>
+    <string name="mtrl_picker_announce_current_selection">Selección actual: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selecciona una fecha</string>
+    <string name="mtrl_picker_date_header_unselected">Fecha seleccionada</string>
+    <string name="mtrl_picker_day_of_week_column_header">Columna de días: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Formato no válido.</string>
+    <string name="mtrl_picker_invalid_format_example">Ejemplo: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Usar: %1$s</string>
+    <string name="mtrl_picker_invalid_range">El periodo no es válido.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Ir al año %1$s</string>
+    <string name="mtrl_picker_out_of_range">Fuera del periodo válido: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Fecha de inicio–%1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s–Fecha de finalización</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selecciona un periodo</string>
+    <string name="mtrl_picker_range_header_unselected">Fecha de inicio–Fecha de finalización</string>
+    <string name="mtrl_picker_save">Guardar</string>
+    <string name="mtrl_picker_text_input_date_hint">Fecha</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Fecha de finalización</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Fecha de inicio</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Cambiar al modo de introducción Calendario</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Toca para seleccionar un día</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Cambiar al modo de introducción Texto</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Toca para seleccionar un año</string>
+    <string name="nav_app_bar_navigate_up_description">Desplazarse hacia arriba</string>
+    <string name="nav_app_bar_open_drawer_description">Abrir panel de navegación</string>
+    <string name="new_connection">Nueva conexión</string>
+    <string name="new_list_button">Nueva lista</string>
+    <string name="nickname_caption">Apodo</string>
+    <string name="nickname_caption_hint">Título (opcional)</string>
+    <string name="no">No</string>
+    <string name="no_backup_selected">No se seleccionó ninguna importación de sistema de archivos</string>
+    <string name="not_set">Sin definir</string>
+    <string name="notif_action_stop_sessions">Detener sesiones</string>
+    <string name="off">Apagado</string>
+    <string name="ok">Ok</string>
+    <string name="one_to_one">One to One</string>
+    <string name="opaque_app_name">Opaque</string>
+    <string name="opaque_app_name_beta">Opaque Beta</string>
+    <string name="opaque_connection_screen_help_text">"Cuando agregue o edite una conexión, verá una página de configuración de conexión.
+Aquí puede configurar una nueva conexión Opaque o elegir una preexistente.
+En la parte superior hay un botón que le permite guardar la conexión.
+Debajo es donde configura su conexión.
+
+ - Tipo de conexión: aquí elige a qué entorno de virtualización se está conectando.
+
+ - Dirección del servidor: el nombre de host o la IP del servidor. Si está escuchando en un puerto no estándar, puede agregar un puerto separado por dos puntos.
+
+ - Nombre de la máquina virtual: puede especificar el nombre de la máquina virtual tal como aparece en su plataforma de virtualización o dejar este campo vacío para obtener una lista de máquinas virtuales o contenedores para seleccionar.
+
+ - Usuario: ingrese el nombre de usuario para autenticarse en su marco de virtualización.
+
+ - Contraseña: Si desea guardar la contraseña, ingrésela aquí o deje el campo vacío para que se le solicite cada vez..
+
+ - Configuración avanzada: en esta sección encontrará cualquier dispositivo local, protocolo y ajustes de rendimiento.
+    "</string>
+    <string name="open_doc">Manual/Wiki</string>
+    <string name="opt_in_error_collection_prompt">¿Optar por el servicio de recopilación de registros de errores?</string>
+    <string name="opt_in_help_prompt">¿Te gustaría ayudar a que %1$s sea más estable enviándonos reportes de errores?</string>
+    <string name="opt_in_preference">Optar por el envío de reportes de errores</string>
+    <string name="opt_in_preference_summary">Permítenos recopilar reportes de errores para mejorar %1$s.</string>
+    <string name="opt_in_secondary_pos_btn">Vale, quiero optar por participar.</string>
+    <string name="opt_in_secondary_prompt">¿Estás seguro? Puedes cambiar este ajuste más tarde en la página de ajustes.</string>
+    <string name="orientation_landscape">Horizontal</string>
+    <string name="orientation_portrait">Vertical</string>
+    <string name="pan_follow_mouse">Desplazamiento sigue al ratón</string>
+    <string name="panning">Pantalla de desplazamiento</string>
+    <string name="password_caption">Autenticación VNC.</string>
+    <string name="password_caption_hint">Contraseña VNC</string>
+    <string name="password_caption_ssh">Autenticación SSH.</string>
+    <string name="password_hint_ssh">Contraseña SSH</string>
+    <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string name="paste_ca">Ingrese la autoridad de certificación aquí si no la va a importar como un archivo.</string>
+    <string name="path_to_ca">Ingrese una ruta de archivo (por ejemplo /sdcard/ca-cert.pem) y toque Importar para cargar su Autoridad de Certificación.</string>
+    <string name="permission_request_code">1000</string>
+    <string name="placeholder">Texto de marcador de posición</string>
+    <string name="port_caption">Puerto VNC</string>
+    <string name="port_caption_ssh">Puerto SSH</string>
+    <string name="port_hint">Puerto</string>
+    <string name="port_ssh_hint">Puerto</string>
+    <string name="portrait_mode">Cambia al modo vertical cuando está conectado</string>
+    <string name="position_toolbar_last_used">Restore Toolbar Position</string>
+    <string name="position_toolbar_last_used_summary">(Applies to New Connections Only)</string>
+    <string name="pref_app_category">Ajustes de Aplicación</string>
+    <string name="pref_apps_title">Establecer URL del Servidor de Apps</string>
+    <string name="pref_category_barcode_detection">Detección de códigos de barras</string>
+    <string name="pref_category_camera">Cámara</string>
+    <string name="pref_clear_auto_start_summary">Detiene el inicio automático de cualquier app hasta que se vuelva a activar.</string>
+    <string name="pref_clear_auto_start_title">Borrar Ajustes de Inicio Automático</string>
+    <string name="pref_clear_connect_type_summary">Volverá a preguntar qué tipo de conexión prefieres la próxima vez que inicies.</string>
+    <string name="pref_clear_connect_type_title">Borrar Ajustes de Tipo de Conexión</string>
+    <string name="pref_clear_display_preferences_summary">Volverá a preguntar qué preferencias de pantalla prefieres la próxima vez que inicies.</string>
+    <string name="pref_clear_display_preferences_title">Borrar Preferencias de Pantalla</string>
+    <string name="pref_custom_apps_enabled_summary">Permite especificar una URL personalizada para el servidor que aloja la lista de apps.</string>
+    <string name="pref_custom_apps_enabled_title">Usar URL Personalizada para el Servidor de Apps</string>
+    <string name="pref_custom_dns_enabled_summary">Te permite especificar contenido personalizado para el archivo /etc/resolv.conf.</string>
+    <string name="pref_custom_dns_enabled_title">Usar Archivo reslov.conf Personalizado</string>
+    <string name="pref_custom_filesystem_enabled_summary">Permite especificar una URL personalizada para el servidor que aloja el sistema de archivos a usar.</string>
+    <string name="pref_custom_filesystem_enabled_title">Usar URL Personalizada para el Servidor de Sistemas de Archivos</string>
+    <string name="pref_custom_hostname_enabled_summary">Te permite especificar un nombre de host personalizado que se usará en /etc/hosts y /etc/hostname.</string>
+    <string name="pref_custom_hostname_enabled_title">Usar Nombre de Host Personalizado</string>
+    <string name="pref_default_landing_page_message">Seleccione la página que quiera ver cuando inicie %1$s.</string>
+    <string name="pref_default_landing_page_title">Página de Inicio predeterminada</string>
+    <string name="pref_default_vnc_input_mode_summary">Establece el modo de entrada VNC predeterminado. Se puede anular desde la barra de herramientas de la sesión VNC.</string>
+    <string name="pref_default_vnc_input_mode_title">Modo de Entrada VNC Predeterminado</string>
+    <string name="pref_dns_title">Establecer Contenido del Archivo resolv.conf</string>
+    <string name="pref_filesystem_title">Establecer URL del Servidor de Sistemas de Archivos</string>
+    <string name="pref_hide_custom_toolbar_summary">Oculta la barra de herramientas que aparece dentro de una sesión VNC.</string>
+    <string name="pref_hide_custom_toolbar_title">Ocultar Barra de Herramientas VNC</string>
+    <string name="pref_hide_distributions_summary">No mostrar ninguna app que esté categorizada como una distribución.</string>
+    <string name="pref_hide_distributions_title">Ocultar Distribuciones</string>
+    <string name="pref_hide_sessions_filesystems_summary">Simplifica la app ocultando las vistas que no son la página de inicio predeterminada.</string>
+    <string name="pref_hide_sessions_filesystems_title">Ocultar Navegación Inferior</string>
+    <string name="pref_hide_settings_summary">Hace que este menú de ajustes sea inaccesible.</string>
+    <string name="pref_hide_settings_title">Ocultar este Menú de Ajustes</string>
+    <string name="pref_hide_vnc_extra_keys_summary">Oculta las teclas adicionales que se muestran junto con el teclado en pantalla.</string>
+    <string name="pref_hide_vnc_extra_keys_title">Ocultar Teclas Adicionales de VNC</string>
+    <string name="pref_hostname_title">Establecer Nombre de Host Personalizado</string>
+    <string name="pref_proot_category">Preferencias de PRoot</string>
+    <string name="pref_proot_debugging_enabled_summary">"Sólo es necesaria si tiene problemas con %1$s. El archivo de registro se almacena en 
+/mnt/sdcard/PRoot_Debug_Log"</string>
+    <string name="pref_proot_debugging_enabled_title">Registro de Depuración de PRoot activado</string>
+    <string name="pref_proot_debugging_level_default">-1</string>
+    <string name="pref_proot_debugging_level_summary">Cuanto mayor sea el número, mayor será el nivel de verbosidad.</string>
+    <string name="pref_proot_debugging_level_title">Nivel de Verbosidad de Depuración</string>
+    <string name="pref_proot_delete_debug_file_title">Borrar Registro de Depuración</string>
+    <string name="pref_summary_barcode_reticle_height" formatted="false">Relativo a la altura de la vista de la cámara, varía de 20% a 80%</string>
+    <string name="pref_summary_barcode_reticle_width" formatted="false">Relativo al ancho de la vista de la cámara, varía de 50% a 95%</string>
+    <string name="pref_summary_enable_barcode_size_check">Pedirá al usuario que acerque la cámara si el código de barras detectado es demasiado pequeño</string>
+    <string name="pref_summary_minimum_barcode_width" formatted="false">Relativo al ancho de la retícula, varía de 20% a 80% (solo aplicable cuando la verificación de tamaño de código de barras está activada)</string>
+    <string name="pref_title_barcode_reticle_height">Alto de la retícula de código de barras</string>
+    <string name="pref_title_barcode_reticle_width">Ancho de la retícula de código de barras</string>
+    <string name="pref_title_enable_barcode_size_check">Activar verificación de tamaño de código de barras</string>
+    <string name="pref_title_minimum_barcode_width">Ancho mínimo de código de barras</string>
+    <string name="pref_title_rear_camera_preview_size">Tamaño de vista previa de la cámara trasera</string>
+    <string name="preference_copied">\"%1$s\" se ha copiado en el portapapeles.</string>
+    <string name="preference_title_client">Cliente</string>
+    <string name="preference_title_client_name">Identificador del cliente</string>
+    <string name="pro_feature_mfa">Parece que su servidor tiene habilitada la autenticación multifactor. Apoye el proyecto comprando la versión Pro que tiene soporte para esta función. Un enlace a la versión Pro está disponible en el cuadro de diálogo de inicio.</string>
+    <string name="product_search_button">Buscar objeto</string>
+    <string name="progress_checking_for_required_updates">Comprobando actualizaciones……</string>
+    <string name="progress_clearing_support_files">Borrando todos los archivos de soporte…</string>
+    <string name="progress_copying_downloads">Copiando archivos descargados al almacenamiento local…</string>
+    <string name="progress_deleting_filesystem">Eliminando sistema de archivos</string>
+    <string name="progress_downloading">Descargando recursos requeridos…</string>
+    <string name="progress_downloading_out_of">%1$d de %2$d completados</string>
+    <string name="progress_exporting_filesystem">Exportando sistema de archivos</string>
+    <string name="progress_extraction_details">Extrayendo: %1$s</string>
+    <string name="progress_fetching_asset_lists">Obteniendo lista de archivos necesarios……</string>
+    <string name="progress_setting_up_filesystem">Preparando el sistema de archivos…</string>
+    <string name="progress_start_step">Dejando todo listo……</string>
+    <string name="progress_starting">Iniciando servicio…</string>
+    <string name="progress_starting_client">Iniciando cliente</string>
+    <string name="progress_starting_server">Iniciando servidor</string>
+    <string name="progress_verifying_assets">Verificando recursos…</string>
+    <string name="progress_verifying_sufficient_storage">Verificando que haya suficiente almacenamiento disponible…</string>
+    <string name="prompt_app_connection_type_preference">Seleccione el tipo de conexión:</string>
+    <string name="prompt_app_flavor_preference">Selecciona un entorno de escritorio:</string>
+    <string name="prompt_bits">Bits</string>
+    <string name="prompt_client_type">Tipo de Cliente:</string>
+    <string name="prompt_execution_type_preference">¿Cómo debería ejecutarse esta app?</string>
+    <string name="prompt_file_name">Nombre de archivo para guardar en el directorio de descargas</string>
+    <string name="prompt_file_will_be_saved">El archivo se guardará o leerá desde el directorio de descargas.</string>
+    <string name="prompt_filesystem">Sistema de Archivos:</string>
+    <string name="prompt_geometry">Geometría especificada:</string>
+    <string name="prompt_graphical_preferences">Ajustes Gráficos</string>
+    <string name="prompt_install_file_manager">Por favor, instala un administrador de archivos</string>
+    <string name="prompt_lock_orientation_preference">Bloquear orientación</string>
+    <string name="prompt_mic_support">Activar micrófono (pro)</string>
+    <string name="prompt_move_camera_closer">Acércate más para buscar</string>
+    <string name="prompt_orientation_preference">Orientación seleccionada:</string>
+    <string name="prompt_passphrase">Passphrase</string>
+    <string name="prompt_password_can_be_blank">La passphrase puede estar en blanco pero la clave no está cifrada</string>
+    <string name="prompt_point_at_a_barcode">Apunta tu cámara a un código de barras</string>
+    <string name="prompt_remember_graphical_preferences">Usar siempre estos ajustes</string>
+    <string name="prompt_remember_service_type_preferences">Usar siempre este ajuste</string>
+    <string name="prompt_scaling_preference">Factor de escala:</string>
+    <string name="prompt_searching">Buscando…</string>
+    <string name="prompt_select_backup">Selecciona el archivo de respaldo del sistema de archivos</string>
+    <string name="prompt_service_type">Tipo de Servicio:</string>
+    <string name="prompt_share_storage">Compartir almacenamiento de Android</string>
+    <string name="prompt_sound_support">Activar sonido (pro)</string>
+    <string name="prompt_type">Tipo</string>
+    <string name="prompt_use_all_cores">Usar todos los núcleos de CPU (%1$d disponibles)</string>
+    <string name="prompt_vm_memory">Memoria de la máquina virtual: %1$d MB (%2$.1f GB)</string>
+    <string name="qemu_install_wizard_label">Configurar UserLOst QEMU</string>
+    <string name="qemu_session_start_failed">No se pudo iniciar la sesión de QEMU.</string>
+    <string name="rdp_address_caption_hint">Servidor RDP</string>
+    <string name="rdp_adv_console_mode">Modo consola</string>
+    <string name="rdp_adv_desktop_background">Mostrar fondo de escritorio</string>
+    <string name="rdp_adv_desktop_composition">Habilitar composición de escritorio</string>
+    <string name="rdp_adv_font_smoothing">Realizar suavizado de fuentes</string>
+    <string name="rdp_adv_menu_animation">Mostrar animaciones de menú</string>
+    <string name="rdp_adv_redirect_sdcard">Redirigir tarjeta SD</string>
+    <string name="rdp_adv_remotefx">Habilitar RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Habilitar estilos visuales</string>
+    <string name="rdp_adv_window_contents">Mostrar el contenido de la ventana mientras se arrastra</string>
+    <string name="rdp_connection_screen_help_text">"Cuando agregue o edite una conexión, verá una página de configuración de conexión. Aquí puede configurar una nueva conexión RDP o elegir una preexistente. En la parte superior hay un botón que le permite guardar la conexión. Debajo es donde configura su conexión.
+
+ - Tipo de conexión: aquí elige el tipo de conexión RDP. Los tipos de conexión disponibles son:
+   (a) RDP, que se conecta directamente a una computadora a través del protocolo RDP.
+   (b) RDP sobre SSH, que primero canaliza su conexión a través de una computadora que ejecuta un servidor SSH.
+
+ - Título: cada conexión que cree puede tener un apodo para identificarla fácilmente en la lista.
+ 
+ - Configuración de túnel SSH: disponible en modo RDP sobre SSH.
+   (a) Servidor/puerto SSH: la dirección y el puerto del servidor SSH a través del cual se canalizará la conexión. De forma predeterminada, SSH escucha en el puerto 22.
+   (b) Nombre de usuario/contraseña: el nombre de usuario y la contraseña de la cuenta en el servidor SSH. La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+   (c) Administrar/Usar clave: un botón para administrar claves públicas/privadas y una casilla de verificación que indica si se debe usar una clave en lugar de una contraseña para autenticarse. Si usa el botón Copiar al portapapeles después de generar un key-pair, debería poder pegar la clave pública una vez conectado al servidor RDP (el portapapeles está sincronizado con el servidor).
+
+ - Configuración de la conexión RDP:
+   (a) Servidor/puerto RDP: Aquí es donde ingresa el nombre de host o la dirección IP y el puerto de la computadora que ejecuta el servidor RDP con el que desea contactar. En el modo RDP sobre SSH, esta dirección es como se ve desde el servidor SSH. Si el servidor SSH y el servidor RDP son la misma computadora física, puede usar localhost. Los servidores RDP suelen escuchar en el puerto 3389.
+   (b) Usuario RDP: aquí es donde ingresa el nombre de usuario de su cuenta de Windows/UNIX.
+   (c) Dominio RDP: ingrese el dominio al que pertenece su cuenta.
+   (d) Contraseña RDP: aquí es donde ingresa la contraseña de su cuenta de Windows/UNIX. El almacenamiento seguro no se usa para las contraseñas (están en una base de datos), y la contraseña se almacenará solo si marca la casilla Conservar. La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+
+ - Configuración avanzada: en esta sección encontrará formas de personalizar la resolución del escritorio y varios ajustes de rendimiento de RDP
+ 
+ - Ajustes del dispositivo local: ajustan el comportamiento de la aplicación en su dispositivo.
+   (a) Use el D-Pad para las flechas: si lo prefiere, puede usar el D-Pad de su teclado Bluetooth o las flechas en su teclado en pantalla para enviar flechas al servidor RDP.
+   (b) Rotar D-Pad: los teléfonos emparejados con un teclado Bluetooth pueden necesitar que el D-pad del teclado se gire en sentido antihorario para enviar las direcciones correctas al servidor.
+   (c) Puntero del ratón local: si el puntero es invisible, selecciónelo para forzar que la aplicación lo dibuje."</string>
+    <string name="rdp_connection_settings">Configuración de la conexión RDP</string>
+    <string name="rdp_descript_geom">Tamaño del escritorio remoto (ancho x alto)</string>
+    <string name="rdp_domain_hint">Dominio RDP</string>
+    <string name="rdp_geom_automatic">Automático</string>
+    <string name="rdp_geom_checkbox_enable">Habilitar resolución personalizada</string>
+    <string name="rdp_geom_custom">Personalizado</string>
+    <string name="rdp_geom_description_hint">El servidor necesita soporte ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Deshabilitado</string>
+    <string name="rdp_geom_native_landscape">Orientación horizontal original</string>
+    <string name="rdp_geom_native_portrait">Orientación vertical original</string>
+    <string name="rdp_intro_text">"¡Gracias por apoyar aRDP y el software de código abierto en general! Para obtener ayuda con el uso de aRDP, consulte los elementos de Ayuda en el menú y la descripción de la aplicación en el mercado.
+&lt;br>
+&lt;br>
+La lista actual de características de aRDP incluye:
+&lt;br>
+- RDP simple, RDP tunelizado sobre SSH.
+&lt;br>
+- Soporte de rotación libre. Utilice el sistema operativo para limitar la rotación si es necesario.
+&lt;br>
+- Configuración de resolución remota, resolución nativa en modo horizontal y vertical.
+&lt;br>
+- Generación y exportación de key-pair público/privado SSH.
+&lt;br>
+- Guardado automático de sesiones.
+&lt;br>
+- Ampliable, Ajustar a pantalla y Modos de escala One to One.
+&lt;br>
+- Control multitáctil sobre el ratón remoto en los modos de entrada de panel táctil simulado y directo.
+&lt;br>
+- Control total con una sola mano sobre el ratón remoto en el modo de entrada con una sola mano.
+&lt;br>
+- Clics de ratón multitáctil: toque para hacer clic con el botón izquierdo, toque con dos dedos para hacer clic con el botón derecho, toque con tres dedos para hacer clic en el medio.
+&lt;br>
+- Desplazamiento multitáctil: arrastre con dos dedos hacia arriba/abajo e izquierda/derecha para desplazarse.
+&lt;br>
+- Meta en pantalla and y flechas de teclado que pueden desactivarse por completo desde el menú o guardarse con el botón en pantalla.
+&lt;br>
+- Envío de texto y combinaciones de teclas arbitrarias cuando está conectado.
+&lt;br>
+- Ayuda para crear conexiones (\"Menú->Ayuda para conexión\") en la pantalla de conexión.
+&lt;br>
+- Ayuda con los modos de entrada (\"Menú->Más->Ayuda para modo de entrada\") cuando conectado.
+&lt;br>
+- Usar un trackpad disponible como flechas en lugar de mover el ratón, hacer clic en el trackpad como Ctrl y pad direccional/trackpad giratorio para teclados BT.
+&lt;br>
+- Soporte en varios idiomas, siempre que el servidor RDP tenga habilitada la capa de idioma necesaria.
+&lt;br>
+- Cambios en la resolución de la máquina remota
+&lt;br>
+- Compatibilidad total con el ratón en dispositivos Android 4.0+, incluido el clic derecho y central y la rueda de desplazamiento.
+&lt;br>
+&lt;br>
+Las características planificadas de aRDP incluyen:
+&lt;br>
+- Una variedad de modos de color
+&lt;br>
+- Integración Copiar/Pegar
+&lt;br>
+- Exportación de configuraciones
+&lt;br>
+- Sonido
+&lt;br>
+&lt;br>
+Problemas conocidos:
+"</string>
+    <string name="rdp_intro_title">aRDP: cliente RDP intuitivo y seguro</string>
+    <string name="rdp_password_hint">Contraseña RDP</string>
+    <string name="rdp_server_empty">Servidor o puerto RDP vacío. ¡No se puede conectar!</string>
+    <string name="rdp_username_hint">Nombre de usuario de RDP</string>
+    <string name="refresh">Actualizar</string>
+    <string name="remote_sound_disabled">Sonido deshabilitado</string>
+    <string name="remote_sound_on_device">Sonido en el dispositivo</string>
+    <string name="remote_sound_on_server">Sonido en el servidor</string>
+    <string name="rendering_mode">Modo de renderizado:</string>
+    <string name="repeater_button">Repetidor UltraVNC</string>
+    <string name="repeater_caption">IMPORTANTE: Si usa un repetidor UltraVNC, ingrese su dirección y puerto fuera de este cuadro de diálogo. Aquí, ingrese la dirección y el puerto del servidor VNC real. Separe la dirección y el puerto del servidor VNC con dos puntos, e.g. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">Repetidor UltraVNC</string>
+    <string name="repeater_clear">No utilizar</string>
+    <string name="repeater_dialog_title">Servidor VNC detrás del repetidor</string>
+    <string name="repeater_empty_text">Sin repetidor</string>
+    <string name="repeater_save">Utilizar</string>
+    <string name="report_bug">Reportar un error</string>
+    <string name="requires_pro_purchase">Esta función requiere una suscripción o compra pro.</string>
+    <string name="resolution_automatic">Automatico</string>
+    <string name="resolution_custom">Manual</string>
+    <string name="resolution_fit">Pantalla</string>
+    <string name="review_ask_for_feedback">¿Te importaría darnos algún comentario en GitHub?</string>
+    <string name="review_ask_for_rating">¿Qué tal una valoración en Play Store, entonces?</string>
+    <string name="review_is_user_enjoying">¿Estás disfrutando %1$s?</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt como ISO L3 Shift (solo VNC)</string>
+    <string name="rotate_dpad">Gire el D-Pad de software o Bluetooth</string>
+    <string name="save">Guardar</string>
+    <string name="save_as_copy">Guardar como copia</string>
+    <string name="save_button">Guardar</string>
+    <string name="scaling">Escalando</string>
+    <string name="scaling_zoomable">Ampliable</string>
+    <string name="search_connections">Conexiones de búsqueda</string>
+    <string name="search_hint">Connect to Computer</string>
+    <string name="search_menu_title">Buscar</string>
+    <string name="section_active_sessions">Sesiones Activas</string>
+    <string name="section_bookmarks">Conexión Manual</string>
+    <string name="select_vm_title">Seleccionar máquina virtual</string>
+    <string name="send_button">Enviar</string>
+    <string name="send_key_again">Enviar clave de nuevo</string>
+    <string name="service_notification_description">%1$s se está ejecutando en segundo plano.</string>
+    <string name="services_notification_channel_description">Servicios persistentes</string>
+    <string name="services_notification_channel_name">Servicios</string>
+    <string name="session_unique_name_required">¡Las sesiones requieren un nombre único!</string>
+    <string name="sessions">Sesiones</string>
+    <string name="settings">Ajustes</string>
+    <string name="settings_advanced">Avanzado</string>
+    <string name="settings_async_channel">Async channel</string>
+    <string name="settings_async_input">Async input</string>
+    <string name="settings_async_update">Async update</string>
+    <string name="settings_cat_advanced">Configuracion Avanzada</string>
+    <string name="settings_cat_client">Cliente</string>
+    <string name="settings_cat_credentials">Credenciales</string>
+    <string name="settings_cat_gateway">Gateway</string>
+    <string name="settings_cat_host">Host</string>
+    <string name="settings_cat_performance">Configuracion Rendimiento</string>
+    <string name="settings_cat_power">Ahorro de energía</string>
+    <string name="settings_cat_screen">Configuracion Pantalla</string>
+    <string name="settings_cat_security">Seguridad</string>
+    <string name="settings_cat_settings">Configuracion</string>
+    <string name="settings_cat_ui">Interfaze Usuario</string>
+    <string name="settings_colors">Colores</string>
+    <string name="settings_console_mode">Modo Consola</string>
+    <string name="settings_credentials">Credenciales</string>
+    <string name="settings_debug">Debug Settings</string>
+    <string name="settings_description_after_minutes">Despues %1$d Minutos</string>
+    <string name="settings_description_disabled">Desabilitado</string>
+    <string name="settings_domain">Dominio</string>
+    <string name="settings_enable_3g_settings">Configuracion 3G</string>
+    <string name="settings_enable_gateway_settings">Enable Gateway</string>
+    <string name="settings_gateway_settings">Gateway Settings</string>
+    <string name="settings_height">Altura</string>
+    <string name="settings_hostname">IP</string>
+    <string name="settings_label">Su nombre</string>
+    <string name="settings_password">Contraseña</string>
+    <string name="settings_password_empty">no configurado</string>
+    <string name="settings_password_present">*******</string>
+    <string name="settings_perf_desktop_composition">Composicion escritorio</string>
+    <string name="settings_perf_font_smoothing">Fuente suave</string>
+    <string name="settings_perf_full_window_drag">Contenidos de la ventana mientras se arrastra</string>
+    <string name="settings_perf_menu_animation">Animacion del menu</string>
+    <string name="settings_perf_remotefx">RemoteFX</string>
+    <string name="settings_perf_theming">Estilo visual</string>
+    <string name="settings_perf_wallpaper">Fondo escritorio</string>
+    <string name="settings_performance">Rendimiento</string>
+    <string name="settings_performance_3g">Rendimiento 3G</string>
+    <string name="settings_port">Puerto</string>
+    <string name="settings_power_disconnect_timeout">Cerrar las conexiones inactivas</string>
+    <string name="settings_redirect_microphone">Redirect Microphone</string>
+    <string name="settings_redirect_sdcard">Redirect SDCard</string>
+    <string name="settings_redirect_sound">Redirect Sound</string>
+    <string name="settings_remote_program">Programa Remoto</string>
+    <string name="settings_resolution">Resolucion</string>
+    <string name="settings_screen">Pantalla</string>
+    <string name="settings_screen_3g">Pantalla 3G</string>
+    <string name="settings_security">Seguridad</string>
+    <string name="settings_security_accept_certificates">Aceptar todos los certificados</string>
+    <string name="settings_security_clear_certificate_cache">Borrar el Cache de los certificados</string>
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_ui_ask_on_exit">Mostrar cuadro de diálogo en la salida</string>
+    <string name="settings_ui_auto_scroll_touchpointer">Puntero táctil de desplazamiento automático</string>
+    <string name="settings_ui_hide_action_bar">\"Ocultar barra de acción\"</string>
+    <string name="settings_ui_hide_status_bar">Ocultar barra de estado</string>
+    <string name="settings_ui_hide_zoom_controls">Ocultar controles de zoom</string>
+    <string name="settings_ui_invert_scrolling">invertir desplazamiento</string>
+    <string name="settings_ui_swap_mouse_buttons">Intercambiar botones del mouse</string>
+    <string name="settings_username">Usuario</string>
+    <string name="settings_width">Ancho</string>
+    <string name="settings_work_dir">Directorio de trabajo</string>
+    <string name="share">Compartir clave pública</string>
+    <string name="shift_check">Shift</string>
+    <string name="shortcut_label_rdp">Conexión RDP</string>
+    <string name="shortcut_label_spice">Conexión SPICE</string>
+    <string name="shortcut_label_vnc">Conexión VNC</string>
+    <string name="show">Mostrar</string>
+    <string name="show_advanced_settings">Mostrar configuración avanzada</string>
+    <string name="show_keyboard">Mostrar teclado</string>
+    <string name="showkbd_label">Teclado</string>
+    <string name="single_cancel">Modo de una mano cancelado</string>
+    <string name="single_choose">Elija el modo de una mano o cancele</string>
+    <string name="single_left">Modo de arrastre izquierda - deslice para arrastrar/seleccionar, levante el dedo para detener</string>
+    <string name="single_middle">Modo de arrastre medio - deslice para arrastrar/seleccionar, levante el dedo para detener</string>
+    <string name="single_reposition">Puntero del ratón reposicionado para el modo de una mano</string>
+    <string name="single_right">Modo de arrastre derecha - deslice para arrastrar/seleccionar, levante el dedo para detener</string>
+    <string name="single_scroll">Modo de desplazamiento - deslice hacia arriba/abajo para desplazarse, levante el dedo para detener</string>
+    <string name="single_session_supported">¡%1$s por ahora sólo soporta una sesión activa!</string>
+    <string name="single_zoom">Modo de zoom: deslice hacia arriba/abajo para acercar/alejar, levante el dedo para detener</string>
+    <string name="snap_one_to_one">Ajustado a zoom 1: 1</string>
+    <string name="special_keys">Enviar claves</string>
+    <string name="spice_address_caption_hint">Servidor SPICE</string>
+    <string name="spice_button_import_ca">Importar CA</string>
+    <string name="spice_ca_cert_path_hint">Ruta al archivo de autoridad de certificación</string>
+    <string name="spice_ca_file_error_reading">Error al leer el archivo CA. Asegúrese de que sea legible.</string>
+    <string name="spice_ca_file_not_found">Archivo no encontrado. Ingrese un nombre de archivo válido en el campo de texto (e.g. /sdcard/ca-cert.pem).</string>
+    <string name="spice_connection_screen_help_text">"Cuando agregue o edite una conexión, verá una página de configuración de conexión. Aquí puede configurar una nueva conexión SPICE o elegir una preexistente. En la parte superior hay un botón que le permite guardar la conexión. Debajo es donde configura su conexión.
+
+ - Tipo de conexión: aquí elige el tipo de conexión SPICE. Los tipos de conexión disponibles son:
+   (a) SPICE, que se conecta directamente a una computadora a través del protocolo SPICE.
+   (b) SPICE sobre SSH, que primero canaliza su conexión a través de una computadora que ejecuta un servidor SSH.
+
+ - Title: Each connection you create can have a nickname to easily identify it on the list.
+ 
+ - Título: cada conexión que cree puede tener un apodo para identificarla fácilmente en la lista.
+   (a) Servidor/puerto SSH: la dirección y el puerto del servidor SSH a través del cual se canalizará la conexión. De forma predeterminada, SSH escucha en el puerto 22.
+   (b) Nombre de usuario/contraseña: el nombre de usuario y la contraseña de la cuenta en el servidor SSH. La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+   (c) Administrar/Usar clave: un botón para administrar claves públicas/privadas y una casilla de verificación que indica si se debe usar una clave en lugar de una contraseña para autenticarse. Si usa el botón Copiar al portapapeles después de generar un par de claves, debería poder pegar la clave pública una vez conectado al servidor SPICE (el portapapeles está sincronizado con el servidor).
+
+ - Configuración de conexión SPICE:
+   (a) Servidor/Puerto SPICE: Aquí es donde ingresa el nombre de host o la dirección IP y el puerto de la computadora que ejecuta el servidor SPICE con el que desea contactar. En el modo SPICE sobre SSH, esta dirección es como se ve desde el servidor SSH. Si el servidor SSH y el servidor SPICE son la misma computadora física, puede usar localhost. Los servidores SPICE suelen escuchar en el puerto 5900 y superior.
+   (d) Contraseña de SPICE: aquí es donde ingresa la contraseña establecida para proteger su sesión de SPICE. El almacenamiento seguro no se usa para las contraseñas (están en una base de datos), y la contraseña se almacenará solo si marca la casilla Conservar. La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+
+ - Configuración avanzada: en esta sección encontrará cualquier dispositivo local o ajustes de rendimiento de SPICE
+ - Ajustes del dispositivo local: ajustan el comportamiento de la aplicación en su dispositivo.
+   (a) Use el D-Pad para las flechas: si lo prefiere, puede usar el D-Pad de su teclado Bluetooth o las flechas en su teclado en pantalla para enviar flechas al servidor SPICE.
+   (b) Rotar D-Pad: los teléfonos emparejados con un teclado Bluetooth pueden necesitar que el D-pad del teclado se gire en sentido antihorario para enviar las direcciones correctas al servidor.
+   (c) Puntero del ratón local: si el puntero es invisible, selecciónelo para forzar que la aplicación lo dibuje."</string>
+    <string name="spice_connection_settings">Configuración de conexión SPICE</string>
+    <string name="spice_intro_text">"¡Gracias por apoyar aSPICE y el software de código abierto en general! Para obtener ayuda con el uso de aSPICE, consulte los elementos de Ayuda en el menú y la descripción de la aplicación en el mercado.
+&lt;br>
+&lt;br>
+La lista actual de características de aSPICE incluye:
+
+&lt;br>
+- SPICE simple, SPICE tunelizado sobre SSH.
+&lt;br>
+- Soporte de rotación libre. Utilice el sistema operativo para limitar la rotación si es necesario.
+&lt;br>
+- Generación y exportación de key-pair público/privado SSH.
+&lt;br>
+- Guardado automático de sesiones.
+&lt;br>
+- Ampliable, Ajustar a pantalla y Modos de escala One to One.
+&lt;br>
+- Control multitáctil sobre el ratón remoto en los modos de entrada de panel táctil simulado y directo.
+&lt;br>
+- Control total con una sola mano sobre el ratón remoto en el modo de entrada con una sola mano.
+&lt;br>
+- Clics de ratón multitáctil: toque para hacer clic con el botón izquierdo, toque con dos dedos para hacer clic con el botón derecho, toque con tres dedos para hacer clic en el medio.
+&lt;br>
+- Desplazamiento multitáctil: arrastre con dos dedos hacia arriba/abajo e izquierda/derecha para desplazarse.
+&lt;br>
+- Meta en pantalla and y flechas de teclado que pueden desactivarse por completo desde el menú o guardarse con el botón en pantalla.
+&lt;br>
+- Envío de texto y combinaciones de teclas arbitrarias cuando está conectado.
+&lt;br>
+- Ayuda para crear conexiones (\"Menú->Ayuda para conexión\") en la pantalla de conexión.
+&lt;br>
+- Ayuda con los modos de entrada (\"Menú->Más->Ayuda para modo de entrada\") cuando conectado.
+&lt;br>
+- Usar un trackpad disponible como flechas en lugar de mover el ratón, hacer clic en el trackpad como Ctrl y pad direccional/trackpad giratorio para teclados BT.
+&lt;br>
+- Soporte en varios idiomas, siempre que el servidor SPICE tenga habilitada la capa de idioma necesaria.
+&lt;br>
+- Cambios perfectos en la resolución de la máquina remota
+&lt;br>
+- Compatibilidad total con el ratón en dispositivos Android 4.0, incluido el clic derecho y central y la rueda de desplazamiento.
+&lt;br>
+&lt;br>
+Funcionalidades planificadas:
+&lt;br>
+- Integración Copiar/Pegar
+&lt;br>
+- Sonido
+&lt;br>
+- Mejoras de rendimiento
+&lt;br>
+Problemas conocidos:
+&lt;br>
+- Enviar texto no envía algunos símbolos.
+&lt;br>
+"</string>
+    <string name="spice_intro_title">aSPICE: cliente de SPICE intuitivo y seguro</string>
+    <string name="spice_password_hint">Contraseña SPICE</string>
+    <string name="spice_server_empty">Servidor SPICE o puerto vacío. ¡No se puede conectar!</string>
+    <string name="spice_tls_port_hint">Puerto TLS</string>
+    <string name="spice_username_hint">Nombre de usuario de SPICE</string>
+    <string name="ssh_key_generated">"Nueva clave generada o importada con éxito. Ahora puede tocar el botón 'Generar/Exportar clave' para compartir, copiar al portapapeles o exportar la clave pública."</string>
+    <string name="ssh_passphrase_hint">Passphrase de SSH</string>
+    <string name="ssh_pubkey_button">Administrar clave</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Su servidor necesita autenticación de contraseña además de autenticación de clave.</string>
+    <string name="ssh_tunnel_settings">Configuración del túnel SSH</string>
+    <string name="ssh_use_pubkey">Usar clave</string>
+    <string name="ssh_use_x11vnc">Escritorio automático</string>
+    <string name="ssh_x11vnc_customize">Configurar AutoX</string>
+    <string name="ssl_strict">Requiere que el nombre común coincida con el certificado (recomendado)</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_app">Detener Aplicación</string>
+    <string name="stop_session">Detener Sesión</string>
+    <string name="success_decrypting">Clave descifrada con éxito.</string>
+    <string name="success_importing">Clave importada correctamente del archivo.</string>
+    <string name="success_writing_file">"Se escribió correctamente la clave pública en el archivo: "</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="super_check">Súper</string>
+    <string name="support_dropbear">SSH - Dropbear</string>
+    <string name="support_forum">Foro de soporte</string>
+    <string name="support_tightvnc">VNC - TightVNC</string>
+    <string name="supported_services">Servidores soportados actualmente:</string>
+    <string name="tap_disable">Deshabilitar</string>
+    <string name="tap_enable">Habilitar</string>
+    <string name="terminology">Terminología:</string>
+    <string name="title_about">Sobre</string>
+    <string name="title_activity_pubkey_generator">PubkeyGeneratorActivity</string>
+    <string name="title_application_settings">Configuración</string>
+    <string name="title_bookmark_settings">Configuración de la conexión</string>
+    <string name="title_create_shortcut">Conexiones RDP</string>
+    <string name="title_help">Ayuda</string>
+    <string name="title_home">aFreeRDP - aFreeRDP para Android</string>
+    <string name="toc">Términos y Condiciones</string>
+    <string name="touch_hint">Para garantizar la aleatoriedad durante la generación de claves, mueva el dedo al azar sobre el cuadro de abajo.</string>
+    <string name="touch_prompt">Toque este cuadro para recopilar aleatoriedad: %1$d%% hecho</string>
+    <string name="update_button">Actualizar</string>
+    <string name="usb">USB (conecte primero el cable OTG)</string>
+    <string name="use_no_compression_for_local_connections">Sin compresión (conexiones locales, codificación Hextile)</string>
+    <string name="user_not_specified">Usuario no especificado</string>
+    <string name="username_caption">Usuario de VNC</string>
+    <string name="username_hint">Nombre de usuario de UltraVNC MS Logon</string>
+    <string name="username_hint_optional">Nombre de usuario de VNC (opcional)</string>
+    <string name="username_hint_ssh">Nombre de usuario SSH</string>
+    <string name="username_hint_vencrypt">Nombre de usuario de VNC</string>
+    <string name="v7_preference_off">DESACTIVADA</string>
+    <string name="v7_preference_on">ACTIVADO</string>
+    <string name="verification_code">Código de verificación</string>
+    <string name="verification_code_message">Ingrese el código de verificación de autenticación multifactor</string>
+    <string name="view_only">Modo de solo lectura</string>
+    <string name="vnc_connection_screen_help_text">"Cuando agregue o edite una conexión, verá una página de configuración de conexión. Aquí puede configurar una nueva conexión VNC o elegir una preexistente. En la parte superior hay un botón que le permite guardar la conexión. Debajo es donde configura su conexión.
+
+Si está buscando un aumento rápido del rendimiento, intente configurar el modo de color en un valor más bajo. Además, intente eliminar cualquier imagen de fondo de escritorio en el servidor VNC. Finalmente, asegúrese de que su dispositivo tenga una buena conectividad de red y evite cubrir su antena y reducir la intensidad de la señal.
+
+ - Tipo de conexión: aquí elige el tipo de conexión VNC. Los tipos de conexión disponibles son:
+   (a) VNC simple, que es compatible con todos los servidores VNC pero carece de cifrado y es vulnerable a ataques de fuerza bruta debido a una limitación de contraseña de 8 caracteres.
+   (b) VNC seguro a través de SSH, que se conecta a través de un túnel SSH cifrado. Necesita un servicio SSHD en ejecución además de un servidor VNC. Siempre que el servidor VNC no acepte conexiones directamente desde Internet, este tipo de conexión no sufre vulnerabilidades conocidas, siempre y cuando verifique la firma del certificado del servidor al conectarse por primera vez.
+   (c) UltraVNC, que le ofrece Windows Logon y repetidor UltraVNC. El uso de Windows Logon no sufre la limitación de contraseña de 8 caracteres, pero este modo no ofrece cifrado, por lo que su sesión es vulnerable a la detección.
+   (d) VNC seguro a través de AnonTLS, que es VNC regular sobre una conexión equivalente a stunnel. Necesita ejecutar stunnel o usar un servidor VNC como Vino que admita AnonTLS listo para usar. Este modo le brinda cifrado de sesión, pero adolece de la limitación de contraseña de 8 caracteres y no evita los ataques man-in-the-middle.
+   (e) VNC seguro a través de VeNCrypt, que utiliza certificados x509, así como cifrado de sesión, y dependiendo de la configuración del servidor, puede utilizar credenciales de usuario/contraseña sin limitación de 8 caracteres. Este modo evita los ataques man-in-the-middle, además de proporcionar privacidad a la sesión. Los servidores como x11vnc y TigerVNC admiten este modo y son tan seguros como VNC sobre SSH. 
+
+ - Título: cada conexión que cree puede tener un apodo para identificarla fácilmente en la lista.
+ 
+ - Configuración del túnel SSH: disponible en VNC sobre modo SSH.
+   (a) Servidor/puerto SSH: la dirección y el puerto del servidor SSH a través del cual se canalizará la conexión. De forma predeterminada, SSH escucha en el puerto 22.
+   (b) Nombre de usuario/contraseña: el nombre de usuario y la contraseña de la cuenta en el servidor SSH. La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+   (c) Administrar clave/Usar clave: un botón para administrar claves públicas/privadas y una casilla de verificación que indica si se debe usar una clave en lugar de una contraseña para autenticarse. Si usa el botón Copiar al portapapeles después de generar un key-pair, debería poder pegar la clave pública una vez conectado al servidor VNC (el portapapeles está sincronizado con el servidor).
+
+ - Configurar AutoX: disponible solo en VNC sobre modo SSH. La aplicación puede descubrir automáticamente sesiones X existentes y, opcionalmente, crear nuevas sesiones en sistemas UNIX (como el cliente NX). Necesita x11vnc para buscar y Xvfb, Xvnc o Xdummy instalado en el sistema remoto para crear sesiones. Es posible que deba quitar su archivo .dmrc y agregar un archivo .xinit en su directorio de inicio si su escritorio no se ve bien o si solo obtiene una ventana xterm.
+
+ - Configuración de conexión VNC:
+   (a) Servidor/puerto VNC: aquí es donde ingresa el nombre de host o la dirección IP y el puerto de la computadora que ejecuta el servidor VNC con el que desea contactar. En el modo VNC sobre SSH, esta dirección es como se ve en el servidor SSH. Si el servidor SSH y el servidor VNC son la misma computadora, puede usar localhost. Los servidores VNC suelen escuchar comenzando en el puerto 5900 (la primera pantalla VNC, pantalla: 0).
+   (b) Usuario de VNC: disponible en UltraVNC con el modo de Windows Logon, o VNC seguro sobre VeNCrypt, aquí es donde ingresa el nombre de usuario de su cuenta de Windows/UNIX.
+   (c) Contraseña de VNC: si la configuración de su servidor VNC requiere una contraseña, ingrese esa contraseña aquí. En UltraVNC con los modos Windows Logon/VeNCrypt, ingrese aquí la contraseña de su cuenta de Windows/UNIX. El almacenamiento seguro no se utiliza para las contraseñas, y la contraseña se almacenará solo si marca la casilla Conservar. La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+
+ - Modo de color: el cliente admite varios modos de color. Los modos con más colores brindan una mejor experiencia visual a expensas de un mayor ancho de banda y más cálculos de CPU en su dispositivo. Algunos servidores VNC no admiten todas las profundidades de color (por ejemplo, OS/X Remote Desktop requiere color de 24 bits). Si tiene problemas para conectarse, pruebe con otra profundidad de color.
+
+ - Use el D-Pad para las flechas: si lo prefiere, puede usar el D-Pad de su teclado Bluetooth o las flechas en su teclado en pantalla para enviar flechas al servidor VNC.
+
+ - Girar el D-Pad: los teléfonos emparejados con un teclado Bluetooth pueden necesitar que el D-pad del teclado se gire en sentido antihorario para enviar las direcciones correctas al servidor.
+ 
+ - Puntero del ratón local: algunos servidores VNC (por ejemplo, OS/X Remote Desktop) no dibujarán el puntero del ratón en el cliente. Marcar esta opción hará que la aplicación dibuje un puntero del ratón en la posición del ratón.
+
+ - Mapa de bits automático/de pantalla completa: el cliente VNC utiliza un mapa de bits para representar la pantalla remota. Para pantallas remotas muy grandes, especialmente en el modo de ajuste a la pantalla, es posible que experimente extraños artefactos visuales cuando esté en el modo de ajuste a la pantalla, debido a las limitaciones de la memoria por proceso. Si eso sucede, intente marcar esta opción. Tenga en cuenta que marcar la opción puede hacer que la aplicación se cierre al conectarse.
+
+ - Repetidor: disponible solo en modo UltraVNC. IMPORTANTE: Si tiene un repetidor UltraVNC, ingrese su dirección y puerto fuera del cuadro de diálogo 'UltraVNC Repeater' e ingrese la dirección y el puerto del servidor VNC real dentro del cuadro de diálogo 'UltraVNC Repeater'. Separe la dirección y el puerto del servidor VNC con dos puntos, e.g. 192.168.0.100:5900."</string>
+    <string name="vnc_connection_settings">Configuración de conexión VNC</string>
+    <string name="vnc_server_empty">Servidor VNC o puerto vacío. ¡No se puede conectar!</string>
+    <string name="vnc_server_empty_no_save">Servidor VNC o puerto vacío. ¡No se puede guardar la conexión!</string>
+    <string name="vv_file_error">¡Falta el archivo .vv o está dañado!</string>
+    <string name="vv_file_not_found">¡No se encontró el archivo .vv!</string>
+    <string name="warning_cert_does_not_match">ADVERTENCIA: El certificado x509 guardado o la firma pasada no coincide con el certificado del servidor actual. Este podría ser un ataque de hombre en el medio. Si es consciente el cambio de clave, puede continuar.</string>
+    <string name="welcome">¡Bienvenido a %1$s!</string>
+    <string name="wiki">Wiki</string>
+    <string name="yes">Si</string>
+</resources>

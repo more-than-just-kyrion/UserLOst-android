@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="88.0dp" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/review_is_user_enjoying" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1.0">
+        <Button android:id="@id/btn_negative_response" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_negative" android:layout_weight="0.5" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" style="@style/Widget.AppCompat.Button.Colored" />
+        <Button android:id="@id/btn_positive_response" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_yes" android:layout_weight="0.5" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="13.999998%p" android:keyHeight="@dimen/key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="@integer/keycode_esc" android:keyEdgeFlags="left" android:keyLabel="Esc" />
+        <Key android:codes="@integer/keycode_toggle_shift" android:isModifier="true" android:isSticky="true" android:keyLabel="Shift" />
+        <Key android:codes="@integer/keycode_toggle_ctrl" android:isModifier="true" android:isSticky="true" android:keyLabel="Ctrl" />
+        <Key android:codes="@integer/keycode_toggle_win" android:isModifier="true" android:isSticky="true" android:iconPreview="@drawable/sym_keyboard_winkey_black" android:keyIcon="@drawable/sym_keyboard_winkey" />
+        <Key android:codes="@integer/keycode_toggle_alt" android:keyEdgeFlags="right" android:isModifier="true" android:isSticky="true" android:keyLabel="Alt" />
+    </Row>
+</Keyboard>

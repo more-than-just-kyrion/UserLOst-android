@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="340.0dp">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ca_subject" />
+        <EditText android:id="@id/certSubject" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="2" android:ems="10" android:inputType="textMultiLine">
+            <requestFocus />
+        </EditText>
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/path_to_ca" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:id="@id/caCertPath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.79" />
+            <Button android:id="@id/importButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_settings" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paste_ca" />
+        <EditText android:id="@id/caCert" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="10" android:ems="10" android:inputType="textMultiLine">
+            <requestFocus />
+        </EditText>
+        <Button android:id="@id/helpButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_help" />
+    </LinearLayout>
+</ScrollView>

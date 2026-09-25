@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.undatech.remoteClientUi"
+    compileSdkVersion 29
+
+    defaultConfig {
+        targetSdkVersion 29
+        minSdkVersion project.getProperties().get("SDK_VERSION")
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'lib/armeabi/libsqlcipher.so'
+        exclude 'lib/mips64/libsqlcipher.so'
+        exclude 'lib/mips/libsqlcipher.so'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':pubkeyGenerator')
+    implementation project(':freeRDPCore')
+    implementation project(':remoteClientLib')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation 'androidx.preference:preference:1.0.0'
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.9@aar'
+    implementation files('libs/com.antlersoft.android.contentxml.jar')
+    implementation files('libs/com.antlersoft.android.db.jar')
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.23'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.10'
+    implementation "com.github.luben:zstd-jni:1.4.3-1@aar"
+}

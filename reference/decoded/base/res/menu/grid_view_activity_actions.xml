@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/itemExportImport" android:title="@string/import_export_settings" app:showAsAction="never" />
+    <item android:id="@id/itemMasterPassword" android:title="@string/master_password_enable" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/copyLogcat" android:title="@string/copy_logcat" android:onClick="copyLogcat" app:showAsAction="never" />
+    <item android:id="@id/actionSupportForum" android:title="@string/support_forum" android:onClick="showSupportForum" app:showAsAction="never" />
+    <item android:id="@id/reportBug" android:title="@string/report_bug" android:onClick="reportBug" app:showAsAction="never" />
+    <item android:icon="@null" android:id="@id/actionNewConnection" android:title="@string/action_new_connection" android:onClick="addNewConnection" android:showAsAction="never" app:showAsAction="never" />
+    <item android:icon="@android:drawable/ic_menu_manage" android:id="@id/actionEditDefaultSettings" android:title="@string/action_edit_default_settings" android:onClick="editDefaultSettings" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+    <item android:icon="@android:drawable/ic_menu_info_details" android:id="@id/actionHelp" android:title="@string/help" android:onClick="showMainScreenHelp" android:showAsAction="ifRoom" app:showAsAction="ifRoom" />
+</menu>

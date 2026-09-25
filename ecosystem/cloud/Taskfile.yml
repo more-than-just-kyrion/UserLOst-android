@@ -1,0 +1,314 @@
+# https://taskfile.org
+---
+version: '2'
+
+output: prefixed
+
+x-deploy-pre: &x-deploy-pre
+  - sh: test -n "{{.ANSIBLE_VAULT_PATH}}"
+    msg: "ANSIBLE_VAULT_PATH must be set - it is currently {{.ANSIBLE_VAULT_PATH}}"
+  - sh: "[ '{{.WORKSPACE}}' != '<no value>' ]"
+    msg: "WORKSPACE must be set"
+  - sh: "[ \"$(nomad --version)\" = 'Nomad v0.9.5' ]"
+  - sh: host vault.service.city.consul
+    msg: "Could not reach vault, are you on the VPN?"
+  - NOMAD_ADDR=http://nomad:4646 nomad status
+
+x-deploy-vars: &x-deploy-vars
+  HOOK: '{{ default "none" .HOOK }}'
+  ANSIBLE_VAULT_PATH:
+    sh: echo $ANSIBLE_VAULT_PATH
+  ROOT_TOKEN:
+    sh: cat {{.ANSIBLE_VAULT_PATH}}/{{.WORKSPACE}}/vault_recovery | awk '/Initial Root Token:(.*?)/{print $4}'
+  NOMAD_ADDR: http://nomad.service.city.consul:4646
+  # If you are on master, grab the tag that points at master and deploy that
+  # one - if you are on a branch - grab the tag with your branch name and
+  # deploy that.
+  ULA_TAG:
+    sh: |
+      if [ "$(git rev-parse --abbrev-ref HEAD)" = "master" ]; then
+        git describe --abbrev=0 --tags --match "userland-*" | awk -F'[.]' '{gsub("userland-",""); print $1"."$2"."$3}'
+      elif [ "{{.ULA_TAG}}" != "<no value>" ]; then
+        echo "{{.ULA_TAG}}";
+      else
+        git rev-parse --abbrev-ref HEAD
+      fi
+  BOX_TAG:
+    sh: |
+      if [ "$(git rev-parse --abbrev-ref HEAD)" = "master" ]; then
+        git describe --abbrev=0 --tags --match "box-*" | awk -F'[.]' '{gsub("box-",""); print $1"."$2"."$3}'
+      elif [ "{{.BOX_TAG}}" != "<no value>" ]; then
+        echo "{{.BOX_TAG}}";
+      else
+        git rev-parse --abbrev-ref HEAD
+      fi
+
+x-release-vars: &x-release-vars
+  VER: '{{ default "next" .VER }}'
+  RELEASED_TAG:
+    sh: git describe --abbrev=0 --tags --match "{{.KIND | default ""}}*"
+  SOURCE_COMMIT:
+    sh: git rev-parse HEAD
+  NEXT_TAG:
+    sh: |
+      if [ "{{.VER}}" = "next" ] && [ "$(git rev-parse --abbrev-ref HEAD)" = "master" ]; then
+        git describe --abbrev=0 --tags --match "{{.KIND}}-*" | awk -F'[.]' '{gsub("{{.KIND}}-",""); print $1"."$2"."$3+1}';
+      elif [ "{{.VER}}" != "next" ] && [ "$(git rev-parse --abbrev-ref HEAD)" = "master" ]; then
+        echo "{{.VER}}";
+      else
+        git rev-parse --abbrev-ref HEAD
+      fi
+
+x-release-status: &x-release-status
+  - |
+    if [ "$(git rev-parse --abbrev-ref HEAD)" == "master" ]; then
+      test $(git describe --abbrev=0 --tags --match "{{.KIND}}*")
+    else
+      exit 1
+    fi
+
+x-cmd-tag-if-master: &x-cmd-tag-if-master |
+  if [ "$(git rev-parse --abbrev-ref HEAD)" = "master" ]; then
+    git tag {{.KIND}}-{{.NEXT_TAG}};
+    git push origin {{.KIND}}-{{.NEXT_TAG}};
+  fi
+
+tasks:
+  count:
+    cmds:
+      - |
+        for i in $(seq 100); do
+          printf "$(tput sc) $i $(tput rc)";
+        done
+
+  setup_db:
+    prefix: 'setup_db'
+    desc: Setup Database
+    cmds:
+      - docker-compose stop db
+      - docker-compose rm -f db
+      - docker volume rm userland_postgres || :
+      - docker-compose up -d db
+      - sleep 3
+      - docker-compose exec db createdb -U postgres userland_development
+      - docker-compose exec db createdb -U postgres userland_test
+      - docker-compose run web flask db upgrade
+      - docker-compose run web python -m flask plan populate
+
+  setup_net:
+    prefix: 'setup_net'
+    desc: Setup the extra interface for Userland Nomad
+    vars:
+      LOOPBACK_ALIAS: 172.16.123.1
+    cmds:
+      - sudo ifconfig lo0 alias {{.LOOPBACK_ALIAS}}
+
+  setup_box:
+    prefix: 'setup_box'
+    desc: Build a development BOX container and schedule it on the local nomad
+    cmds:
+      - docker build -f Dockerfile.box -t /box:develop .
+      - docker-compose up -d nomad
+      - docker-compose run nomad job run /box.hcl
+
+  clean_boxes:
+    prefix: 'clean'
+    desc: Shutdown All Running Boxes and Destroy Unreserved Configs
+    cmds:
+      - nomad job status | grep "box-client" | cut -d ' ' -f1 | xargs -I '{}' sh -lc 'yes | nomad job stop --purge {}'
+      #- echo "delete from box; delete from config where reserved is false" | psql -U postgres -h 0.0.0.0 -d userland_development
+
+  add_host:
+    prefix: 'add_host'
+    desc: Add a domain to your hosts file so you can test
+    vars:
+      DOMAIN: '{{ default "none" .DOMAIN }}'
+    preconditions:
+      - sh: "[ '{{.DOMAIN}}' != 'none' ]"
+        msg: "DOMAIN must be set"
+    cmds:
+      - sudo sh -lc 'echo "127.0.0.1     {{.DOMAIN}}" >> /private/etc/hosts'
+
+  start_test_server:
+    prefix: 'test_server'
+    desc: Start the HTTPBIN test server on {{.LISTEN_PORT}}
+    vars:
+      LISTEN_PORT: 4000
+    cmds:
+      - "docker run -p {{.LISTEN_PORT}}:80 -e GUNICORN_CMD_ARGS=\"--capture-output --error-logfile - --access-logfile - --access-logformat '%(h)s %(t)s %(r)s %(s)s Host: %({Host}i)s}'\" kennethreitz/httpbin"
+
+
+  release-box:
+    prefix: 'release-box'
+    desc: Push an BOX container release to Dockerhub
+    vars:
+      KIND: "box"
+      <<: *x-release-vars
+    sources:
+      - ./Dockerfile.box
+    method: checksum
+    preconditions:
+      - sh: git describe --abbrev=0 --tags --match "box-*"
+        msg: "This commit is already tagged for box"
+    status: *x-release-status
+    cmds:
+      - echo "Updating BOX from {{.RELEASED_TAG}} to box-{{.NEXT_TAG}}"
+      - docker build -f Dockerfile.box -t /box:{{.NEXT_TAG}} .
+      - docker push /box:{{.NEXT_TAG}}
+      - *x-cmd-tag-if-master
+
+  release:
+    prefix: 'release'
+    desc: Push a userland release to Dockerhub
+    vars:
+      KIND: 'userland'
+      <<: *x-release-vars
+    sources:
+      - app/**/*.py
+      - migration/**/*.{py,ini,mako}
+      - support/**/*.json
+      - Pipfile
+      - Pipfile.lock
+      - Dockerfile.production
+    method: checksum
+    preconditions:
+      - sh: git describe --abbrev=0 --tags --match "userland-*"
+        msg: "No tags matching userland found"
+    status: *x-release-status
+    cmds:
+      - echo "Updating API from {{.RELEASED_TAG}} to {{.KIND}}-{{.NEXT_TAG}}"
+      - docker build --build-arg APP_NAME=userland --build-arg SOURCE_COMMIT={{.SOURCE_COMMIT}} -f Dockerfile.production -t /userland-production:{{.NEXT_TAG}} .
+      - docker push /userland-production:{{.NEXT_TAG}}
+      - *x-cmd-tag-if-master
+
+  vault-login:
+    prefix: 'vault login'
+    vars:
+      ANSIBLE_VAULT_PATH:
+        sh: echo $ANSIBLE_VAULT_PATH
+      ROOT_TOKEN:
+        sh: cat {{.ANSIBLE_VAULT_PATH}}/{{.WORKSPACE}}/vault_recovery | awk '/Initial Root Token:(.*?)/{print $4}'
+    status:
+      - test -f ~/.vault-token
+    cmds:
+      - VAULT_ADDR=http://vault.service.city.consul:8200 vault login {{.ROOT_TOKEN}}
+
+  cold-deploy:
+    prefix: 'cold deploy'
+    desc: Deploy the userland app to a new cluster
+    dir: deploy
+    deps:
+      - task: vault-login
+        vars:
+          ROOT_TOKEN: '{{.ROOT_TOKEN}}'
+          ANSIBLE_VAULT_PATH: '{{.ANSIBLE_VAULT_PATH}}'
+          WORKSPACE: '{{.WORKSPACE}}'
+    vars: *x-deploy-vars
+    preconditions: *x-deploy-pre
+    cmds:
+      - (terraform taint nomad_job.userland || exit 0)
+      - terraform workspace select {{.WORKSPACE}}
+      - terraform plan -var "box_deploy_version={{.BOX_TAG}}" -var "userland_deploy_version=0.0.1" -out "planfile"
+      - terraform apply "planfile"
+
+  cluster-exec:
+    prefix: 'cluster exec'
+    desc: Execute a task on the cluster
+    silent: true
+    deps:
+      - task: vault-login
+        vars:
+          ROOT_TOKEN: '{{.ROOT_TOKEN}}'
+          ANSIBLE_VAULT_PATH: '{{.ANSIBLE_VAULT_PATH}}'
+          WORKSPACE: '{{.WORKSPACE}}'
+    dir: deploy
+    vars:
+      <<: *x-deploy-vars
+    preconditions:  *x-deploy-pre
+    status:
+      - "[ '{{.HOOK}}' == 'none' ]"
+    cmds:
+      - echo {{.HOOK}}
+      - echo {{.ULA_TAG}}
+      - echo {{.NOMAD_ADDR}}
+      - terraform workspace select {{.WORKSPACE}}
+      - terraform plan -target nomad_job.userland_hook -var "hook={{.HOOK}}" -var "userland_deploy_version={{.ULA_TAG}}" -out "hookfile"
+      - if [ "$(terraform show hookfile)" = "This plan does nothing." ]; then
+          echo "No hook to execute";
+          exit 0;
+        fi
+      - terraform apply "hookfile"
+      - |
+        export NOMAD_ADDR={{.NOMAD_ADDR}}
+        echo "Waiting for hook to finish."
+        nomad job status userland-hook | sed -n '/^Allocations/,$p' | sed -n '1!p'
+        green=$(tput setaf 2)
+        red=$(tput setaf 1)
+        complete=""
+        check_count=0
+        while [ "$complete" != "complete" ] && [ "$complete" != "failed" ]; do
+          alloc=$(nomad job status userland-hook | sed -n '/^Allocations/,$p' | sed -n '3p')
+          complete=$(echo -e "$alloc" |  awk '{ print $6 }')
+
+          if [ "$complete" = "complete" ]; then
+            echo $green;
+          fi
+
+          if [ "$complete" = "failed" ]; then
+            echo $red;
+          fi
+
+          echo -e "$alloc"
+          check_count=$((check_count+1))
+          test $check_count -gt 160 && exit 1
+          awk "BEGIN { while (c++ < $check_count) printf \"=\" }" && echo
+          sleep 1
+        done
+        echo $(tput sgr0)
+        echo "--- Task Stdout ---"
+        nomad alloc logs $(echo "$alloc"  | awk '{ print $1 }')
+        echo "--- Task Stderr ---"
+        nomad alloc logs --stderr $(echo "$alloc"  | awk '{ print $1 }')
+        echo -e "\n\n"
+      - NOMAD_ADDR={{.NOMAD_ADDR}} nomad job stop -purge holepunch-hook
+      - terraform destroy --auto-approve -target nomad_job.holepunch_hook
+      - rm hookfile
+
+  deploy:
+    prefix: 'deploy'
+    desc: Deploy the userland app
+    dir: deploy
+    deps:
+      - task: release
+        vars:
+          KIND: "userland"
+      - task: release
+        vars:
+          KIND: "box"
+      - task: vault-login
+        vars:
+          ROOT_TOKEN: '{{.ROOT_TOKEN}}'
+          ANSIBLE_VAULT_PATH: '{{.ANSIBLE_VAULT_PATH}}'
+          WORKSPACE: '{{.WORKSPACE}}'
+    vars: *x-deploy-vars
+    preconditions: *x-deploy-pre
+    cmds:
+      - task: cluster-exec
+        vars:
+          ULA_TAG: "{{.ULA_TAG}}"
+          BOX_TAG: "{{.BOX_TAG}}"
+          ROOT_TOKEN: "{{.ROOT_TOKEN}}"
+          ANSIBLE_VAULT_PATH: "{{.ANSIBLE_VAULT_PATH}}"
+          WORKSPACE: "{{.WORKSPACE}}"
+          HOOK: "{{.HOOK}} pre"
+      - terraform workspace select {{.WORKSPACE}}
+      - terraform plan -var "box_deploy_version={{.BOX_TAG}}" -var "userland_deploy_version={{.ULA_TAG}}" -out "planfile"
+      - terraform apply "planfile"
+      - task: cluster-exec
+        vars:
+          ULA_TAG: "{{.ULA_TAG}}"
+          BOX_TAG: "{{.BOX_TAG}}"
+          ROOT_TOKEN: "{{.ROOT_TOKEN}}"
+          ANSIBLE_VAULT_PATH: "{{.ANSIBLE_VAULT_PATH}}"
+          WORKSPACE: "{{.WORKSPACE}}"
+          HOOK: "{{.HOOK}} post"

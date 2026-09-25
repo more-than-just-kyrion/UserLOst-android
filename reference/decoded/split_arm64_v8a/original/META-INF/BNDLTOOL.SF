@@ -1,0 +1,437 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: +P/umTAnYY2Up2MG7EDAp+6ngPM=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA1-Digest: srK+CCKrFAbqCnt8uE7f8xGjL2E=
+
+Name: lib/arm64-v8a/lib_addNonRootUser.sh.so
+SHA1-Digest: 6UXQeQFcnkH4DhMWWGHR39JXFLw=
+
+Name: lib/arm64-v8a/lib_arch.so
+SHA1-Digest: IIZ1th5Fm9VVNgzcBeQFHkKMyTw=
+
+Name: lib/arm64-v8a/lib_assets.txt.so
+SHA1-Digest: NFatqPC0W+yA8Z3oIvXWiSyVxBk=
+
+Name: lib/arm64-v8a/lib_busybox.so
+SHA1-Digest: sQPinryBnN31feEq/zDqP4LEqSU=
+
+Name: lib/arm64-v8a/lib_busybox_static.so
+SHA1-Digest: C5/A3Hk5L2iSdsb3nOXeKWfVP8w=
+
+Name: lib/arm64-v8a/lib_compressFilesystem.sh.so
+SHA1-Digest: 9rf/FiXOFsDCA7AN0UEauBTPJC0=
+
+Name: lib/arm64-v8a/lib_daemon.conf.so
+SHA1-Digest: f2i0NUtDb34r6b4lhkRqN7dfc8k=
+
+Name: lib/arm64-v8a/lib_dbclient.so
+SHA1-Digest: kIN+2gPwn+m1d7V6FwtRbl6blsk=
+
+Name: lib/arm64-v8a/lib_default.pa.so
+SHA1-Digest: NKgE1H6RodzOP8DHWP1F1ax+nQY=
+
+Name: lib/arm64-v8a/lib_deleteFilesystem.sh.so
+SHA1-Digest: B01AyUnto+o1ZKGd8184EhzhLHE=
+
+Name: lib/arm64-v8a/lib_execInProot.sh.so
+SHA1-Digest: DIrbUXarlplb9prilyfhgg5scGc=
+
+Name: lib/arm64-v8a/lib_extractFilesystem.sh.so
+SHA1-Digest: BFi7oTJdu1kjplfD9aHvZn4Kox4=
+
+Name: lib/arm64-v8a/lib_isServerInProcTree.sh.so
+SHA1-Digest: izDKWtFvihp6ReoK/jEQelk1dC8=
+
+Name: lib/arm64-v8a/lib_killProcTree.sh.so
+SHA1-Digest: PH1uKFWCeEBfre5/NQ7Qi5+Qf3Q=
+
+Name: lib/arm64-v8a/lib_libFLAC.so.so
+SHA1-Digest: I5jL+ucqTRQzAOSoFNiqhWHs/+U=
+
+Name: lib/arm64-v8a/lib_libandroid-execinfo.so.so
+SHA1-Digest: ApVhrOnxTz7SZcovN8p2TtmiDRE=
+
+Name: lib/arm64-v8a/lib_libandroid-glob.so.so
+SHA1-Digest: nMQM9LzEeNXjc2ZWZ9E0t1ZyXRU=
+
+Name: lib/arm64-v8a/lib_libandroid-selinux.so.so
+SHA1-Digest: 3ETK8OOr8yQ5HnkIDQq2e0HN5qg=
+
+Name: lib/arm64-v8a/lib_libbusybox.so.1.37.0.so
+SHA1-Digest: o3UAdV/lDXp8XATrZNSep6hmROY=
+
+Name: lib/arm64-v8a/lib_libcli.so.so
+SHA1-Digest: ErNqRDAYUWLPuiJsaeSYsA6yBPo=
+
+Name: lib/arm64-v8a/lib_libcrypto.so.3.so
+SHA1-Digest: hVedbbi53X9S54t/ATsXUVJ+hk8=
+
+Name: lib/arm64-v8a/lib_libdbus-1.so.so
+SHA1-Digest: xLN1R4grblkGRgrP7HTtaELeyvQ=
+
+Name: lib/arm64-v8a/lib_libiconv.so.so
+SHA1-Digest: QTvcwDUwTSFRgxBXYVT930YTNrU=
+
+Name: lib/arm64-v8a/lib_libltdl.so.so
+SHA1-Digest: gqxpZsjsRJINuZqtQuYZyChJ3EU=
+
+Name: lib/arm64-v8a/lib_libmp3lame.so.so
+SHA1-Digest: UJ5YgVG7IUHtwb+gRMxWXzC+Tnw=
+
+Name: lib/arm64-v8a/lib_libogg.so.so
+SHA1-Digest: sW00ghResmoUu1Q/Y2n+rCEocR0=
+
+Name: lib/arm64-v8a/lib_libopus.so.so
+SHA1-Digest: +1fT5IgO3iqPX+Zuob5aPLqX9pA=
+
+Name: lib/arm64-v8a/lib_libpcre2-8.so.so
+SHA1-Digest: l7sUMySmbjNddr9JINL0mk8BKBE=
+
+Name: lib/arm64-v8a/lib_libprotocol-cli.so.so
+SHA1-Digest: HgSbPV0qhTDe6/Zfi7GoNcXk0X8=
+
+Name: lib/arm64-v8a/lib_libprotocol-http.so.so
+SHA1-Digest: BPnnyB8n2tMNQwCfDsmJHhgkYnI=
+
+Name: lib/arm64-v8a/lib_libprotocol-native.so.so
+SHA1-Digest: AufryI2rAAL5QYJZfK4NpjS28pM=
+
+Name: lib/arm64-v8a/lib_libprotocol-simple.so.so
+SHA1-Digest: KHWNNhW+YjMTbRAcxHyjcoPabfw=
+
+Name: lib/arm64-v8a/lib_libpulse.so.so
+SHA1-Digest: Bse8O5Ma9bcU2FRa4ksEGA45p6w=
+
+Name: lib/arm64-v8a/lib_libpulsecommon-17.0.so.so
+SHA1-Digest: 2wiUnlW5e/WTVBSX07stL7FPg8M=
+
+Name: lib/arm64-v8a/lib_libpulsecore-17.0.so.so
+SHA1-Digest: pJpk8F+bj2yywnmlk//uS+v23Xc=
+
+Name: lib/arm64-v8a/lib_librtp.so.so
+SHA1-Digest: Z0nIlgfze25yvCFSMFHoApfG+cQ=
+
+Name: lib/arm64-v8a/lib_libsndfile.so.so
+SHA1-Digest: bbl5tAO9Dv5pVRnPc8piAlnk6eU=
+
+Name: lib/arm64-v8a/lib_libsoxr.so.so
+SHA1-Digest: JdYRnP7JM/xA6RKaL5egKfiweM8=
+
+Name: lib/arm64-v8a/lib_libspeexdsp.so.so
+SHA1-Digest: VSaNYwzft+twx/g3jYx/l2lZNsM=
+
+Name: lib/arm64-v8a/lib_libtalloc.so.2.a10.so
+SHA1-Digest: Y6lCI3fXwgpqeCcjY5rmjOZ+uVU=
+
+Name: lib/arm64-v8a/lib_libtalloc.so.2.so
+SHA1-Digest: +Mu9XWlfl+nhd7w5042iXcURXPA=
+
+Name: lib/arm64-v8a/lib_libtermux-auth.so.so
+SHA1-Digest: XEH7I/aWdvgJlni+T1M6GlWacmA=
+
+Name: lib/arm64-v8a/lib_libutil.so.so
+SHA1-Digest: OXQuuvNFfwR1MXh8YB3+fiOXQDc=
+
+Name: lib/arm64-v8a/lib_libvorbis.so.so
+SHA1-Digest: 5BbAWnDD45yRtnlA4daSDVVNrVc=
+
+Name: lib/arm64-v8a/lib_libvorbisenc.so.so
+SHA1-Digest: NQr76ITSuoZP7FwyGUulqcjLyNs=
+
+Name: lib/arm64-v8a/lib_libwebrtc-util.so.so
+SHA1-Digest: aWeOWl8U2z9Lb5BY6haiDrPQe0E=
+
+Name: lib/arm64-v8a/lib_libz.so.1.so
+SHA1-Digest: iaSbTIf2WZ0fHOUJ4HJ3K0tANt8=
+
+Name: lib/arm64-v8a/lib_loader.a10.so
+SHA1-Digest: zPfJgH7wekzSuyb0i/bpdeRxE4s=
+
+Name: lib/arm64-v8a/lib_loader.so
+SHA1-Digest: irHjmPdVKlVsG9A0fnt2HD0gozI=
+
+Name: lib/arm64-v8a/lib_loader32.a10.so
+SHA1-Digest: K8B9r1S7Gq9UHDVm1WXbu/uhcsA=
+
+Name: lib/arm64-v8a/lib_loader32.so
+SHA1-Digest: Vc3imjP1HmEExUID064saS+pn8U=
+
+Name: lib/arm64-v8a/lib_module-aaudio-sink.so.so
+SHA1-Digest: mpjlle1cZNOc7cVulyEvI+vHIPU=
+
+Name: lib/arm64-v8a/lib_module-allow-passthrough.so.so
+SHA1-Digest: SJBvnf04u2Fv1yiTfCd8US309zs=
+
+Name: lib/arm64-v8a/lib_module-always-sink.so.so
+SHA1-Digest: oqTxSPQtCcsNJiBBVSoyuMq9UjQ=
+
+Name: lib/arm64-v8a/lib_module-always-source.so.so
+SHA1-Digest: WAYq3wcfeUOi1RCzTQQ2L30rjhQ=
+
+Name: lib/arm64-v8a/lib_module-augment-properties.so.so
+SHA1-Digest: iW0J/zwPxxSCdR2Wap4qfVvpssw=
+
+Name: lib/arm64-v8a/lib_module-card-restore.so.so
+SHA1-Digest: D6uTs4JRx+i/pEuJ/D1ssir+lQw=
+
+Name: lib/arm64-v8a/lib_module-cli-protocol-tcp.so.so
+SHA1-Digest: LahxVPyXL3lfpHRUH7Ua/H042C0=
+
+Name: lib/arm64-v8a/lib_module-cli-protocol-unix.so.so
+SHA1-Digest: pnUonKZNeexvhkXCSbMZlrOAURU=
+
+Name: lib/arm64-v8a/lib_module-cli.so.so
+SHA1-Digest: Xfozm4KkoL8AOnl2pk252jrKOas=
+
+Name: lib/arm64-v8a/lib_module-combine-sink.so.so
+SHA1-Digest: M1JbKCrwxGjlidbWcHSAn7soy9I=
+
+Name: lib/arm64-v8a/lib_module-combine.so.so
+SHA1-Digest: J/AFHdn6DPOgebo9FdXgkYQ1XLM=
+
+Name: lib/arm64-v8a/lib_module-console-kit.so.so
+SHA1-Digest: 7N7eBUQ1JJzcP678i0mxIR+a0ek=
+
+Name: lib/arm64-v8a/lib_module-dbus-protocol.so.so
+SHA1-Digest: TVlOagmrqARzIFzvRF9Bg3dBBuo=
+
+Name: lib/arm64-v8a/lib_module-default-device-restore.so.so
+SHA1-Digest: pkbCrlYoIK7mpOKgbCmuOCxCMEM=
+
+Name: lib/arm64-v8a/lib_module-detect.so.so
+SHA1-Digest: Ed6v9hMKwt5LsJWMdmNN8X9yn74=
+
+Name: lib/arm64-v8a/lib_module-device-manager.so.so
+SHA1-Digest: cqsWRZaPctV4lLVLCuy2x/9bgtc=
+
+Name: lib/arm64-v8a/lib_module-device-restore.so.so
+SHA1-Digest: nXri9FZ4gKJ7vbzEMA2OPIS/eSs=
+
+Name: lib/arm64-v8a/lib_module-echo-cancel.so.so
+SHA1-Digest: dK5m1JBTyUy0WRJmvovjfUB/NSg=
+
+Name: lib/arm64-v8a/lib_module-filter-apply.so.so
+SHA1-Digest: QgEYAbxadSNWVSJ7THgVgstMA8c=
+
+Name: lib/arm64-v8a/lib_module-filter-heuristics.so.so
+SHA1-Digest: 7s4eiLrJQlnbTf1FK/EnG2+9G9I=
+
+Name: lib/arm64-v8a/lib_module-http-protocol-tcp.so.so
+SHA1-Digest: PnczF/EZW8tWKQF98wFQ18GEi6M=
+
+Name: lib/arm64-v8a/lib_module-http-protocol-unix.so.so
+SHA1-Digest: vCvQWDXJrP2VGIXlG3L7z/JwcEA=
+
+Name: lib/arm64-v8a/lib_module-intended-roles.so.so
+SHA1-Digest: mnxvla9caIHMb8FkUTXqAycpfHA=
+
+Name: lib/arm64-v8a/lib_module-ladspa-sink.so.so
+SHA1-Digest: XnNXTua6u77Tx9NVep0KqOQAk3Y=
+
+Name: lib/arm64-v8a/lib_module-loopback.so.so
+SHA1-Digest: r7HihrBAb2wVPSKGOx4NKQ+coiY=
+
+Name: lib/arm64-v8a/lib_module-match.so.so
+SHA1-Digest: 5QjjigaXtdVXzHrmvFT+NbLnQkk=
+
+Name: lib/arm64-v8a/lib_module-mmkbd-evdev.so.so
+SHA1-Digest: 7enEEB/z/GVLzchCMIyrRgTcdrE=
+
+Name: lib/arm64-v8a/lib_module-native-protocol-fd.so.so
+SHA1-Digest: rLIJW54YJE0yFqEIjbeoudk2RdI=
+
+Name: lib/arm64-v8a/lib_module-native-protocol-tcp.so.so
+SHA1-Digest: 0SLPUcQo+dDLKjZrnpJDq/c7QOc=
+
+Name: lib/arm64-v8a/lib_module-native-protocol-unix.so.so
+SHA1-Digest: 17Y6LYWqJ+ETgzyzl/f6UF/Nbw4=
+
+Name: lib/arm64-v8a/lib_module-null-sink.so.so
+SHA1-Digest: hpRDFvcLwSrpV8y18jFX9ksfBBI=
+
+Name: lib/arm64-v8a/lib_module-null-source.so.so
+SHA1-Digest: tvASlu7xKkUh10E0yPM3hhZ2Dfk=
+
+Name: lib/arm64-v8a/lib_module-pipe-sink.so.so
+SHA1-Digest: T6y1WOGfjStZGdQNuD/ae98sbvw=
+
+Name: lib/arm64-v8a/lib_module-pipe-source.so.so
+SHA1-Digest: TroFi3yuRb0i7a5DxQHO5vPS82w=
+
+Name: lib/arm64-v8a/lib_module-position-event-sounds.so.so
+SHA1-Digest: CTDVRF/KJMKOnLduMjARr3JyQyc=
+
+Name: lib/arm64-v8a/lib_module-remap-sink.so.so
+SHA1-Digest: E84s/LoKxV23Mp6C5is6aZG020s=
+
+Name: lib/arm64-v8a/lib_module-remap-source.so.so
+SHA1-Digest: Au4v0kCxzw4QrAumb640sN/nTak=
+
+Name: lib/arm64-v8a/lib_module-rescue-streams.so.so
+SHA1-Digest: 6z5TIBEPMaUFHqaFF5rieLw+Sus=
+
+Name: lib/arm64-v8a/lib_module-role-cork.so.so
+SHA1-Digest: EFKK3TpIG/MOef/h96jLnVxOFCk=
+
+Name: lib/arm64-v8a/lib_module-role-ducking.so.so
+SHA1-Digest: 8fUwCheJayc5hL8EKOB49HGrXU8=
+
+Name: lib/arm64-v8a/lib_module-rtp-recv.so.so
+SHA1-Digest: d6tuTtIGtWuMLCHq5TL80MEdbf8=
+
+Name: lib/arm64-v8a/lib_module-rtp-send.so.so
+SHA1-Digest: +yWl57onAy4wPbnJSISn1Ca7i0s=
+
+Name: lib/arm64-v8a/lib_module-rygel-media-server.so.so
+SHA1-Digest: LWmFmInPH8BIbazCulpTXjAT2I4=
+
+Name: lib/arm64-v8a/lib_module-simple-protocol-tcp.so.so
+SHA1-Digest: tZzw3CBibF0O7DZPLmMNNHftXfE=
+
+Name: lib/arm64-v8a/lib_module-simple-protocol-unix.so.so
+SHA1-Digest: KjSmOHRJIHFReORp7DiVfoYx7Ms=
+
+Name: lib/arm64-v8a/lib_module-sine-source.so.so
+SHA1-Digest: V/z1JVyo/J63ltnxsu11XOjQ0wA=
+
+Name: lib/arm64-v8a/lib_module-sine.so.so
+SHA1-Digest: yAk4tu/tTeGY7EDAqzSckH8ESO0=
+
+Name: lib/arm64-v8a/lib_module-sles-sink.so.so
+SHA1-Digest: HjWsjq6kUxEV575OElm6HxYfk+U=
+
+Name: lib/arm64-v8a/lib_module-sles-source.so.so
+SHA1-Digest: 9PasSbZzwizNu+9o5x475HICl/s=
+
+Name: lib/arm64-v8a/lib_module-stream-restore.so.so
+SHA1-Digest: VQk91v+SqjVIWO/QXQx5wgAQMhI=
+
+Name: lib/arm64-v8a/lib_module-suspend-on-idle.so.so
+SHA1-Digest: hOfu+UqcKfDbQOis5TNkC8VYsyY=
+
+Name: lib/arm64-v8a/lib_module-switch-on-connect.so.so
+SHA1-Digest: FNNFAiXCpoz5OI4aYb8/D4z2viQ=
+
+Name: lib/arm64-v8a/lib_module-switch-on-port-available.so.so
+SHA1-Digest: WUUkVaEC8MWueVWwfuhRFaMyLz0=
+
+Name: lib/arm64-v8a/lib_module-tunnel-sink-new.so.so
+SHA1-Digest: kHLjwgfonKNI+j/3lLsO0yQX+ao=
+
+Name: lib/arm64-v8a/lib_module-tunnel-sink.so.so
+SHA1-Digest: 34QyxsVS+6AqLBzbY+X+d76+5cs=
+
+Name: lib/arm64-v8a/lib_module-tunnel-source-new.so.so
+SHA1-Digest: mbaS0ohUoT8Cem9gm2sBLAqqw4k=
+
+Name: lib/arm64-v8a/lib_module-tunnel-source.so.so
+SHA1-Digest: fyQ4d2nUYQPFRow1Q79R2EqNGnA=
+
+Name: lib/arm64-v8a/lib_module-virtual-sink.so.so
+SHA1-Digest: +X6H4de/JeHGGKBRUy8ec1T87Tw=
+
+Name: lib/arm64-v8a/lib_module-virtual-source.so.so
+SHA1-Digest: UxxppeQM5HUwFbqoBHYFFBVCZcU=
+
+Name: lib/arm64-v8a/lib_module-volume-restore.so.so
+SHA1-Digest: rYeCIX2lmsn+7YOzUDdmZ3D9gms=
+
+Name: lib/arm64-v8a/lib_pactl.so
+SHA1-Digest: CVZJTApPWaOaaL1dvWFYQDbtHCk=
+
+Name: lib/arm64-v8a/lib_proot.a10.so
+SHA1-Digest: AV/OZKDd6fwxawoiQ4MYsZZFSSY=
+
+Name: lib/arm64-v8a/lib_proot.so
+SHA1-Digest: R3BGGJ1aJJ3t1vqQLu+XTOYE44Q=
+
+Name: lib/arm64-v8a/lib_pulseaudio.so
+SHA1-Digest: DeWkyYbznsAeT86FtxlFX0x6nqA=
+
+Name: lib/arm64-v8a/lib_startSSHServer.sh.so
+SHA1-Digest: 9/nhAjhLLmNmv0Rwnm8lJt4Q6Jk=
+
+Name: lib/arm64-v8a/lib_startVNCServer.sh.so
+SHA1-Digest: Cn7qNrejVXboWXR3dyqFtPFrcvQ=
+
+Name: lib/arm64-v8a/lib_stat4.so
+SHA1-Digest: Qk/TVfWjnSzvJMdSMupjXaB+06I=
+
+Name: lib/arm64-v8a/lib_stat8.so
+SHA1-Digest: wn0oPkqP3ZL67ntASHXaza3EsUQ=
+
+Name: lib/arm64-v8a/lib_uptime.so
+SHA1-Digest: 5z240KV6eXW6b4jEIptBlQkaaTg=
+
+Name: lib/arm64-v8a/libadbndk.so
+SHA1-Digest: 6btMP7KSpAQuUJ5iQWv7btXF8BE=
+
+Name: lib/arm64-v8a/libavcodec.so
+SHA1-Digest: TIyg0U9ntHX68+a3mAtvjwolGdA=
+
+Name: lib/arm64-v8a/libavutil.so
+SHA1-Digest: 8UWXKj15KF5kcsOsf0x1g3fVqQY=
+
+Name: lib/arm64-v8a/libbarhopper_v3.so
+SHA1-Digest: gAoLm5xUQ6Blz4GSY+HtOCLqobI=
+
+Name: lib/arm64-v8a/libc++_shared.so
+SHA1-Digest: 3NyhIAwtETptesWXZj4tdZz6Oog=
+
+Name: lib/arm64-v8a/libcrypto.so
+SHA1-Digest: 81l7KmNJVF4jXk5dM+VIveV33io=
+
+Name: lib/arm64-v8a/libdroid_files.so
+SHA1-Digest: n0RIGUQPh3y0dNSDD9OB0pz5Pto=
+
+Name: lib/arm64-v8a/libfreerdp-android.so
+SHA1-Digest: WTL0GQsTvpP49NLKZJUPCXJeYDQ=
+
+Name: lib/arm64-v8a/libfreerdp-client2.so
+SHA1-Digest: cXwDxpKgs9qg4rQMR+48pVbrL5U=
+
+Name: lib/arm64-v8a/libfreerdp2.so
+SHA1-Digest: 3HEzTO3TKUEiQhtpxwE+o5QEdTU=
+
+Name: lib/arm64-v8a/libgstreamer_android.so
+SHA1-Digest: cIzyuEeUQawYnFnBk9z/ZwqRXvg=
+
+Name: lib/arm64-v8a/libmlkitcommonpipeline.so
+SHA1-Digest: vLUCdVg7+wKWOVom4PeIpyndvsE=
+
+Name: lib/arm64-v8a/libspice.so
+SHA1-Digest: vpcffQ9asf3IqLnSRCbGxIPQpyY=
+
+Name: lib/arm64-v8a/libsqlcipher.so
+SHA1-Digest: 9KGXfE5Dx5i8UiUmH72kl0RRVE8=
+
+Name: lib/arm64-v8a/libssl.so
+SHA1-Digest: sIKiywjcOaoc80AWfzJT3F6q2Rg=
+
+Name: lib/arm64-v8a/libswresample.so
+SHA1-Digest: fa5VATsyFJDX/VegHGAUEQN7qRE=
+
+Name: lib/arm64-v8a/libswscale.so
+SHA1-Digest: 5luY3hVhZ+pv8+OksPEdK3QAUTs=
+
+Name: lib/arm64-v8a/libtermux-bootstrap.so
+SHA1-Digest: bwqhCc9ms7BRNVlxHEW0bpmnEAY=
+
+Name: lib/arm64-v8a/libtermux.so
+SHA1-Digest: QASBnChgKaz4I07Fok5eLyVNXuU=
+
+Name: lib/arm64-v8a/libtoybox.so
+SHA1-Digest: 65eCNXL5LQplnEkcMHqBpbvz7h0=
+
+Name: lib/arm64-v8a/libwinpr2.so
+SHA1-Digest: b/H0EvX7XahmzBCC6k2yuMhRYxs=
+
+Name: lib/arm64-v8a/libzstd-jni-1.5.7-7.so
+SHA1-Digest: t80qXSkQJ0809jhI/ZwZ1UI/RqY=
+
+Name: stamp-cert-sha256
+SHA1-Digest: Bs40BvDZ1xrbgQrPTD2x5w/NfHQ=
+

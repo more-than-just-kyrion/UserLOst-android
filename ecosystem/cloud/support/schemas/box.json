@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "box.json",
+  "definitions": {
+    "box": {
+      "allOf": [
+        {
+          "$ref": "json-api.json#/definitions/data"
+        },
+        {
+          "properties": {
+            "attributes": {
+              "required": [
+                "sshPort",
+                "ipAddress"
+              ],
+              "properties": {
+                "config": {
+                  "type": "string"
+                },
+                "sshPort":{
+                  "type":"string"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": { "$ref": "#/definitions/box" }
+  }
+}

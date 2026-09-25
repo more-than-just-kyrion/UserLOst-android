@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.mlkit.md.camera.GraphicOverlay android:id="@id/camera_preview_graphic_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/static_overlay_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/search_progress_bar" android:visibility="gone" android:layout_width="@dimen/search_progress_bar_size" android:layout_height="@dimen/search_progress_bar_size" android:indeterminate="true" android:indeterminateTint="@color/white" android:indeterminateTintMode="src_in" />
+        <com.google.android.material.chip.Chip android:textSize="@dimen/bottom_prompt_chip_text_size" android:textColor="@color/white" android:layout_gravity="center|bottom" android:id="@id/bottom_prompt_chip" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bottom_prompt_chip_margin_bottom" android:checkable="false" android:fontFamily="sans-serif" app:chipCornerRadius="@dimen/bottom_prompt_chip_corner_radius" app:chipSurfaceColor="@color/dark" app:closeIconVisible="false" style="@style/Widget.MaterialComponents.Chip.Entry" />
+    </FrameLayout>
+</merge>

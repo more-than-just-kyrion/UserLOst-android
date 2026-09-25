@@ -1,0 +1,126 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  python_lint:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - checkout
+
+      - run:
+            name: Install black
+            command: |
+                sudo pip install black
+
+      - run:
+          name: run black
+          command: black --check .
+
+  build:
+    machine: true
+
+    working_directory: ~/userland
+
+    steps:
+      - checkout
+
+      - run:
+          name: install dockerize
+          command: wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && sudo tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+          environment:
+            DOCKERIZE_VERSION: v0.3.0
+
+      - run:
+          name: install docker-compose
+          command: sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
+
+      - run:
+          name: install go-task
+          command: curl -sL https://taskfile.dev/install.sh | sh
+
+      - run:
+          name: generate a default key
+          command: yes | ssh-keygen -o -N "" -f ~/.ssh/id_rsa || true
+
+      - run:
+          name: install nomad
+          command: |
+            wget https://releases.hashicorp.com/nomad/0.8.6/nomad_0.8.6_linux_amd64.zip
+            unzip nomad_0.8.6_linux_amd64.zip
+            sudo cp ./nomad /usr/bin/nomad
+            sudo chmod +x /usr/bin/nomad
+
+      - run: docker build -t userland --build-arg APP_NAME=userland .
+
+      - run:
+          name: Start container
+          command: |
+            set -x
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker-compose up -d
+          environment:
+            FLASK_APP: app:create_app('test')
+            SEA_HOST: nomad
+
+      - run:
+          name: Wait for db
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+
+      - run:
+          name: Wait for web
+          command: dockerize -wait http://localhost:5000 -timeout 1m
+
+      - run:
+          name: Setup userland cloud
+          command: |
+            ./bin/task setup_db
+            ./bin/task setup_tun
+
+      - run:
+          name: Run Unit Tests
+          command: |
+            set -x
+            docker-compose run web pytest --cov-report xml
+
+      - run:
+          name: Docker-compose down
+          command: |
+            set -x
+            docker-compose down
+
+      - persist_to_workspace:
+          root: .
+          paths:
+            - coverage.xml
+
+  upload_coverage:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Install codacy-coverage
+          command: |
+              sudo pip install codacy-coverage
+      - run:
+          name: Upload coverage reports
+          command: |
+              python-codacy-coverage -t ${CODACY_TOKEN}
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - python_lint
+      - build:
+          requires:
+            - python_lint
+      - upload_coverage:
+          requires:
+            - build
+

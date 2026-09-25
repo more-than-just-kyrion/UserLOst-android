@@ -1,0 +1,402 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
+apply plugin: 'jacoco'
+
+apply plugin: 'de.undercouch.download'
+
+android {
+    buildFeatures { buildConfig true }
+    namespace "tech.ula"
+    compileSdkVersion 30
+
+    defaultConfig {
+        // Version code is generated as time since June 1, 2019. These allows for constantly
+        // sequential deployments to both production and beta tracks.
+        def vcode = (int)(((new Date().getTime()/1000) - 1559347200) / 10)
+
+        //applicationId "tech.ula"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode vcode
+        versionName "3.0.3"
+        
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+
+        buildConfigField 'String', 'VERSION_CODE', '\"' + rootProject.ext.appVersionCode + '\"'
+        buildConfigField 'String', 'VERSION_NAME', '\"' + rootProject.ext.appVersionName + '\"'
+
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField 'boolean', 'ENABLE_PLAY_SERVICES', 'true'
+
+        buildConfigField 'boolean', 'APPS_IN_ASSETS', 'true'
+
+        //controls whether to ask for creds or not
+        buildConfigField 'boolean', 'USE_DEFAULT_CREDS', 'true'
+        buildConfigField "String", "DEFAULT_SSH_PASSWORD", "\"sshpass\""
+        buildConfigField "String", "DEFAULT_VNC_PASSWORD", "\"vncpass\""
+        buildConfigField "String", "DEFAULT_USERNAME", "\"userland\""
+
+        //controls whether to ask for session type or not
+        buildConfigField 'boolean', 'USE_DEFAULT_SERVICE_TYPE', 'true'
+        buildConfigField "String", "DEFAULT_LAUNCH_TYPE", "\"vnc\""
+
+        //default settings for associated preferences
+        //this can be used to hide bottom navigation
+        buildConfigField 'boolean', 'DEFAULT_HIDE_SESSIONS_FILESYSTEMS', 'true'
+        resValue "string", "default_hide_sessions_filesystems", "true"
+        //this can be used to hide distributions from being shown in the apps list
+        buildConfigField 'boolean', 'DEFAULT_HIDE_DISTRIBUTIONS', 'true'
+        resValue "string", "default_hide_distributions", "true"
+        //this can be used to get apps from a custom url
+        buildConfigField 'boolean', 'DEFAULT_CUSTOM_APPS_ENABLED', 'false'
+        resValue "string", "default_custom_apps_enabled", "false"
+        //this is the default custom apps url
+        buildConfigField "String", "DEFAULT_APPS_URL", "\"\""
+        resValue "string", "default_apps_url", "\"\""
+        //this can be used to get the filesystem from a custom url
+        buildConfigField 'boolean', 'DEFAULT_CUSTOM_FILESYSTEM_ENABLED', 'true'
+        resValue "string", "default_custom_filesystem_enabled", "true"
+        //this is the default custom filesystem url
+        buildConfigField "String", "DEFAULT_FILESYSTEM_URL", "\"\""
+        resValue "string", "default_filesystem_url", "\"\""
+        //this can be used the hide the toolbar within bVNC
+        buildConfigField 'boolean', 'DEFAULT_HIDE_VNC_TOOLBAR', 'false'
+        resValue "string", "default_hide_vnc_toolbar", "false"
+        //this can be used the hide the extra keys within bVNC
+        buildConfigField 'boolean', 'DEFAULT_HIDE_VNC_EXTRA_KEYS', 'false'
+        resValue "string", "default_hide_vnc_extra_keys", "false"
+        //this is the default input mode in bVNC
+        buildConfigField "String", 'DEFAULT_VNC_INPUT_MODE', "\"Direct, Swipe Pan\""
+        resValue "string", "default_vnc_input_mode", "\"Direct, Swipe Pan\""
+        //this is the default hostname to get written to the hosts and hostname file
+        buildConfigField "String", "DEFAULT_HOSTNAME", "\"android-device\""
+        resValue "string", "pref_hostname_default", "\"android-device\""
+        //these are the default search domains and nameservers to get written to the resolv.conf file
+        buildConfigField "String", "DEFAULT_DNS_DOMAINS", "\"search Home\""
+        buildConfigField "String", "DEFAULT_DNS_NAMESERVERS", "\"nameserver 8.8.8.8\\nnameserver 8.8.4.4\""
+        resValue "string", "pref_dns_default", "\"search Home\\nnameserver 8.8.8.8\\nnameserver 8.8.4.4\""
+
+        //these are used to help determine the resolution
+        buildConfigField 'boolean', 'FORCE_PORTRAIT_GEOMETRY', 'true'
+        buildConfigField 'int', "MAX_DIMENSION", "1000"
+        buildConfigField 'int', "MIN_DIMENSION", "360"
+
+        //these can be used to turn off certain prompts we present to users
+        buildConfigField 'boolean', 'HAS_LOGGER', 'false'
+        buildConfigField 'boolean', 'ASK_FOR_FEEDBACK', 'false'
+        buildConfigField 'boolean', 'ASK_FOR_CONTRIBUTION', 'false'
+
+        //these can be used to remove items from the setting menu
+        resValue "string", "help_enabled", "false"
+        resValue "string", "wiki_enabled", "false"
+        resValue "string", "toc_enabled", "false"
+        resValue "string", "clear_support_files_enabled", "false"
+
+        //this should be set to true if the assets are embedded in the filesystem
+        buildConfigField 'boolean', 'FILESYSTEM_ONLY_ASSET', 'false'
+
+        buildConfigField 'boolean', 'CHECK_FILESYSTEM_MD5', 'false'
+
+        //this is the default github release for filesystems to use if not overwritten by a custom url
+        buildConfigField 'String', 'DEFAULT_RELEASE', "\"tags/v7.7.7\""
+
+        // Ignore Sentry packages that cause lint failure
+        lintOptions {
+            lintConfig file("$projectDir/src/main/resources/lint.xml")
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
+        }
+
+        testOptions {
+            execution 'ANDROIDX_TEST_ORCHESTRATOR'
+        }
+    }
+
+    signingConfigs {
+        beta {
+            storeFile project.file('../keystore.jks')
+            keyAlias System.getenv('ANDROID_KEY_ALIAS')
+            storePassword System.getenv('ANDROID_STORE_PASSWORD')
+            keyPassword System.getenv('ANDROID_KEY_PASSWORD')
+        }
+        release {
+            storeFile project.file('../keystore.jks')
+            keyAlias System.getenv('ANDROID_KEY_ALIAS')
+            storePassword System.getenv('ANDROID_STORE_PASSWORD')
+            keyPassword System.getenv('ANDROID_KEY_PASSWORD')
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled true
+            buildConfigField 'boolean', 'ENABLE_PLAY_SERVICES', 'false'
+        }
+        //beta {
+        //    versionNameSuffix "-beta-$defaultConfig.versionCode"
+        //    debuggable false
+        //    minifyEnabled false
+        //    signingConfig signingConfigs.beta
+        //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        //}
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    // Enable this and run lintVitalRelease task to check missing translations.
+    lintOptions {
+        disable 'MissingTranslation'
+        disable 'ParcelCreator'
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+jacoco {
+    toolVersion = "$jacoco_version"
+}
+
+configurations {
+    ktlint
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+}
+
+task reportVersionCode {
+    new File("$projectDir/versionCode.txt").text = "$project.android.defaultConfig.versionCode"
+}
+// By running this task before builds, we guarantee that the same version is used for the fastlane
+// to supply the automated changelogs.
+preBuild.dependsOn reportVersionCode
+
+task reportVersionName {
+    new File("$projectDir/versionName.txt").text = "$project.android.defaultConfig.versionName"
+}
+preBuild.dependsOn reportVersionName
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    main = "com.pinterest.ktlint.Main"
+    args "src/**/*.kt"
+}
+check.dependsOn ktlint
+
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    classpath = configurations.ktlint
+    main = "com.pinterest.ktlint.Main"
+    args "-F", "src/**/*.kt"
+}
+
+task testAll(dependsOn: ['test', 'connectedAndroidTest']) {
+    description = "Run all unit and instrumented tests."
+}
+
+// This task is for generating coverage reports locally. It will run connected and unit tests if necessary.
+task jacocoCoverageReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'createDebugCoverageReport']) {
+
+    reports {
+        xml.required = true
+        html.required = true
+    }
+
+    def fileFilter = [ '**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*' ]
+    def javaClasses = fileTree(dir: "$project.buildDir/intermediates/classes/debug", excludes: fileFilter)
+    def kotlinClasses = fileTree(dir: "$project.buildDir/tmp/kotlin-classes/debug", excludes: fileFilter)
+    def mainSrc = "$project.projectDir/src/main/java"
+
+    sourceDirectories.from = files(mainSrc)
+    classDirectories.from = files([javaClasses, kotlinClasses])
+    executionData.from = fileTree(dir: project.buildDir, includes: [
+            'jacoco/testDebugUnitTest.exec', 'outputs/code-coverage/connected/*coverage.ec'
+    ])
+}
+
+// This task is for generating coverage in CI. It will run unit tests if required but will only
+// correctly report coverage if a 'coverage.ec' file has been moved into the workspace from Firebase.
+task jacocoCoverageReportForCi(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
+
+    reports {
+        xml.required = true
+        html.required = true
+    }
+
+    def fileFilter = [ '**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*' ]
+    def javaClasses = fileTree(dir: "$project.buildDir/intermediates/classes/debug", excludes: fileFilter)
+    def kotlinClasses = fileTree(dir: "$project.buildDir/tmp/kotlin-classes/debug", excludes: fileFilter)
+    def mainSrc = "$project.projectDir/src/main/java"
+
+    sourceDirectories.from = files(mainSrc)
+    classDirectories.from = files([javaClasses, kotlinClasses])
+    executionData.from = fileTree(dir: project.buildDir, includes: [
+            'jacoco/testDebugUnitTest.exec', 'outputs/code-coverage/connected/*.ec'
+    ])
+}
+
+ext.architectures = ["armeabi-v7a", "arm64-v8a", "x86", "x86_64"]
+//ext.libDir = "$project.projectDir/src/main/resources/lib"
+ext.libDir = "$project.projectDir/src/main/jniLibs"
+
+task downloadAssets(type: Download) {
+    def assetVersion = "v1.2.7"
+    def baseUrl = ""
+    for (arch in architectures) {
+        src "$baseUrl/$arch-assets.zip"
+        dest buildDir
+    }
+}
+
+task fetchAssets(dependsOn: downloadAssets) {
+    doLast {
+        for (arch in architectures) {
+            delete "$buildDir/$arch"
+            copy {
+                from zipTree("$buildDir/$arch-assets.zip")
+                into "$buildDir/$arch"
+            }
+            copy {
+                from "$buildDir/$arch"
+                into "$libDir/$arch"
+                // Lib files must start with 'lib' and end with '.so.'
+                rename '(.*)', 'lib_$1.so'
+            }
+            new File("$libDir/$arch","lib_arch.so").text = "$arch"
+        }
+    }
+}
+
+task checkIfAssetsMissing {
+    for (arch in architectures) {
+        File[] archLibDirContents = new File(libDir, arch).listFiles()
+        if (archLibDirContents == null || archLibDirContents.length == 0) {
+            dependsOn 'fetchAssets'
+        }
+    }
+}
+
+preBuild.dependsOn checkIfAssetsMissing
+
+dependencies {
+    def moshi_version = '1.12.0'
+    def okhttp_version = '4.9.0'
+    def sentry_version = '1.7.22'
+    def slf4j_version = '1.7.26'
+
+    def kotlinx_coroutines_version = '1.4.3'
+    def kotlin_jdk_version = '1.5.10'
+
+    // Androidx versions
+    def room_version = '2.3.0'
+    def lifecycle_version = '2.2.0'
+    def support_library_version = '1.4.0'
+    def preference_version = '1.1.1'
+    def ktx_version = '1.6.0'
+    def billing_version = '2.2.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_jdk_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version"
+
+    implementation "androidx.core:core-ktx:$ktx_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.preference:preference:$preference_version"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation "com.google.android.material:material:$support_library_version"
+    ktlint "com.pinterest:ktlint:0.32.0"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.moshi:moshi:$moshi_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+    implementation 'org.rauschig:jarchivelib:0.8.0' // v1.0.0 breaks all sdk versions < 26 https://github.com/thrau/jarchivelib/issues/75
+    implementation "io.sentry:sentry-android:$sentry_version"
+    implementation "org.slf4j:slf4j-nop:$slf4j_version"
+
+    implementation "com.android.billingclient:billing-ktx:$billing_version"
+    implementation "com.google.android.gms:play-services-base:17.2.1"
+
+    def mockito_version = '2.23.0'
+    def mockito_kotlin_version = '2.1.0'
+    def core_testing_version = '2.0.0-beta01'
+    def androidx_test_version = '1.4.0-alpha05'
+    def androidx_test_ext_version = '1.1.3-alpha05'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "org.mockito:mockito-inline:$mockito_version"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito_kotlin_version"
+    testImplementation "androidx.arch.core:core-testing:$core_testing_version"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$core_testing_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+    androidTestImplementation "androidx.test:runner:$androidx_test_version"
+    androidTestImplementation "androidx.test:rules:$androidx_test_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_version"
+    // Barista packages espresso-core and espresso-contrib
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.4.0-alpha05'
+    androidTestImplementation('com.schibsted.spain:barista:3.1.0') {
+        exclude group: 'com.android.support'
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    androidTestUtil "androidx.test:orchestrator:$androidx_test_version"
+
+    // Use the VNC viewer from BVNC
+    api 'androidx.multidex:multidex:2.0.1'
+    implementation project(':bVNC')
+    implementation project(':pubkeyGenerator')
+
+    // Use the terminal from termux
+    // The terminal modules (terminal-app, terminal-view, terminal-emulator)
+    // are not present in the community-fork snapshot. Commented out so the
+    // rest of the project can configure. App code referencing these will
+    // fail at compile time.
+    // implementation project(':terminal-app')
+    // implementation project(':terminal-view')
+    // implementation project(':terminal-emulator')
+
+    // Used only for the auto app startup
+    implementation 'com.google.code.gson:gson:2.8.6'
+}

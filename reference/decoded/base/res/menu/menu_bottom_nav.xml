@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_app_icon_24dp" android:id="@id/app_list_fragment" android:title="@string/apps" />
+    <item android:icon="@drawable/ic_storage_white_24dp" android:id="@id/filesystem_list_fragment" android:title="@string/filesystems" />
+</menu>

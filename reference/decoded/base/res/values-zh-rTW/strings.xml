@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">瀏覽首頁</string>
+    <string name="abc_action_bar_up_description">向上瀏覽</string>
+    <string name="abc_action_menu_overflow_description">更多選項</string>
+    <string name="abc_action_mode_done">完成</string>
+    <string name="abc_activity_chooser_view_see_all">查看全部</string>
+    <string name="abc_activitychooserview_choose_application">選擇應用程式</string>
+    <string name="abc_capital_off">關閉</string>
+    <string name="abc_capital_on">開啟</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl +</string>
+    <string name="abc_menu_delete_shortcut_label">Delete 鍵</string>
+    <string name="abc_menu_enter_shortcut_label">Enter 鍵</string>
+    <string name="abc_menu_function_shortcut_label">Fn +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta +</string>
+    <string name="abc_menu_shift_shortcut_label">Shift +</string>
+    <string name="abc_menu_space_shortcut_label">空格鍵</string>
+    <string name="abc_menu_sym_shortcut_label">Sym +</string>
+    <string name="abc_prepend_shortcut_label">Menu +</string>
+    <string name="abc_search_hint">搜尋…</string>
+    <string name="abc_searchview_description_clear">清除查詢</string>
+    <string name="abc_searchview_description_query">搜尋查詢</string>
+    <string name="abc_searchview_description_search">搜尋</string>
+    <string name="abc_searchview_description_submit">提交查詢</string>
+    <string name="abc_searchview_description_voice">語音搜尋</string>
+    <string name="abc_shareactionprovider_share_with">分享對象</string>
+    <string name="abc_shareactionprovider_share_with_application">與「%s」分享</string>
+    <string name="abc_toolbar_collapse_description">收合</string>
+    <string name="ad_donate_text0">Pro版本對應於多重要素驗證。為了防止違法使用，也對應於主密碼功能。加上為了防盜包含密碼與SSH鍵的所有連接設定都是加密的。這些都在主功能表內進行設定。如果主功能表按鈕不見，請按住在功能表上的應用按鈕。</string>
+    <string name="ad_donate_text1">如果您購買Pro版本並且同意捐贈我們的話，請點選這裡。</string>
+    <string name="ad_donate_text2">使用Pro版本時，可以將這個對話框設定為無效，也可以存取追加功能。</string>
+    <string name="ad_donate_text3">項目的詳細請參照以下客戶端應用用鏈接：</string>
+    <string name="ad_donate_text_rdp">Pro版本的aRDP已對應聲音重定向！</string>
+    <string name="ad_donate_text_spice">Pro版本的aSPICE已對應USB重定向！只要在連接之前安裝OTG電纜就行了。</string>
+    <string name="add">新增</string>
+    <string name="address_caption">VNC伺服器</string>
+    <string name="address_caption_hint">VNC伺服器</string>
+    <string name="address_caption_hint_tunneled">VNC伺服器</string>
+    <string name="address_caption_ssh">SSH伺服器</string>
+    <string name="address_caption_ssh_hint">SSH伺服器</string>
+    <string name="alert_clear_support_files_clear_button">清除</string>
+    <string name="alert_clear_support_files_message">這將會刪除所有的支援檔案。但不會影響您在您的檔案系統上建立的任何東西。 不過會導致資源必須在工作階段或應用程式下次執行時再下載一次。</string>
+    <string name="alert_clear_support_files_title">清除所有支援檔案？</string>
+    <string name="alert_need_client_app_message">"您將會需要 SSH 或 VNC 或 XSDL 客戶端來完成這個動作，但看起來您並未安裝 Play 商店。
+
+請安裝與工作階段類型相關的客戶端應用程式 (SSH/VNC/XSDL) 以繼續。"</string>
+    <string name="alert_need_client_app_title">找不到客戶端應用程式！</string>
+    <string name="alert_network_required_for_refresh">重新整理應用程式需要可用或訊號較佳的網路連線。</string>
+    <string name="alert_notification_documents_permission_necessary_message">要繼續，請授予 %1$s 存取 %2$s 目錄的權限。</string>
+    <string name="alert_notification_permission_necessary_message">要繼續，請啟用通知權限以允許 %1$s 發送服務通知。</string>
+    <string name="alert_permissions_necessary_cancel_button">取消</string>
+    <string name="alert_permissions_necessary_message">要繼續，請啟用儲存空間權限以允許 %1$s 下載檔案並將它們從外部儲存空間移動到應用程式本機儲存空間。</string>
+    <string name="alert_permissions_necessary_title">%1$s 需要權限！</string>
+    <string name="alert_permissions_refused_message">您拒絕了一項必要權限。您將被導向應用程式設定頁面，請點選「權限」，然後點選並啟用任何列為「不允許」的權限。</string>
+    <string name="alert_play_service_error_message">我們在存取 Google Play 服務以完成此動作時發生問題。請稍後再試，如果問題持續發生，請回報給開發人員。</string>
+    <string name="alert_play_store_required">付費應用程式需要存取 Google Play 商店以驗證付款。請安裝它以繼續。</string>
+    <string name="alert_pro_features_request_message">"您想要啟用專業版功能並支持開發嗎？ 
+ 
+\t專業版功能包括： 
+\t\t存取 UserLOst 之外的檔案 
+\t\t\t例如 /sdcard/Documents 
+\t\t進階圖形化桌面 
+\t\t\t例如 LXDE 或 XFCE 
+\t\t聲音支援 
+\t\t麥克風支援 
+ 
+\t專業版功能即將推出： 
+\t\t完善的備份與還原 
+\t\t遠端連線 
+\t\t連接額外的顯示器 
+\t\t以及更多功能"</string>
+    <string name="alert_pro_features_request_title">專業版功能請求</string>
+    <string name="alert_pro_features_required_message">存取 /sdcard 上的檔案是專業版功能。請購買我們的專業版功能以繼續。</string>
+    <string name="alert_pro_features_required_title">需要專業版功能</string>
+    <string name="alert_storage_low_message">為確保 %1$s 中檔案系統能順暢運作，請確保至少有 1 GB 的可用空間。</string>
+    <string name="alert_storage_low_title">儲存空間容量不足</string>
+    <string name="alert_subscriptions_unsupported_message">看起來您的 Play 商店版本過舊，不支援訂閱功能。請更新後繼續。</string>
+    <string name="alert_unreachable_app">無法連線的應用程式：</string>
+    <string name="alert_wifi_disabled_cancel_button">取消</string>
+    <string name="alert_wifi_disabled_continue_button">繼續</string>
+    <string name="alert_wifi_disabled_message">需要下載大型資源檔案 (~80mb)。</string>
+    <string name="alert_wifi_disabled_title">沒有 wifi！</string>
+    <string name="alert_wifi_disabled_turn_on_wifi_button">開啟 Wifi</string>
+    <string name="alt_check">Alt</string>
+    <string name="app_info">應用程式資訊</string>
+    <string name="app_name">UserLOst</string>
+    <string name="apps">應用程式</string>
+    <string name="apps_sessions">應用程式工作階段</string>
+    <string name="ardp_app_name">aRDP Pro</string>
+    <string name="arrow_down">向下箭頭</string>
+    <string name="arrow_left">向左箭頭</string>
+    <string name="arrow_right">向右箭頭</string>
+    <string name="arrow_up">向上箭頭</string>
+    <string name="aspice_app_name">aSPICE Pro</string>
+    <string name="auto">自動</string>
+    <string name="auto_start_checkbox">啟用自動啟動</string>
+    <string name="auto_x_cancel">取消</string>
+    <string name="auto_x_caption">bVNC在Linux/UNIX系統（類似於NX）上自動搜索現有的並創建新的X會話。搜索需要x11vnc，創建會話需要Xvfb、Xvnc或Xdummy。如果連接有問題，請嘗試在AutoX高級設置中選擇特定的遠端會話類型。</string>
+    <string name="auto_x_confirm">確認</string>
+    <string name="auto_x_descript_geom">遠端桌面大小（WxH）</string>
+    <string name="auto_x_descript_session">遠端會話類型</string>
+    <string name="auto_x_disabled">無效</string>
+    <string name="auto_x_disabled_selection">AutoX無效</string>
+    <string name="auto_x_enabled">有效</string>
+    <string name="auto_x_find">只搜索，不創建</string>
+    <string name="auto_x_find_login">搜索X登入名（需要sudo）</string>
+    <string name="auto_x_geom_custom">自訂</string>
+    <string name="auto_x_geom_native">原創</string>
+    <string name="auto_x_session_auto">自動</string>
+    <string name="auto_x_session_custom">自訂</string>
+    <string name="auto_x_session_gnome">GNOME</string>
+    <string name="auto_x_session_gnome_cl">GNOME經典</string>
+    <string name="auto_x_session_kde">KDE</string>
+    <string name="auto_x_session_mate">MATE</string>
+    <string name="auto_x_session_trinity">Trinity</string>
+    <string name="auto_x_session_unity">Unity</string>
+    <string name="auto_x_session_unity_2d">Unity2D</string>
+    <string name="auto_x_session_xfce">Xfce</string>
+    <string name="auto_x_title">AutoX設定</string>
+    <string name="auto_x_unix_auth">自動使用給定的SSH用戶名／密碼進行身份驗證（進入黑色的登入畫面）</string>
+    <string name="auto_x_unixpw">使用UNIX憑據代替內置的安全性機制。用戶必須能夠運行/bin/su。</string>
+    <string name="auto_x_xdummy">使用Xdummy搜索或創建</string>
+    <string name="auto_x_xvfb">使用Xvfb搜索或創建</string>
+    <string name="auto_x_xvnc">使用Xvnc搜索或創建</string>
+    <string name="avf_disk_corrupted_message">此虛擬機器的磁碟映像檔已損毀，且無法自動修復。修復將會清除容器並從頭重新安裝，您在其中所做的任何變更都將遺失。</string>
+    <string name="avf_disk_corrupted_repair_button">修復（清除並重新安裝）</string>
+    <string name="avf_disk_corrupted_title">虛擬機器磁碟已損毀</string>
+    <string name="avf_install_wizard_label">設定 UserLOst VM</string>
+    <string name="avf_runner_not_installed">尚未安裝 UserLOst VM。請開啟 AVF 類型的檔案系統以執行設定精靈。</string>
+    <string name="avf_session_start_failed">啟動虛擬機器工作階段失敗。請確認 UserLOst VM 已安裝並正在執行。</string>
+    <string name="backup">匯出</string>
+    <string name="backup_export_success">備份匯出成功！</string>
+    <string name="bottomsheet_action_expand_halfway">展開一半</string>
+    <string name="button_advanced_options_hide">隱藏進階選項</string>
+    <string name="button_advanced_options_show">顯示進階選項</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_continue">繼續</string>
+    <string name="button_negative">並不是</string>
+    <string name="button_never">永不</string>
+    <string name="button_no">否</string>
+    <string name="button_ok">確定！</string>
+    <string name="button_positive">好的，當然</string>
+    <string name="button_refuse">不用了，謝謝</string>
+    <string name="button_select_backup_import">選取要匯入的備份檔案</string>
+    <string name="button_send_text">發送文字</string>
+    <string name="button_send_without_saving">發送文字/不保存</string>
+    <string name="button_yes">是的！</string>
+    <string name="bvnc_app_name">bVNC Pro</string>
+    <string name="ca_subject">在此輸入證書主題名稱。 如果證書公用名（CN）與伺服器主機名匹配的話，就有可能不需要。</string>
+    <string name="cd_close_button">返回</string>
+    <string name="cd_flash_button">切換相機閃光燈</string>
+    <string name="cd_settings_button">設定</string>
+    <string name="center_mouse">滑鼠 @</string>
+    <string name="cert_fingerprint">證書指紋</string>
+    <string name="cert_issuer">證書頒發行人</string>
+    <string name="cert_subject">憑證科目</string>
+    <string name="character_counter_content_description">已輸入 %1$d 個字元 (上限為 %2$d 個字元)</string>
+    <string name="character_counter_overflowed_content_description">超過字元限制 (共 %1$d 字元，上限 %2$d 字元)</string>
+    <string name="clear_support_files">清除所有支援檔案</string>
+    <string name="clear_text_end_icon_content_description">清除文字</string>
+    <string name="client_ssh">Terminal</string>
+    <string name="client_vnc">Graphical</string>
+    <string name="client_xsdl">XSDL</string>
+    <string name="close">關閉</string>
+    <string name="color_24_bit">24位元彩色（24 bpp）</string>
+    <string name="color_256">256色（8 bpp）</string>
+    <string name="color_64">64色（4 bpp）</string>
+    <string name="color_8">8色（2 bpp）</string>
+    <string name="color_black_and_white">黑白（1 bpp）</string>
+    <string name="color_format_caption">彩色模式</string>
+    <string name="color_greyscale">灰度（1 bpp）</string>
+    <string name="color_mode">彩色模式</string>
+    <string name="common_google_play_services_enable_button">啟用</string>
+    <string name="common_google_play_services_enable_text">您必須啟用 Google Play 服務，才能執行「%1$s」。</string>
+    <string name="common_google_play_services_enable_title">啟用 Google Play 服務</string>
+    <string name="common_google_play_services_install_button">安裝</string>
+    <string name="common_google_play_services_install_text">您的裝置並未安裝 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_install_title">取得 Google Play 服務</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 服務可用性</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 服務發生錯誤</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」無法存取 Google Play 服務，請再試一次。</string>
+    <string name="common_google_play_services_unsupported_text">您的裝置不支援 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必須更新 Google Play 服務，才能執行「%1$s」。</string>
+    <string name="common_google_play_services_update_title">更新 Google Play 服務</string>
+    <string name="common_google_play_services_updating_text">執行「%1$s」所需的 Google Play 服務正在更新。</string>
+    <string name="common_google_play_services_wear_update_text">必須使用新版 Google Play 服務。該服務稍後就會自動更新。</string>
+    <string name="common_open_on_phone">在手機上開啟</string>
+    <string name="common_signin_button_text">登入</string>
+    <string name="common_signin_button_text_long">使用 Google 帳戶登入</string>
+    <string name="companion_app_update_button">更新</string>
+    <string name="companion_app_update_message">此工作階段的後端必須先更新才能啟動。要立即透過 ADB 無線偵錯進行更新嗎？</string>
+    <string name="companion_app_update_title">需要更新</string>
+    <string name="connect_button">連接</string>
+    <string name="connection_caption">連接</string>
+    <string name="connection_type_caption">連接類型</string>
+    <string name="connection_type_rdp">RDP</string>
+    <string name="connection_type_rdp_over_ssh">透過SSH的RDP</string>
+    <string name="connection_type_spice">SPICE</string>
+    <string name="connection_type_spice_over_ssh">透過SSH的SPICE</string>
+    <string name="connection_type_ultravnc">UltraVNC</string>
+    <string name="connection_type_vnc">基本VNC</string>
+    <string name="connection_type_vnc_over_ssh">透過SSH的安全VNC</string>
+    <string name="connection_type_vnc_over_ssl">透過AnonTLS的安全VNC</string>
+    <string name="connection_type_vnc_over_stunnel">透過SSL隧道的安全VNC</string>
+    <string name="connection_type_vnc_over_vencrypt">透過VeNCrypt的安全VNC</string>
+    <string name="contribution_amount_invalid">無效</string>
+    <string name="contribution_frequency">多久一次？</string>
+    <string name="contribution_monthly">每月</string>
+    <string name="contribution_once">一次性</string>
+    <string name="contribution_primary">您可以協助支持 %1$s 的開發嗎？</string>
+    <string name="contribution_process">處理</string>
+    <string name="contribution_secondary_negative">您想看看還有哪些方式可以協助這個專案嗎？</string>
+    <string name="contribution_secondary_positive">您可以贊助多少？</string>
+    <string name="contribution_thanks">感謝您的贊助</string>
+    <string name="contribution_yearly">每年</string>
+    <string name="control_check">Ctrl</string>
+    <string name="copy">複製</string>
+    <string name="copy_list_button">複製清單</string>
+    <string name="copy_logcat">複製Logcat</string>
+    <string name="copy_of">複製</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="cursor_force_disable">無效</string>
+    <string name="cursor_force_local">本地</string>
+    <string name="cursor_mode">光標模式：</string>
+    <string name="custom_sessions">自訂工作階段</string>
+    <string name="deactivate_sessions">必須停用所有工作階段才能繼續此動作。</string>
+    <string name="debug_log_deleted">除錯紀錄檔已被刪除或不存在！</string>
+    <string name="debug_log_export_failure">匯出除錯紀錄檔失敗！</string>
+    <string name="debug_log_export_success">除錯紀錄檔匯出成功！</string>
+    <string name="decrypt">解密當前密鑰</string>
+    <string name="default_input_mode">默認輸入模式</string>
+    <string name="delete">刪除</string>
+    <string name="delete_connection">刪除連接設定</string>
+    <string name="delete_key">刪除所選密鑰</string>
+    <string name="delete_key_list">刪除密鑰列表</string>
+    <string name="desc_apps_message">應用程式是啟動常見的 Linux 應用程式最簡單的方法。</string>
+    <string name="desc_apps_title">應用程式：</string>
+    <string name="desc_arrow">圖片：箭頭表示工作階段與檔案系統間的連線。</string>
+    <string name="desc_default_app_icon">圖片：應用程式圖示佔位圖</string>
+    <string name="desc_filesystem_type">圖片：散佈版圖示</string>
+    <string name="desc_filesystems_message">檔案系統就是顧名思義：使用者的集合與允許類似 Linux 行為的檔案結構。</string>
+    <string name="desc_filesystems_title">檔案系統：</string>
+    <string name="desc_import_backups_should_use_same_settings">"填入相同的東西：
+
+• 使用者名稱 
+• 密碼 
+• VNC 密碼 
+• 散佈版 
+
+ 作為備份以確保功能運作順暢"</string>
+    <string name="desc_sessions_message">工作階段會在檔案系統上啟動伺服器，讓您可以使用第三方客戶端應用程式連線進去使用。</string>
+    <string name="desc_sessions_title">工作階段：</string>
+    <string name="disconnect">切斷</string>
+    <string name="download_failure_cannot_resume">無法繼續下載。</string>
+    <string name="download_failure_destination_exists">目的地已存在。</string>
+    <string name="download_failure_finished_wrong_items">嘗試以未加入佇列的項目完成下載程序。</string>
+    <string name="download_failure_http_error">Http 錯誤：%1$s</string>
+    <string name="download_failure_http_processing">HTTP 資料處理錯誤。</string>
+    <string name="download_failure_insufficient_external_storage">外部儲存空間不足。</string>
+    <string name="download_failure_md5">檔案系統的 md5 檢查碼與預期值不符。</string>
+    <string name="download_failure_missing_error">錯誤代碼未知。</string>
+    <string name="download_failure_no_external_devices">找不到外部裝置（儲存空間）。</string>
+    <string name="download_failure_reason_not_found">無法取得原因。</string>
+    <string name="download_failure_too_many_redirects">重新導向次數過多。</string>
+    <string name="download_failure_unhandled_http_response">未處理的 HTTP 回應碼。</string>
+    <string name="download_failure_unknown_error">未知的錯誤。</string>
+    <string name="download_failure_unknown_file_error">未知的檔案錯誤。</string>
+    <string name="dpad_as_arrows">將D-Pad用於箭頭鍵，將D-Pad單擊用於Ctrl。</string>
+    <string name="edit">編輯</string>
+    <string name="edit_filesystem">編輯檔案系統</string>
+    <string name="edit_session">編輯工作階段</string>
+    <string name="enable_recording">使錄像有效</string>
+    <string name="enable_sound">使聲音有效</string>
+    <string name="enter_password_auth_failed">Authentication failed. Please re-enter your credentials.</string>
+    <string name="enter_text">發送文字</string>
+    <string name="enter_text_title">輸入發送用文字</string>
+    <string name="error">錯誤</string>
+    <string name="error_anon_dh_unsupported">VNC伺服器正在嘗試使用匿名Diffie Hellman密碼，但您的Android設備不支持的。如果使用GNOME的Vino VNC伺服器，就可以透過在終端中運行以下命令然後重新啟動來禁用AnonTLS：\" gsettings set org.gnome.Vino require-encryption false \"。如果運行x11vnc，就可以添加以下選項：\"-vencrypt nodh：only -ssl \"。</string>
+    <string name="error_app_description_not_found">找不到此應用程式的描述。嘗試重新整理。</string>
+    <string name="error_connection_failed">連接失敗了。</string>
+    <string name="error_connection_interrupted">連接被中斷了。</string>
+    <string name="error_empty_field">每個欄位都必須輸入！</string>
+    <string name="error_export_copy_public_external_failure">複製備份到外部公用儲存空間失敗。</string>
+    <string name="error_export_execution_failure">匯出失敗。理由：%1$s</string>
+    <string name="error_export_filesystem_not_found">無法判斷要備份的檔案系統，請再試一次。</string>
+    <string name="error_export_local_failure">匯出至本機儲存空間失敗。</string>
+    <string name="error_filesystem_delete">刪除檔案系統失敗！請嘗試停止所有工作階段後再試一次。</string>
+    <string name="error_filesystem_extraction">解壓縮檔案系統失敗。</string>
+    <string name="error_filesystem_name">您必須提供檔案系統名稱</string>
+    <string name="error_filesystem_name_invalid_characters">檔案系統名稱必須在1到50個字元間，且不能有如 \"/:*\\| 等符號</string>
+    <string name="error_icon_content_description">錯誤</string>
+    <string name="error_library_file_missing">看起來我們缺少必要的函式庫！</string>
+    <string name="error_library_setup_failure">看起來初始設定失敗，請透過 GitHub 與我們聯絡。</string>
+    <string name="error_no_lib_directory">看起來我們要找的函式庫目錄不存在，請透過 GitHub 與我們聯絡。</string>
+    <string name="error_no_user_hostname">請輸入用戶名，以及主機名或IP地址。</string>
+    <string name="error_out_of_memory">無法將足夠的內存分配給遠端屏幕的繪製。請嘗試重新啟動應用或者設備。您也可以嘗試透過應用設置來縮小遠端桌面的大小。</string>
+    <string name="error_ovirt_unable_to_connect">無法連接或認證，請確認伺服器地址，用戶名，密碼以及CA與主題。</string>
+    <string name="error_password_invalid">密碼有無效的字元</string>
+    <string name="error_pick_correct_item">請確認您在\"連接類型\"中選擇了正確的項目。</string>
+    <string name="error_rdp_authentication_failed">RDP驗證失敗了！ 請先確認RDP用戶名和密碼再重試。</string>
+    <string name="error_rdp_connection_failed">無法連接到RDP伺服器！請確認RDP伺服器設置正確，伺服器已上電，RDP已有效以及伺服器與該設備位於同一網絡上。</string>
+    <string name="error_rdp_unable_to_connect">伺服器無法提供對應的安全類型。</string>
+    <string name="error_security_type">無法連接或認證。請確認伺服器地址、密碼以及CA與主題。</string>
+    <string name="error_session_name">您必須提供工作階段名稱</string>
+    <string name="error_spice_unable_to_connect">沒能執行遠端命令。</string>
+    <string name="error_ssh_could_not_exec_command">沒能執行遠端命令。</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">沒能發送sudo密碼。</string>
+    <string name="error_ssh_hostkey_changed">ERROR！伺服器主機密鑰已更改。如果有意這樣做，請刪除並重試連接。否則，這可能是中間人的攻擊，不能繼續。</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH伺服器都不支持\"password\"與\"keyboard-interactive\"這兩種認證方式，或者先要執行\"publickey\"方式。請設定為允許這兩種方式中的至少一種。或者重新設定本App。有效的認證方式：</string>
+    <string name="error_ssh_key_auth_fail">透過密鑰對來向SSH伺服器認證失敗了。請確認SSH用戶名，並確認您的公開金鑰在遠端端的authorized_keys文件中。</string>
+    <string name="error_ssh_keypair_decryption_failure">"解密密鑰對失敗了。請確認您在主畫面的'SSH Passphrase'欄位中正確輸入了密碼。"</string>
+    <string name="error_ssh_keypair_missing">尚未創建SSH密鑰對！ 請創建它並將它（公開金鑰）放入SSH伺服器上的authorized_keys中。</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">已創建了密碼短語，但密鑰對未加密。請刪除密碼短語。</string>
+    <string name="error_ssh_port_forwarding_failure">無法設置為透過SSH隧道連接VNC的端口轉發。請確認SSH伺服器設置為允許端口轉發，然後重試。</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH伺服器不支持\" publickey \"身份驗證方法，我們正在嘗試使用密鑰對進行身份驗證。請設置為允許公開金鑰身份驗證，然後重試。可用的身份驗證方法：</string>
+    <string name="error_ssh_pwd_auth_fail">使用密碼對SSH伺服器進行身份驗證失敗了。請確認您的SSH用戶名和SSH密碼。</string>
+    <string name="error_ssh_unable_to_connect">連接SSH伺服器失敗了。請確認網絡連接以及SSH伺服器地址和端口。</string>
+    <string name="error_ssh_x11vnc_no_port_failure">無法從x11vnc獲取遠端VNC端口。請確認是否已安裝x11vnc。為慎重起見，請嘗試在命令行上手動運行x11vnc。</string>
+    <string name="error_uri_noinfo_nosave">用於連接的信息不足。</string>
+    <string name="error_username">您必須提供使用者名稱</string>
+    <string name="error_username_in_blacklist">使用者名稱可能被 Linux 保留，不能用於檔案系統的使用者名稱。</string>
+    <string name="error_username_invalid">使用者名稱有無效的字元</string>
+    <string name="error_username_invalid_characters">使用者名字必須是1到30個字元的小寫字母或數字。</string>
+    <string name="error_vnc_authentication">VNC驗證失敗了！請確認VNC密碼和用戶名。</string>
+    <string name="error_vnc_password_invalid">VNC 密碼有無效的字元</string>
+    <string name="error_vnc_password_length_incorrect">VNC 密碼必須在6到8個字元之間！</string>
+    <string name="error_vnc_unable_to_connect">與VNC伺服器的連接失敗了，原因如下：</string>
+    <string name="error_x509_could_not_generate_encoding">無法生成證書編碼。</string>
+    <string name="error_x509_could_not_generate_signature">無法生成證書的SHA1或MD5簽名。找不到SHA1 / MD5算法。</string>
+    <string name="execution_type_avf">虛擬機器（專業版）</string>
+    <string name="execution_type_label">執行後端：</string>
+    <string name="execution_type_proot">標準（proot）</string>
+    <string name="execution_type_qemu">QEMU 模擬（專業版）</string>
+    <string name="expand_button_title">進階</string>
+    <string name="export_failure">匯出備份失敗</string>
+    <string name="export_settings">匯出</string>
+    <string name="export_settings_path" />
+    <string name="export_started">匯出已開始，請稍候</string>
+    <string name="export_success">成功匯出備份</string>
+    <string name="exposed_dropdown_menu_content_description">顯示下拉式選單</string>
+    <string name="extra_keys_disable">使特殊鍵無效</string>
+    <string name="extra_keys_enable">使特殊鍵有效</string>
+    <string name="filesystem_credentials_reasoning">"我們正在為您的應用程式建立檔案系統。
+請輸入相關的必要資訊，以讓我們將此做為檔案系統的預設值。"</string>
+    <string name="filesystem_protected_text">受保護：</string>
+    <string name="filesystem_unique_name_required">檔案系統必須有獨一無二的名稱！</string>
+    <string name="filesystems">檔案系統</string>
+    <string name="fit_to_screen">適應於屏幕</string>
+    <string name="force">全屏位圖</string>
+    <string name="freeardp_app_name">aRDP Free</string>
+    <string name="freeaspice_app_name">aSPICE Free</string>
+    <string name="freebvnc_app_name">bVNC Free</string>
+    <string name="gather_entropy">改善隨機性</string>
+    <string name="general_error_title">發生了預料之外的錯誤！</string>
+    <string name="generate">創建新的密鑰</string>
+    <string name="generated">成功創建密鑰</string>
+    <string name="generating">正在創建密鑰對...</string>
+    <string name="github_message">遇到臭蟲或想要什麼功能嗎？我們的 GitHub 頁面是取得快速回應的最佳方法。</string>
+    <string name="help">說明</string>
+    <string name="hide">隱藏</string>
+    <string name="hint_filesystem_name">檔案系統名稱</string>
+    <string name="hint_password">密碼</string>
+    <string name="hint_session_name">工作階段名稱</string>
+    <string name="hint_username">使用者名稱</string>
+    <string name="hint_vnc_password">VNC 密碼</string>
+    <string name="icon_content_description">對話方塊圖示</string>
+    <string name="illegal_state_assets_have_not_been_downloaded">資源必須複製到您的檔案系統，但看起來它們還沒被下載。嘗試清除支援檔案。</string>
+    <string name="illegal_state_busybox_missing">此操作需要 Busybox。請嘗試執行工作階段以確保它已安裝。</string>
+    <string name="illegal_state_downloads_did_not_complete_successfully">下載失敗，因為：%1$s。</string>
+    <string name="illegal_state_empty_download_cache_access">試圖存取時，下載快取被清空。</string>
+    <string name="illegal_state_error_copying_app_script">無法複製應用程式指令稿。</string>
+    <string name="illegal_state_error_fetching_app_database_entries">無法擷取資料庫項目。</string>
+    <string name="illegal_state_error_fetching_asset_lists">擷取資源清單失敗。</string>
+    <string name="illegal_state_failed_to_clear_support_files">清除支援檔案失敗。</string>
+    <string name="illegal_state_failed_to_copy_assets_to_filesystem">複製資源到檔案系統失敗。</string>
+    <string name="illegal_state_failed_to_copy_assets_to_local">複製資源至本機儲存空間失敗。嘗試清除支援檔案。</string>
+    <string name="illegal_state_failed_to_extract_filesystem">解壓縮檔案系統失敗。嘗試清除支援檔案。失敗理由：%1$s</string>
+    <string name="illegal_state_github_message">"%1$s 
+我們正在努力解決這些問題。您可以在 GitHub 上讓我們知道，如果您願意幫忙的話！"</string>
+    <string name="illegal_state_insufficient_storage">未能偵測到足夠的儲存空間。請嘗試將您裝置的可用儲存空間增加至至少 250 MB。</string>
+    <string name="illegal_state_no_app_selected_when_preference_submitted">應用程式偏好設定已遞交，但並未選取任何一個。</string>
+    <string name="illegal_state_no_app_selected_when_preparation_started">嘗試開始準備應用程式，但並未選取任何一個。</string>
+    <string name="illegal_state_no_filesystem_selected_when_credentials_selected">已為檔案系統遞交憑證，但並未選取任何一個。</string>
+    <string name="illegal_state_no_filesystem_selected_when_flavor_selected">已為檔案系統遞交桌面環境，但並未選取任何一個。</string>
+    <string name="illegal_state_no_selections_when_permissions_granted">在授予權限時，沒有選取任何工作階段與應用程式。</string>
+    <string name="illegal_state_no_session_selected_when_preparation_started">嘗試在選取前處理工作階段準備事宜。</string>
+    <string name="illegal_state_remote_unreachable_during_generation">生成下載需求時無法連線到遠端主機。請確定您的網路 連線夠穩定，然後再試一次。</string>
+    <string name="illegal_state_title">%1$s 已進入違規狀態！</string>
+    <string name="illegal_state_too_many_selections_when_permissions_granted">在授予權限時，必須同時選取工作階段與應用程式。</string>
+    <string name="illegal_state_transition">狀態轉換不良：%1$s</string>
+    <string name="illegal_state_unhandled_session_service_type">嘗試啟動未知服務類型的工作階段。</string>
+    <string name="immersive_mode_disable">禁用沉浸模式</string>
+    <string name="import_export_settings">匯入／匯出設定</string>
+    <string name="import_failure">無法匯入備份</string>
+    <string name="import_settings">匯入</string>
+    <string name="import_settings_file_url" />
+    <string name="import_success">成功匯入備份</string>
+    <string name="info">信息</string>
+    <string name="info_cert_signatures">證書信息是：</string>
+    <string name="info_cert_signatures_identical">"
+
+您可以確認信息與伺服器證書匹配，以防止中間人攻擊。"</string>
+    <string name="info_cert_tunnel">"是否要連接以下證書標識的主機？
+
+Fingerprint: %1$s
+
+Issued to:
+%2$s
+
+Issued by:
+%3$s
+
+Valid from:
+%4$s
+
+Valid until:
+%5$s
+
+Note: The application does not verify certificate authorities or check for certificate revocation."</string>
+    <string name="info_continue_connecting">繼續連接到：</string>
+    <string name="info_encoding">編碼</string>
+    <string name="info_finish_app_setup">完成應用程式設定以使這些選項可用。</string>
+    <string name="info_progress_dialog_aborted">連接被中止了！</string>
+    <string name="info_progress_dialog_connecting">正在連接…</string>
+    <string name="info_progress_dialog_downloading">"正在下載第一幀。
+請稍候..."</string>
+    <string name="info_progress_dialog_establishing">"正在建立握手。
+請稍候..."</string>
+    <string name="info_set_touchpad_input_mode">伺服器不支持客戶端模式的滑鼠輸入，因此當前的滑鼠輸入無法正常工作。請確認SPICE工具已安裝在虛擬機中。或者從功能表上切換到模擬觸摸板輸入模式。</string>
+    <string name="info_ssh_initializing_hostkey">嘗試初始化SSH HostKey。</string>
+    <string name="info_ssh_key_fingerprint">主機密鑰指紋是：</string>
+    <string name="info_ssh_key_fingerprint_identical">"
+
+您可以確認它與伺服器證書的已知指紋相同，以防止中間人攻擊。"</string>
+    <string name="info_stop_app">停止此應用程式以變更其設定。</string>
+    <string name="info_update_color_model_to">將顏色模型更新為</string>
+    <string name="info_xsdl_support">"XSDL 尚未完整支援
+Android 9.0 或更新的版本"</string>
+    <string name="input_method_direct_drag_pan_description">直接、按住並平移：滑動並拖曳下拉。 一根手指單擊相當於滑鼠左擊，用兩根手指單擊相當於滑鼠右擊，再用三根手指單擊相當於滑鼠中擊。 用兩根手指滑動即可滾動。 長按即可開始平移。</string>
+    <string name="input_method_direct_swipe_pan_description">直接、滑動平移：滑動即可隨意平移。 一根手指單擊相當於滑鼠左擊，用兩根手指單擊相當於滑鼠右擊，再用三根手指單擊相當於滑鼠中擊。 用兩根手指滑動即可滾動。 長按即可拖曳下拉。</string>
+    <string name="input_method_single_handed_description">單手操作：滑動即可隨意平移。 一根手指單擊相當於滑鼠左擊。長按可選擇左擊/右擊/中擊/拖動/滾動/縮放模式。 通常的多點觸摸操作也可以使用。</string>
+    <string name="input_method_touchpad_description">模擬模擬板：滑動即可移動指標。一根手指單擊相當於滑鼠左擊，用兩根手指單擊相當於滑鼠右擊，再用三根手指單擊相當於滑鼠中擊。 用兩根手指滑動即可滾動。 長按即可拖曳下拉。</string>
+    <string name="input_mode">輸入模式</string>
+    <string name="input_mode_drag_pan_zoom_mouse">直接、按住並平移</string>
+    <string name="input_mode_fit_to_screen">無平移：軌跡球滑鼠</string>
+    <string name="input_mode_help">輸入模式操作幫助</string>
+    <string name="input_mode_help_text">"在所有輸入模式下都可以透過點選鍵盤圖標來顯示屏上鍵盤。鍵盤的顯示方法因使用的機器而異。
+
+使用直接輸入模式可以更直觀地控制觸摸屏。 使用模擬觸摸板模式可以更好地控制滑鼠。
+
+直接、滑動平移模式：
+  -透過觸摸直接控制滑鼠。
+  -滑動即可平移。
+  -點選即可滑鼠單擊。
+  -在兩個手指開始滑動時在兩個手指之間發送滾動事件。
+
+直接、按住並平移模式：
+  -透過觸摸直接控制滑鼠。
+  -長按即可平移。
+  -點選即可滑鼠單擊。
+  -在兩個手指開始滑動時在兩個手指之間發送滾動事件。
+
+模擬觸摸板模式：
+  -像觸摸板一樣使用屏幕。
+  -滑動即可移動滑鼠指標。
+  -將滑鼠移到屏幕邊緣之外即可進行平移。
+  -點選相當於滑鼠單擊指標所在的位置。
+  -滾動事件發送到滑鼠指針所在的位置。
+
+單手模式：
+  -與直接、滑動平移模式相同，不同之處在於長按可打開功能表並選擇模式。
+  -選擇模式後，在屏幕上滑動手指即可執行選定的手勢。
+  -抬起手指即可完成手勢。
+
+所有輸入模式：
+  -左擊：點選一次
+  -雙擊：雙擊
+  -右擊：按住並用另一根手指點選屏幕上其他任何地方
+  -備用右擊：使用設備的\"Back\"按鈕或手勢。
+  -中擊：按住並用另外兩個手指點選屏幕上其他任何地方
+  -拖動滑鼠：長按並滑動
+  -滾輪：兩根手指上下/左右拖動。快速拖動滾動更快
+  -放大/縮小：縮放即可控制顯示的大小
+  -Ctrl / Alt鍵：功能表-> Ctrl / Alt按鈕。完成後請不要忘記關閉！
+  -按鍵組合：功能表->更多->發送按鍵
+  -發送文字：在屏幕鍵盤上輸入文字，或使用菜單->更多->發送文字"</string>
+    <string name="input_mode_mouse">滑鼠指標控制</string>
+    <string name="input_mode_panning">桌面平移模式</string>
+    <string name="input_mode_single_handed">單手</string>
+    <string name="input_mode_touch_pan_zoom_mouse">直接、滑動平移</string>
+    <string name="input_mode_touchpad">模擬觸摸板</string>
+    <string name="install_notif_channel_name">%1$s 設定</string>
+    <string name="install_notif_pair_action">配對</string>
+    <string name="install_notif_pair_failed_title">配對失敗 ✗</string>
+    <string name="install_notif_pair_ready_body">請下拉此通知並輸入「無線偵錯」中顯示的 6 位數配對碼，然後點選「配對」。</string>
+    <string name="install_notif_pair_ready_title">%1$s 設定——通訊埠 %2$s 已就緒</string>
+    <string name="install_notif_pair_waiting_body">在「無線偵錯」中，點選「使用配對碼配對裝置」。系統將自動偵測通訊埠。</string>
+    <string name="install_notif_pair_waiting_title">%1$s 設定——正在等待配對通訊埠…</string>
+    <string name="install_notif_paired_title">已配對 ✓——點選以繼續</string>
+    <string name="install_notif_pairing_title">配對中…</string>
+    <string name="install_notif_step1_action">開啟「關於手機」</string>
+    <string name="install_notif_step1_body">點選「版本號碼」7 次，畫面將顯示「您已經是開發人員了！」</string>
+    <string name="install_notif_step1_title">步驟 1——啟用開發人員選項</string>
+    <string name="install_notif_step2_action">開啟「開發人員選項」</string>
+    <string name="install_notif_step2_body">開發人員選項已開啟。請開啟「開發人員選項」並啟用「無線偵錯」。</string>
+    <string name="install_notif_step2_title">步驟 2——啟用無線偵錯</string>
+    <string name="install_wizard_adb_init_failed">啟動內建 ADB 伺服器失敗。</string>
+    <string name="install_wizard_apk_missing">無法下載 %1$s 安裝程式。請檢查您的網路連線並重試。</string>
+    <string name="install_wizard_btn_done">完成</string>
+    <string name="install_wizard_checking_paired">正在檢查現有配對…</string>
+    <string name="install_wizard_connect_failed">"無法連線至裝置：%1$s
+
+請確認「無線偵錯」仍為啟用狀態。"</string>
+    <string name="install_wizard_connecting">正在連線至裝置…</string>
+    <string name="install_wizard_consent_body">%1$s 是一個獨立的應用程式，並非 UserLOst 的一部分。繼續操作將透過 ADB 無線偵錯與您的裝置配對，自動安裝 %1$s，並在不再另行提示的情況下授予其下列權限：%2$s。</string>
+    <string name="install_wizard_consent_cancel">取消</string>
+    <string name="install_wizard_consent_continue">繼續</string>
+    <string name="install_wizard_consent_title">要安裝 %1$s 嗎？</string>
+    <string name="install_wizard_done">✓ %1$s 已安裝並設定完成！現在可以使用工作階段了。</string>
+    <string name="install_wizard_downloading_pack">正在下載 %1$s…</string>
+    <string name="install_wizard_downloading_pack_progress">正在下載 %1$s… %2$d%%</string>
+    <string name="install_wizard_grant_failed">"授予權限失敗：
+%1$s
+
+請再試一次，或透過 ADB 手動授予權限。"</string>
+    <string name="install_wizard_granting">正在授予虛擬機器權限…</string>
+    <string name="install_wizard_install_failed">安裝失敗：%1$s</string>
+    <string name="install_wizard_installing">正在安裝 %1$s…（可能需要 10–30 秒）</string>
+    <string name="install_wizard_keepalive_title">設定進行中…</string>
+    <string name="install_wizard_open_about_phone">開啟「關於手機」</string>
+    <string name="install_wizard_open_dev_options">開啟「開發人員選項」</string>
+    <string name="install_wizard_open_wireless_debug">開啟「無線偵錯」</string>
+    <string name="install_wizard_pair_failed">配對失敗：%1$s</string>
+    <string name="install_wizard_pairing_detected">已偵測到配對通訊埠。請下拉通知並輸入「無線偵錯」中顯示的 6 位數配對碼。</string>
+    <string name="install_wizard_permission_custom_vm">啟動自訂虛擬機器映像</string>
+    <string name="install_wizard_permission_manage_vm">執行並管理虛擬機器</string>
+    <string name="install_wizard_permission_notifications">顯示通知</string>
+    <string name="install_wizard_permission_storage">存取共用儲存空間</string>
+    <string name="install_wizard_reinstalling_incompatible">已安裝的 %1$s 是以不同的金鑰簽署，無法就地更新——正在重新安裝…</string>
+    <string name="install_wizard_step1_body">前往「設定」→「關於手機」，然後點選「版本號碼」7 次，直到畫面顯示「您已經是開發人員了！」</string>
+    <string name="install_wizard_step1_title">步驟 1：啟用開發人員選項</string>
+    <string name="install_wizard_step2_body">開啟「開發人員選項」並啟用「無線偵錯」。</string>
+    <string name="install_wizard_step2_title">步驟 2：啟用無線偵錯</string>
+    <string name="install_wizard_step3_body">點選下方按鈕以開啟「無線偵錯」。在「無線偵錯」畫面中，點選「使用配對碼配對裝置」。此時會出現一則通知——請將其下拉並輸入 6 位數的配對碼，過程中請勿離開「無線偵錯」畫面。</string>
+    <string name="install_wizard_step3_title">步驟 3：配對您的裝置</string>
+    <string name="install_wizard_step4_title">正在安裝 %1$s…</string>
+    <string name="install_wizard_subtitle">此一次性設定會透過 ADB 無線偵錯安裝 %1$s，以啟用虛擬機器支援。</string>
+    <string name="install_wizard_title">設定 %1$s</string>
+    <string name="install_wizard_waiting_pairing">正在等待配對服務——請在「無線偵錯」中點選「使用配對碼配對裝置」…</string>
+    <string name="intro_close">關閉</string>
+    <string name="intro_dont_show">不再顯示</string>
+    <string name="intro_header" />
+    <string name="intro_text">"bVNC對應的功能如下：
+&lt;br>
+- Plain VNC／基於SSH的安全VNC／AnonTLS／VeNCrypt／UltraVNC Windows登入（帶有可選中繼器）
+&lt;br>
+- AutoX模式：使用x11vnc來可以自動搜索現有的或者創建新的X會話（經過SSH的VNC模式）！像NX客戶端一樣的動作！
+&lt;br>
+- 自動畫面迴轉支持（ 如果不需要，就可以使用操作系統來更改設定）。
+&lt;br>
+- SSH公開金鑰/私密金鑰對的生成和匯出。
+&lt;br>
+- 所有標準VNC編碼，包括Tight、ZRLE和CopyRect。
+&lt;br>
+- 自動保存會話。
+&lt;br>
+- 縮放模式：適合屏幕以及一對一縮放模式。
+&lt;br>
+- 可使用遠端滑鼠來進行多點觸摸控制（直接／模擬觸摸板模式）
+&lt;br>
+- 可使用遠端滑鼠來進行完全單手控制（單手輸入模式）
+&lt;br>
+- 多點觸控滑鼠單擊：點選即可滑鼠左擊，兩指點選即可滑鼠右擊，三指點選即可滑鼠中擊。
+&lt;br>
+- 多點觸控滾動：兩根手指向上／向下／向左／右拖動即可滾動操作。
+&lt;br>
+- 屏幕上的meta／箭頭鍵：可以從功能表中完全禁用它，也可以透過隱藏按鈕來隱藏它們。
+&lt;br>
+- 連接時發送文本和任意組合鍵。
+&lt;br>
+- 在連接畫面上有創建連接的幫助(\"Menu->Connection Help\")。
+&lt;br>
+- 連接時有輸入模式的幫助（\"Menu->More->Input Mode Help\"）
+&lt;br>
+- 觸控板可代替滑鼠操作箭頭，單擊觸控板可代替按Ctrl。
+&lt;br>
+- 連接時切換到縱向模式，D-pad／觸摸板旋轉為藍牙鍵盤。
+&lt;br>
+- 支持多語言，只要VNC伺服器已啟用必要的語言佈局即可。
+&lt;br>
+- 複製/粘貼整合
+&lt;br>
+- 遠端機器分辨率更改
+&lt;br>
+-  在Android 4.0以上版本的設備支持完整滑鼠，包括右鍵、中鍵以及滾輪。
+&lt;br>
+&lt;br>
+已知的問題：
+&lt;br>"</string>
+    <string name="intro_title">bVNC：又直觀又安全的VNC客戶端</string>
+    <string name="intro_version_text" />
+    <string name="item_view_role_description">分頁標籤</string>
+    <string name="keep_password_button">保存</string>
+    <string name="keep_screen_awake_enable">使休眠模式無效</string>
+    <string name="key_import">匯入</string>
+    <string name="keys_caption">鍵</string>
+    <string name="landscape_force">強行橫放設定</string>
+    <string name="left_handed_mode">左手模式</string>
+    <string name="list_caption">一覽表</string>
+    <string name="list_name_caption">一覽表名</string>
+    <string name="local_device_tweaks">本地設備調整</string>
+    <string name="local_mouse_check">本地滑鼠指標（指標不可見時選擇）</string>
+    <string name="log_copied">Logcat已複製到剪貼板。您可以將它粘貼到電子郵件中或在支持論壇上。發佈之前，請仔細確認是否有任何個人數據。</string>
+    <string name="main_screen_help">連接操作幫助</string>
+    <string name="main_screen_help_text">"首次啟動本App時連接設定畫面會顯示出來。在此可以設置新的VNC連接設定或選擇現有的VNC連接。該頁面分為2個部分，頂部有下拉功能表顯示之前創建的連接設定。首次啟動本App時只能創建新的連接。下拉功能表旁邊有連接按鈕，按下它就按照當前的設定啟動VNC客戶端。在連接按鈕之下可設定連接。
+
+如果要快速提高性能，請嘗試將\"色彩\"模式設置為較低的值。另外，請嘗試刪除VNC伺服器上的所有桌面背景圖像。最後，請確認您的設備具有良好的網絡連接性，並避免由於覆蓋其天線而降低信號強度。
+
+-連接類型：在此處選擇VNC連接類型。可用的連接類型如下：
+  （a）普通VNC：所有VNC伺服器都支持，但缺乏加密，並且由於密碼限制為8個字符，因此容易受到蠻力攻擊。
+  （b）透過SSH的安全VNC：它透過加密的SSH隧道連接。您需要運行SSHD服務以及VNC伺服器。只要VNC伺服器不直接連接到因特網，此連接類型就不會遭受任何已知的漏洞。在首次連接時需要驗證服務器證書籤名。
+  （c）UltraVNC：它為您提供Windows登入和UltraVNC轉發器選項。使用Windows登入不受8個字符的密碼限制，但是此模式不提供加密，因此您的會話很容易被嗅探。
+  （d）透過AnonTLS的安全VNC：這是透過相當於Stunnel連接的常規VNC。您要麼需要運行Stunnel，要麼使用像對應AnonTLS的Vino等VNC服務器。此模式為您提供會話加密，但受到8個字符的密碼限制，因此有可能受到中間人攻擊。
+  （e）透過VeNCrypt的安全VNC：它使用x509證書以及會話加密，密碼根據服務器設定，可以使用不受到8個字符限制的用戶/密碼憑據。此模式可防止中間人攻擊，以及提供會話隱私。 x11vnc和TigerVNC等服務器支持此模式，與透過SSH的VNC一樣安全。
+
+-標題：您創建的每個連接都可以有一個暱稱，以便在列表中輕鬆識別它。
+
+-SSH隧道設置：在SSH模式的VNC中可用。
+  （a）SSH服務器/端口：將透過隧道建立連接的SSH服務器的地址和端口。 默認端口是22。
+  （b）用戶名/密碼：SSH服務器上帳戶的用戶名和密碼。 未退出本App，密碼就保留在畫面上。
+  （c）管理密鑰/使用密鑰：用於管理公開金鑰／密鑰的按鈕，以及驗證方法是否從密碼改為密鑰的選項。如果在生成密鑰對後使用\"複製到剪貼板\"按鈕的話，連接到VNC服務器後可以粘貼公開金鑰（剪貼板同步到服務器）。
+
+-設置AutoX：僅在SSH模式下的VNC中可用。 本App可以在UNIX系統（例如NX客戶端）上自動發現現有的X會話，並可以選擇創建新的X會話。您需要x11vnc來查找，並且需要在遠端系統上安裝Xvfb、Xvnc或Xdummy來創建會話。如果您的桌面看起來不正確或您僅獲得xterm窗口，則可能必須移走.dmrc文件並在主目錄中添加.xinit文件。
+
+-VNC連接設置：
+  （a）VNC服務器／端口：在此輸入運行VNC服務器的計算機的主機名或IP地址與端口號。在透過SSH模式的VNC中，SSH服務器也咖已看到此IP地址。如果SSH服務器與VNC服務器在同一台計算機上，就可以使用localhost。VNC服務器通常從端口5900開始偵聽（第一個VNC屏幕，屏幕：0）。
+  （b）VNC用戶：在具有Windows登入模式的UltraVNC中可用，或透過VeNCrypt的安全VNC中可用。在此輸入Windows / UNIX帳戶用戶名。
+  （c）VNC密碼：如果您的VNC服務器設置需要密碼，在此輸入該密碼。具有Windows登錄或VeNCrypt模式的UltraVNC的話，在此輸入Windows / UNIX帳戶密碼。 密碼不使用安全存儲，只有選中\"保持\"選項，才會存儲密碼。未退出本App，密碼就保留在畫面上。
+
+-顏色模式：客戶端支持幾種顏色模式。 如果選用具有更多顏色的模式，就可以提供更好的視覺體驗，但在設備上需要更大的帶寬和更多的CPU計算。 某些VNC服務器不支持所有顏色深度（例如OS / X遠端桌面需要24位顏色）。 如果連接時遇到問題，請嘗試其他顏色深度。
+
+-D-Pad用於箭頭：想要將箭頭髮送到VNC服務器時，可以使用藍牙鍵盤的D-Pad或屏幕鍵盤上的箭頭。
+
+-旋轉D-Pad：與Bluetooth鍵盤配對的裝置可能需要逆時針旋轉鍵盤的D-pad，才能將正確的方向發送到服務器。
+
+-本地滑鼠指標：某些VNC服務器（例如OS / X遠端桌面）不會在客戶端上繪製滑鼠指標。 選中此選項將使本App在滑鼠位置繪製一個小方塊。
+
+-自動/全屏位圖：VNC客戶端使用位圖表示遠程顯示。 對於非常大的遠程顯示器，尤其是在適合於屏幕的模式下，由於每個進程的內存限制，您可能會遇到奇怪的視覺偽像。 如果發生這種情況，請嘗試勾選此選項。 請記住，勾選該選項可能會導致本App中斷連接。
+
+-中繼器：僅在UltraVNC模式下可用。 重要信息：如果您有UltraVNC中繼器，請在\" UltraVNC中繼器\"對話框之外輸入其地址和端口，並在\" UltraVNC中繼器\"對話框中輸入實際VNC服務器的地址和端口。 用冒號分隔VNC服務器的地址和端口，例如 192.168.0.100:5900。"</string>
+    <string name="master_password_enable">使主密碼有效</string>
+    <string name="master_password_error_failed_to_disable">無法使主密碼無效。 請確認設備上的可用空間，然後重試。</string>
+    <string name="master_password_error_failed_to_enable">無法使主密碼有效。 請確認設備上的可用空間，然後重試。</string>
+    <string name="master_password_error_intents_not_supported">主密碼有效時尚未支持連接意圖。</string>
+    <string name="master_password_error_password_necessary">有主密碼才能繼續。</string>
+    <string name="master_password_error_password_not_set">設置主密碼被取消了。</string>
+    <string name="master_password_error_shortcuts_not_supported">主密碼有效時尚未對應快捷。</string>
+    <string name="master_password_error_wrong_password">無法使用提供的主密碼進行身份驗證。</string>
+    <string name="master_password_hint_once">輸入密碼</string>
+    <string name="master_password_hint_twice">再輸入密碼</string>
+    <string name="master_password_set">設置主密碼</string>
+    <string name="master_password_set_error">密碼不匹配，請確認一下！</string>
+    <string name="master_password_set_message">請輸入並記住主密碼。您的密碼越長，破解的難度就越大。如果密碼輸入錯誤或忘記密碼，將丟失所有設置！推薦您匯出並備份已有的設置。因為匯出的設置未加密，請將它保存在安全的地方。</string>
+    <string name="master_password_verify">確認主密碼</string>
+    <string name="master_password_verify_message">請輸入正確的主密碼，以便繼續。</string>
+    <string name="material_clock_toggle_content_description">選取上午或下午</string>
+    <string name="material_hour_selection">請選取時段</string>
+    <string name="material_hour_suffix">%1$s 點</string>
+    <string name="material_minute_selection">選取分鐘數</string>
+    <string name="material_minute_suffix">%1$s 分</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">切換至時鐘模式來輸入時間。</string>
+    <string name="material_timepicker_hour">小時</string>
+    <string name="material_timepicker_minute">分鐘</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">選取時間</string>
+    <string name="material_timepicker_text_input_mode_description">切換至文字輸入模式來輸入時間。</string>
+    <string name="menu_settings">設定</string>
+    <string name="meta_key_title">發送特殊密鑰</string>
+    <string name="mode_barcode_live_subtitle">讀取多數標準條碼格式中編碼的資料。</string>
+    <string name="mode_barcode_live_title">條碼掃描</string>
+    <string name="mouse_follow_pan">滑鼠跟隨平移</string>
+    <string name="mtrl_badge_numberless_content_description">新通知</string>
+    <string name="mtrl_chip_close_icon_content_description">移除 %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">超過 %1$d 則新通知</string>
+    <string name="mtrl_picker_a11y_next_month">變更至下個月</string>
+    <string name="mtrl_picker_a11y_prev_month">變更至上個月</string>
+    <string name="mtrl_picker_announce_current_selection">目前選取：%1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">選取日期</string>
+    <string name="mtrl_picker_date_header_unselected">所選日期</string>
+    <string name="mtrl_picker_day_of_week_column_header">星期幾資料欄：%1$s</string>
+    <string name="mtrl_picker_invalid_format">格式無效。</string>
+    <string name="mtrl_picker_invalid_format_example">範例：%1$s</string>
+    <string name="mtrl_picker_invalid_format_use">使用：%1$s</string>
+    <string name="mtrl_picker_invalid_range">日期範圍無效。</string>
+    <string name="mtrl_picker_navigate_to_year_description">前往 %1$s 年</string>
+    <string name="mtrl_picker_out_of_range">超出日期範圍：%1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">開始日期 – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – 結束日期</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">選取範圍</string>
+    <string name="mtrl_picker_range_header_unselected">開始日期 - 結束日期</string>
+    <string name="mtrl_picker_save">儲存</string>
+    <string name="mtrl_picker_text_input_date_hint">日期</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">結束日期</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">開始日期</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">切換至日曆輸入模式</string>
+    <string name="mtrl_picker_toggle_to_day_selection">輕觸即可切換為選取星期幾</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">切換至文字輸入模式</string>
+    <string name="mtrl_picker_toggle_to_year_selection">輕觸即可切換為選取年份</string>
+    <string name="nav_app_bar_navigate_up_description">向上瀏覽</string>
+    <string name="nav_app_bar_open_drawer_description">開啟導覽匣</string>
+    <string name="new_connection">新連接</string>
+    <string name="new_list_button">新一覽表</string>
+    <string name="nickname_caption">暱稱</string>
+    <string name="nickname_caption_hint">標題（可選）</string>
+    <string name="no_backup_selected">未選擇要匯入的檔案系統</string>
+    <string name="not_set">未設定</string>
+    <string name="notif_action_stop_sessions">停止所有工作階段</string>
+    <string name="off">Off</string>
+    <string name="one_to_one">1對1</string>
+    <string name="open_doc">操作手冊/Wiki</string>
+    <string name="opt_in_error_collection_prompt">要選擇加入錯誤紀錄收集服務嗎？</string>
+    <string name="opt_in_help_prompt">您願意透過傳送錯誤回報來協助 %1$s 變得更穩定嗎？</string>
+    <string name="opt_in_preference">選擇加入錯誤回報</string>
+    <string name="opt_in_preference_summary">允許我們收集錯誤回報以改善 %1$s。</string>
+    <string name="opt_in_secondary_pos_btn">好的，我要選擇加入。</string>
+    <string name="opt_in_secondary_prompt">您確定嗎？您可以稍後在設定頁面中變更此設定。</string>
+    <string name="orientation_landscape">橫向</string>
+    <string name="orientation_portrait">縱向</string>
+    <string name="pan_follow_mouse">平移跟隨滑鼠</string>
+    <string name="panning">平移屏幕</string>
+    <string name="password_caption">VNC驗證</string>
+    <string name="password_caption_hint">VNC密碼</string>
+    <string name="password_caption_ssh">SSH驗證</string>
+    <string name="password_hint_ssh">SSH密碼</string>
+    <string name="password_toggle_content_description">顯示密碼</string>
+    <string name="paste_ca">如果您不將它作為檔案匯入的話，請在此輸入證書頒發機構。</string>
+    <string name="path_to_ca">輸入檔案路徑（例如/sdcard/ca-cert.pem），然後點擊導入，以便加載您的證書頒發機構。</string>
+    <string name="permission_request_code">1000</string>
+    <string name="placeholder">佔位文字</string>
+    <string name="port_caption">VNC端口</string>
+    <string name="port_caption_ssh">SSH端口</string>
+    <string name="port_hint">端口</string>
+    <string name="port_ssh_hint">端口</string>
+    <string name="portrait_mode">連接後切換到縱放模式</string>
+    <string name="position_toolbar_last_used">工具欄位置初始化</string>
+    <string name="position_toolbar_last_used_summary">(僅限適用到新建連接)</string>
+    <string name="pref_app_category">應用程式偏好設定</string>
+    <string name="pref_apps_title">設定應用程式伺服器的 URL</string>
+    <string name="pref_category_barcode_detection">條碼偵測</string>
+    <string name="pref_category_camera">相機</string>
+    <string name="pref_clear_auto_start_summary">在重新啟用之前，將阻止任何應用程式自動啟動。</string>
+    <string name="pref_clear_auto_start_title">清除自動啟動設定</string>
+    <string name="pref_clear_connect_type_summary">下次啟動時將再次詢問您偏好的連線類型。</string>
+    <string name="pref_clear_connect_type_title">清除連線類型設定</string>
+    <string name="pref_clear_display_preferences_summary">下次啟動時將再次詢問您偏好的顯示設定。</string>
+    <string name="pref_clear_display_preferences_title">清除顯示偏好設定</string>
+    <string name="pref_custom_apps_enabled_summary">允許為託管應用程式清單的伺服器指定自訂 URL。</string>
+    <string name="pref_custom_apps_enabled_title">為應用程式伺服器使用自訂 URL</string>
+    <string name="pref_custom_dns_enabled_summary">允許您為 /etc/resolv.conf 檔案指定自訂內容。</string>
+    <string name="pref_custom_dns_enabled_title">使用自訂 resolv.conf 檔案</string>
+    <string name="pref_custom_filesystem_enabled_summary">允許為託管所使用檔案系統的伺服器指定自訂 URL。</string>
+    <string name="pref_custom_filesystem_enabled_title">為檔案系統伺服器使用自訂 URL</string>
+    <string name="pref_custom_hostname_enabled_summary">允許您指定自訂主機名稱，此名稱將用於 /etc/hosts 與 /etc/hostname。</string>
+    <string name="pref_custom_hostname_enabled_title">使用自訂主機名稱</string>
+    <string name="pref_default_landing_page_message">選取開啟應用程式時要看到的網頁。</string>
+    <string name="pref_default_landing_page_title">預設首頁</string>
+    <string name="pref_default_vnc_input_mode_summary">設定預設的 VNC 輸入模式。可從 VNC 工作階段工具列中覆寫。</string>
+    <string name="pref_default_vnc_input_mode_title">預設 VNC 輸入模式</string>
+    <string name="pref_dns_title">設定 resolv.conf 檔案內容</string>
+    <string name="pref_filesystem_title">設定檔案系統伺服器的 URL</string>
+    <string name="pref_hide_custom_toolbar_summary">隱藏在 VNC 工作階段中顯示的工具列。</string>
+    <string name="pref_hide_custom_toolbar_title">隱藏 VNC 工具列</string>
+    <string name="pref_hide_distributions_summary">不顯示任何被歸類為散佈版的應用程式。</string>
+    <string name="pref_hide_distributions_title">隱藏散佈版</string>
+    <string name="pref_hide_sessions_filesystems_summary">隱藏非預設首頁的畫面，簡化應用程式介面。</string>
+    <string name="pref_hide_sessions_filesystems_title">隱藏底部導覽列</string>
+    <string name="pref_hide_settings_summary">使此設定選單無法存取。</string>
+    <string name="pref_hide_settings_title">隱藏此設定選單</string>
+    <string name="pref_hide_vnc_extra_keys_summary">隱藏隨軟體鍵盤顯示的額外按鍵。</string>
+    <string name="pref_hide_vnc_extra_keys_title">隱藏 VNC 額外按鍵</string>
+    <string name="pref_hostname_title">設定自訂主機名稱</string>
+    <string name="pref_proot_category">PRoot 偏好設定</string>
+    <string name="pref_proot_debugging_enabled_summary">"僅在應用程式有問題時才需要。紀錄檔儲存在
+/mnt/sdcard/PRoot_Debug_Log"</string>
+    <string name="pref_proot_debugging_enabled_title">PRoot 除錯紀錄已啟用</string>
+    <string name="pref_proot_debugging_level_default">-1</string>
+    <string name="pref_proot_debugging_level_summary">數字愈大，詳細程度愈大。</string>
+    <string name="pref_proot_debugging_level_title">除錯資訊等級</string>
+    <string name="pref_proot_delete_debug_file_title">刪除除錯檔案</string>
+    <string name="pref_summary_barcode_reticle_height" formatted="false">相對於相機檢視畫面的高度，範圍為 20% 到 80%</string>
+    <string name="pref_summary_barcode_reticle_width" formatted="false">相對於相機檢視畫面的寬度，範圍為 50% 到 95%</string>
+    <string name="pref_summary_enable_barcode_size_check">若偵測到的條碼過小，將提示使用者將相機靠近</string>
+    <string name="pref_summary_minimum_barcode_width" formatted="false">相對於取景框寬度，範圍為 20% 到 80%（僅在啟用條碼尺寸檢查時適用）</string>
+    <string name="pref_title_barcode_reticle_height">條碼取景框高度</string>
+    <string name="pref_title_barcode_reticle_width">條碼取景框寬度</string>
+    <string name="pref_title_enable_barcode_size_check">啟用條碼尺寸檢查</string>
+    <string name="pref_title_minimum_barcode_width">最小條碼寬度</string>
+    <string name="pref_title_rear_camera_preview_size">後置相機預覽尺寸</string>
+    <string name="preference_copied">已將「%1$s」複製到剪貼簿。</string>
+    <string name="pro_feature_mfa">看來您的伺服器已啟用多因素身份驗證。請購買支持此功能的Pro版本。在開始對話框中有Pro版本的鏈接。</string>
+    <string name="product_search_button">搜尋物件</string>
+    <string name="progress_checking_for_required_updates">正在檢查是否需要更新…</string>
+    <string name="progress_clearing_support_files">正在清除所有支援檔案…</string>
+    <string name="progress_copying_downloads">正在複製下載的檔案到本機儲存空間…</string>
+    <string name="progress_deleting_filesystem">正在刪除檔案系統</string>
+    <string name="progress_downloading">正在下載必要的資源…</string>
+    <string name="progress_downloading_out_of">%1$d 中的 %2$d 完成</string>
+    <string name="progress_exporting_filesystem">正在匯出檔案系統</string>
+    <string name="progress_extraction_details">正在解壓縮：%1$s</string>
+    <string name="progress_fetching_asset_lists">正在擷取資源清單…</string>
+    <string name="progress_setting_up_filesystem">正在設定檔案系統…</string>
+    <string name="progress_start_step">正在為您準備東西…</string>
+    <string name="progress_starting">正在開始服務…</string>
+    <string name="progress_starting_client">正在啟動客戶端</string>
+    <string name="progress_starting_server">正在啟動伺服器</string>
+    <string name="progress_verifying_assets">正在驗證資源…</string>
+    <string name="progress_verifying_sufficient_storage">正在驗證是否有足夠的可用儲存空間…</string>
+    <string name="prompt_app_connection_type_preference">請選取連線類型：</string>
+    <string name="prompt_app_flavor_preference">請選取桌面環境：</string>
+    <string name="prompt_bits">位元</string>
+    <string name="prompt_client_type">客戶端類型：</string>
+    <string name="prompt_execution_type_preference">此應用程式應如何執行？</string>
+    <string name="prompt_file_name">要儲存在下在目錄中的檔案名</string>
+    <string name="prompt_file_will_be_saved">檔案儲存到下載目錄中，並從此讀出來</string>
+    <string name="prompt_filesystem">檔案系統：</string>
+    <string name="prompt_geometry">指定的解析度：</string>
+    <string name="prompt_graphical_preferences">圖形化設定</string>
+    <string name="prompt_install_file_manager">請安裝檔案管理員</string>
+    <string name="prompt_lock_orientation_preference">鎖定方向</string>
+    <string name="prompt_mic_support">啟用麥克風（專業版）</string>
+    <string name="prompt_move_camera_closer">靠近一點以進行搜尋</string>
+    <string name="prompt_orientation_preference">選取的方向：</string>
+    <string name="prompt_passphrase">密碼短語</string>
+    <string name="prompt_password_can_be_blank">密碼短語可以為空，但密鑰不加密</string>
+    <string name="prompt_point_at_a_barcode">將相機對準條碼</string>
+    <string name="prompt_remember_graphical_preferences">永遠使用這些設定</string>
+    <string name="prompt_remember_service_type_preferences">永遠使用此設定</string>
+    <string name="prompt_scaling_preference">縮放比例：</string>
+    <string name="prompt_searching">搜尋中…</string>
+    <string name="prompt_select_backup">選取檔案系統備份檔</string>
+    <string name="prompt_service_type">服務類型：</string>
+    <string name="prompt_share_storage">共用 Android 儲存空間</string>
+    <string name="prompt_sound_support">啟用聲音（專業版）</string>
+    <string name="prompt_type">類型</string>
+    <string name="prompt_use_all_cores">使用所有 CPU 核心（可用 %1$d 個）</string>
+    <string name="prompt_vm_memory">虛擬機記憶體：%1$d MB（%2$.1f GB）</string>
+    <string name="qemu_install_wizard_label">設定 UserLOst QEMU</string>
+    <string name="qemu_session_start_failed">啟動 QEMU 工作階段失敗。</string>
+    <string name="rdp_address_caption_hint">RDP伺服器</string>
+    <string name="rdp_adv_console_mode">控制台模式</string>
+    <string name="rdp_adv_desktop_background">顯示桌面背景</string>
+    <string name="rdp_adv_desktop_composition">啟用桌面合成</string>
+    <string name="rdp_adv_font_smoothing">執行字體平滑</string>
+    <string name="rdp_adv_menu_animation">顯示功能表動畫</string>
+    <string name="rdp_adv_redirect_sdcard">重定向SD卡</string>
+    <string name="rdp_adv_remotefx">啟用RemoteFX</string>
+    <string name="rdp_adv_visual_styles">啟用視覺樣式</string>
+    <string name="rdp_adv_window_contents">拖動時顯示窗口內容</string>
+    <string name="rdp_connection_settings">RDP連接設定</string>
+    <string name="rdp_descript_geom">遠端桌面大小（WxH）</string>
+    <string name="rdp_domain_hint">RDP域</string>
+    <string name="rdp_geom_automatic">自動</string>
+    <string name="rdp_geom_checkbox_enable">啟用自定義分辨率</string>
+    <string name="rdp_geom_custom">自定義</string>
+    <string name="rdp_geom_description_hint">伺服器需要支持ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">無效</string>
+    <string name="rdp_geom_native_landscape">源設備橫向</string>
+    <string name="rdp_geom_native_portrait">源設備縱向</string>
+    <string name="rdp_intro_text">"感謝您支援aRDP以及開源軟件！關於aRDP的用法，請參照功能表中的幫助項目以及應用的說明。
+&lt;br>
+&lt;br>
+aRDP對應的功能如下：
+&lt;br>
+- Plain RDP／經過SSH隧道的RDP
+&lt;br>
+- 自動畫面迴轉支持（ 如果不需要，就可以使用操作系統來更改設定）。
+&lt;br>
+-可設置在橫向和縱向模式的遠端分辨率以及原始分辨率。
+&lt;br>
+- SSH公開金鑰/私密金鑰對的生成和匯出。
+&lt;br>
+- 自動保存會話。
+&lt;br>
+- 縮放模式：適合屏幕以及一對一縮放模式。
+&lt;br>
+- 可使用遠端滑鼠來進行多點觸摸控制（直接／模擬觸摸板模式）
+&lt;br>
+- 可使用遠端滑鼠來進行完全單手控制（單手輸入模式）
+&lt;br>
+- 多點觸控滑鼠單擊：點選即可滑鼠左擊，兩指點選即可滑鼠右擊，三指點選即可滑鼠中擊。
+&lt;br>
+- 多點觸控滾動：兩根手指向上／向下／向左／右拖動即可滾動操作。
+&lt;br>
+- 屏幕上的meta／箭頭鍵：可以從功能表中完全禁用它，也可以透過隱藏按鈕來隱藏它們。
+&lt;br>
+- 在連接畫面上有創建連接的幫助(\"Menu->Connection Help\")。
+&lt;br>
+- 連接時有輸入模式的幫助（\"Menu->More->Input Mode Help\"）
+&lt;br>
+- 觸控板可代替滑鼠操作箭頭，單擊觸控板可代替按Ctrl。
+&lt;br>
+- 支持多語言，只要RDP伺服器已啟用必要的語言佈局即可。
+&lt;br>
+-無縫的遠端機器分辨率更改
+&lt;br>
+- 在Android 4.0以上版本的設備支持完整滑鼠，包括右鍵、中鍵以及滾輪。
+&lt;br>
+&lt;br>
+aRDP對應預定的功能：
+&lt;br>
+- 彩色模式選擇
+&lt;br>
+- 複製/粘貼整合
+&lt;br>
+- 設定的匯出
+&lt;br>
+-  聲音
+&lt;br>
+&lt;br>
+已知的問題：
+&lt;br>"</string>
+    <string name="rdp_intro_title">aRDP：又直觀又安全的RDP客戶端</string>
+    <string name="rdp_password_hint">RDP密碼</string>
+    <string name="rdp_server_empty">RDP伺服器或端口是空著。無法連接！</string>
+    <string name="rdp_username_hint">RDP用戶名</string>
+    <string name="refresh">重新整理</string>
+    <string name="remote_sound_disabled">聲音已禁用</string>
+    <string name="remote_sound_on_device">設備上的聲音</string>
+    <string name="remote_sound_on_server">伺服器上的聲音</string>
+    <string name="rendering_mode">渲染模式：</string>
+    <string name="repeater_button">UltraVNC中繼器</string>
+    <string name="repeater_caption">重要信息：如果使用UltraVNC中繼器，請在此對話框外部輸入其地址和端口號。在此輸入實際VNC伺服器的地址和端口號。用冒號分隔VNC伺服器的地址和端口號，例如 192.168.0.100:5900。</string>
+    <string name="repeater_caption_hint">UltraVNC中繼器</string>
+    <string name="repeater_clear">請勿使用</string>
+    <string name="repeater_dialog_title">中繼器後面的VNC伺服器</string>
+    <string name="repeater_empty_text">沒有中繼器</string>
+    <string name="repeater_save">使用</string>
+    <string name="requires_pro_purchase">此功能需要專業版訂閱或購買。</string>
+    <string name="review_ask_for_feedback">您介意在 GitHub 上給我們一些回饋嗎？</string>
+    <string name="review_ask_for_rating">可以在 Play 上為我們評分嗎？</string>
+    <string name="review_is_user_enjoying">正在享受 %1$s？</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt作為ISO L3移位（僅限VNC）</string>
+    <string name="rotate_dpad">旋轉藍牙或軟體D-Pad</string>
+    <string name="save">儲存</string>
+    <string name="save_as_copy">另存為副本</string>
+    <string name="scaling">縮放</string>
+    <string name="scaling_zoomable">可縮放</string>
+    <string name="search_menu_title">搜尋</string>
+    <string name="send_button">發送</string>
+    <string name="send_key_again">再次發送鍵</string>
+    <string name="service_notification_description">%1$s 正在執行背景服務。</string>
+    <string name="services_notification_channel_description">永久服務</string>
+    <string name="services_notification_channel_name">服務</string>
+    <string name="session_unique_name_required">工作階段必須有獨一無二的名稱！</string>
+    <string name="sessions">工作階段</string>
+    <string name="settings">設定</string>
+    <string name="settings_title">設定</string>
+    <string name="share">共享公開金鑰</string>
+    <string name="shift_check">Shift</string>
+    <string name="shortcut_label_rdp">RDP連接</string>
+    <string name="shortcut_label_spice">SPICE連接</string>
+    <string name="shortcut_label_vnc">VNC連接</string>
+    <string name="show">顯示</string>
+    <string name="show_advanced_settings">顯示詳細設定</string>
+    <string name="showkbd_label">鍵盤</string>
+    <string name="single_cancel">單手模式取消了</string>
+    <string name="single_choose">選擇單手模式或取消</string>
+    <string name="single_left">左拖動模式-滑動即可拖動/選擇，抬起手指即可停止</string>
+    <string name="single_middle">中央拖動模式-滑動即可拖動/選擇，抬起手指即可停止</string>
+    <string name="single_reposition">滑鼠指標重新定位（用於單手模式）</string>
+    <string name="single_right">右拖動模式-滑動即可拖動/選擇，抬起手指即可停止</string>
+    <string name="single_scroll">滾動模式-向上／向下滑動即可滾動，抬起手指即可停止</string>
+    <string name="single_session_supported">%1$s 目前僅支援單一個作用中的工作階段！</string>
+    <string name="single_zoom">縮放模式-向上／向下滑動即可滾動，抬起手指即可停止</string>
+    <string name="snap_one_to_one">捕捉到1對1縮放</string>
+    <string name="special_keys">發送鍵</string>
+    <string name="spice_address_caption_hint">SPICE伺服器</string>
+    <string name="spice_button_import_ca">匯入CA</string>
+    <string name="spice_ca_cert_path_hint">證書頒發機構文件的路徑</string>
+    <string name="spice_ca_file_error_reading">讀取CA文件時出錯。請確認它是可讀取的。</string>
+    <string name="spice_ca_file_not_found">找不到文件。請在文本欄位中輸入有效的文件名（例如：/sdcard/ca-cert.pem）。</string>
+    <string name="spice_connection_settings">SPICE連接設定</string>
+    <string name="spice_intro_text">"感謝您支援aSPICE以及開源軟件！關於aSPICE的用法，請參照功能表中的幫助項目以及應用的說明。
+&lt;br>
+&lt;br>
+aSPICE對應的功能如下：
+&lt;br>
+- Plain SPICE／經過SSH隧道的SPICE
+&lt;br>
+- 自動畫面迴轉支持（ 如果不需要，就可以使用操作系統來更改設定）。
+&lt;br>
+- SSH公開金鑰/私密金鑰對的生成和匯出。
+&lt;br>
+- 自動保存會話。
+&lt;br>
+- 縮放模式：適合屏幕以及一對一縮放模式。
+&lt;br>
+- 可使用遠端滑鼠來進行多點觸摸控制（直接／模擬觸摸板模式）
+&lt;br>
+- 可使用遠端滑鼠來進行完全單手控制（單手輸入模式）
+&lt;br>
+- 多點觸控滑鼠單擊：點選即可滑鼠左擊，兩指點選即可滑鼠右擊，三指點選即可滑鼠中擊。
+&lt;br>
+- 多點觸控滾動：兩根手指向上／向下／向左／右拖動即可滾動操作。
+&lt;br>
+- 屏幕上的meta／箭頭鍵：可以從功能表中完全禁用它，也可以透過隱藏按鈕來隱藏它們。
+&lt;br>
+- 在連接畫面上有創建連接的幫助(\"Menu->Connection Help\")。
+&lt;br>
+- 連接時有輸入模式的幫助（\"Menu->More->Input Mode Help\"）
+&lt;br>
+- 觸控板可代替滑鼠操作箭頭，單擊觸控板可代替按Ctrl。
+&lt;br>
+- 支持多語言，只要SPICE伺服器已啟用必要的語言佈局即可。
+&lt;br>
+-無縫的遠端機器分辨率更改
+&lt;br>
+- 在Android 4.0以上版本的設備支持完整滑鼠，包括右鍵、中鍵以及滾輪。
+&lt;br>
+&lt;br>
+對應預定的功能：
+&lt;br>
+- 複製/粘貼整合
+&lt;br>
+-  聲音
+&lt;br>
+- 性能提升
+&lt;br>
+已知的問題：
+&lt;br>
+- 有非對應文本發送
+&lt;br>"</string>
+    <string name="spice_intro_title">aSPICE：又直觀又安全的SPICE客戶端</string>
+    <string name="spice_password_hint">SPICE密碼</string>
+    <string name="spice_server_empty">SPICE伺服器或端口是空著。無法連接！</string>
+    <string name="spice_tls_port_hint">TLS端口</string>
+    <string name="spice_username_hint">SPICE用戶名</string>
+    <string name="ssh_key_generated">"成功生成或匯入新密鑰。 您可以點選'Generate/Export Key'按鈕來共享、複製到剪貼板或導出公開金鑰。"</string>
+    <string name="ssh_passphrase_hint">SSH密碼短語</string>
+    <string name="ssh_pubkey_button">管理密鑰</string>
+    <string name="ssh_tunnel_settings">SSH隧道設定</string>
+    <string name="ssh_use_pubkey">使用密鑰</string>
+    <string name="ssh_use_x11vnc">自動桌面</string>
+    <string name="ssh_x11vnc_customize">設定AutoX</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_app">停止應用程式</string>
+    <string name="stop_session">停止工作階段</string>
+    <string name="summary_collapsed_preference_list">%1$s、%2$s</string>
+    <string name="super_check">Super</string>
+    <string name="support_dropbear">SSH - Dropbear</string>
+    <string name="support_tightvnc">VNC - TightVNC</string>
+    <string name="supported_services">目前支援的裝置：</string>
+    <string name="tap_disable">無效</string>
+    <string name="tap_enable">有效</string>
+    <string name="terminology">術語：</string>
+    <string name="toc">條款與細則</string>
+    <string name="toggle_keyboard">Toggle Keyboard</string>
+    <string name="touch_hint">為了確保密鑰創建過程中的隨機性，請在下面的框中隨意移動手指。</string>
+    <string name="touch_prompt">觸摸此框以收集隨機性：%1$d%%完成</string>
+    <string name="use_no_compression_for_local_connections">無壓縮（本地連接，Hextile編碼）</string>
+    <string name="username_caption">VNC用戶</string>
+    <string name="username_hint">UltraVNC MS登入用戶名</string>
+    <string name="username_hint_optional">VNC用戶名（可選）</string>
+    <string name="username_hint_ssh">SSH用戶名</string>
+    <string name="username_hint_vencrypt">VNC用戶名</string>
+    <string name="v7_preference_off">關閉</string>
+    <string name="v7_preference_on">開啟</string>
+    <string name="verification_code">驗證碼</string>
+    <string name="verification_code_message">請輸入多因素身份驗證驗證碼</string>
+    <string name="view_only">僅閱覽模式</string>
+    <string name="vnc_connection_settings">VNC連接設定</string>
+    <string name="vnc_server_empty">VNC伺服器或端口是空著。無法連接！</string>
+    <string name="warning_cert_does_not_match">警告：保存的x509憑證或傳入的簽名與當前伺服器憑證不匹配！ 這可能是中間人攻擊。 如果您知道密鑰更改，可以繼續進行。</string>
+    <string name="welcome">歡迎使用 %1$s！</string>
+    <string name="wiki">Wiki</string>
+</resources>

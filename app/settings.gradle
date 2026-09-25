@@ -1,0 +1,24 @@
+rootProject.name = "UserLOst"
+include ':app', ':UserLOstLibrary'
+project(':UserLOstLibrary').projectDir = new File('UserLOstLibrary/app')
+
+include ':pubkeyGenerator', ':bVNC', ':remoteClientLib'
+project(':bVNC').projectDir = new File('UserLOstLibrary/remote-desktop-clients/bVNC')
+project(':pubkeyGenerator').projectDir = new File('UserLOstLibrary/remote-desktop-clients/pubkeyGenerator')
+project(':remoteClientLib').projectDir = new File('UserLOstLibrary/remote-desktop-clients/remoteClientLib')
+
+// bVNC references project(':freeRDPCore') directly, so register the FreeRDP
+// Android module under a top-level name instead of the deep nested path.
+include ':freeRDPCore'
+project(':freeRDPCore').projectDir = new File('UserLOstLibrary/remote-desktop-clients/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/')
+
+include ':CustomLibrary'
+project(':CustomLibrary').projectDir = new File('CustomLibrary')
+
+// Replacement for the termux-app terminal; see UserLOstLibrary/terminal.
+// The terminal module is not present in the community-fork snapshot.
+// include ':terminal'
+// project(':terminal').projectDir = new File('UserLOstLibrary/terminal')
+
+//   // adbndk submodule unavailable
+// 

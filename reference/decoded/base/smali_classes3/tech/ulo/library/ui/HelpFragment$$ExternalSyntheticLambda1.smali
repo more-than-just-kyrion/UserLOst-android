@@ -1,0 +1,36 @@
+.class public final synthetic Ltech/ulo/library/ui/HelpFragment$$ExternalSyntheticLambda1;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Ltech/ulo/library/ui/HelpFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ltech/ulo/library/ui/HelpFragment;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ltech/ulo/library/ui/HelpFragment$$ExternalSyntheticLambda1;->f$0:Ltech/ulo/library/ui/HelpFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Ltech/ulo/library/ui/HelpFragment$$ExternalSyntheticLambda1;->f$0:Ltech/ulo/library/ui/HelpFragment;
+
+    invoke-static {v0, p1}, Ltech/ulo/library/ui/HelpFragment;->$r8$lambda$owdW8cqso8XD9Z1vZiC5D6_lxBU(Ltech/ulo/library/ui/HelpFragment;Landroid/view/View;)V
+
+    return-void
+.end method

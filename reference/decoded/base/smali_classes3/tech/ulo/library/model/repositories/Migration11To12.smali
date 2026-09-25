@@ -1,0 +1,80 @@
+.class public final Ltech/ulo/library/model/repositories/Migration11To12;
+.super Landroidx/room/migration/Migration;
+.source "UlaDatabase.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0016\u00a8\u0006\u0007"
+    }
+    d2 = {
+        "Ltech/ulo/library/model/repositories/Migration11To12;",
+        "Landroidx/room/migration/Migration;",
+        "()V",
+        "migrate",
+        "",
+        "database",
+        "Landroidx/sqlite/db/SupportSQLiteDatabase;",
+        "UserLOstLibrary_UserLOstRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    const/16 v0, 0xb
+
+    const/16 v1, 0xc
+
+    .line 189
+    invoke-direct {p0, v0, v1}, Landroidx/room/migration/Migration;-><init>(II)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public migrate(Landroidx/sqlite/db/SupportSQLiteDatabase;)V
+    .locals 1
+
+    const-string v0, "database"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 191
+    const-string v0, "ALTER TABLE session ADD COLUMN displayOrientation INTEGER NOT NULL DEFAULT 2"
+
+    invoke-interface {p1, v0}, Landroidx/sqlite/db/SupportSQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    .line 192
+    const-string v0, "ALTER TABLE session ADD COLUMN displayLocked INTEGER NOT NULL DEFAULT 0"
+
+    invoke-interface {p1, v0}, Landroidx/sqlite/db/SupportSQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    .line 193
+    const-string v0, "ALTER TABLE session ADD COLUMN displayScaling REAL NOT NULL DEFAULT 1.0"
+
+    invoke-interface {p1, v0}, Landroidx/sqlite/db/SupportSQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    .line 194
+    const-string v0, "ALTER TABLE session ADD COLUMN displayRemember INTEGER NOT NULL DEFAULT 0"
+
+    invoke-interface {p1, v0}, Landroidx/sqlite/db/SupportSQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    .line 195
+    const-string v0, "ALTER TABLE session ADD COLUMN serviceTypeRemember INTEGER NOT NULL DEFAULT 0"
+
+    invoke-interface {p1, v0}, Landroidx/sqlite/db/SupportSQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    return-void
+.end method

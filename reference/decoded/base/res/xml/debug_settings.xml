@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_debug">
+        <ListPreference android:entries="@array/debug_array" android:title="@string/debug_level" android:key="bookmark.debug_level" android:entryValues="@array/debug_values_array" />
+        <CheckBoxPreference android:title="@string/settings_async_channel" android:key="bookmark.async_channel" />
+        <CheckBoxPreference android:title="@string/settings_async_update" android:key="bookmark.async_update" />
+        <CheckBoxPreference android:title="@string/settings_async_input" android:key="bookmark.async_input" />
+    </PreferenceCategory>
+</PreferenceScreen>

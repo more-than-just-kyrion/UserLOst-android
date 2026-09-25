@@ -1,0 +1,14 @@
+* text=auto eol=lf
+*.apk binary
+*.tar binary
+*.tar.gz binary
+*.tgz binary
+*.dex binary
+*.so binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.ttf binary
+*.otf binary
+*.mp4 binary
+*.arsc binary
