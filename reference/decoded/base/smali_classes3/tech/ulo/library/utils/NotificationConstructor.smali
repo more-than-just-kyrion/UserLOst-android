@@ -199,7 +199,7 @@
 
     iget-object v4, p0, Ltech/ulo/library/utils/NotificationConstructor;->context:Landroid/content/Context;
 
-    const-class v5, Ltech/ulo/library/ServerService;
+    const-class v5, Ltech/ula/library/ServerService;
 
     invoke-direct {v1, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

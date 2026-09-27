@@ -1302,7 +1302,7 @@
 
     check-cast p3, Landroid/content/Context;
 
-    const-class v0, Ltech/ulo/library/ServerService;
+    const-class v0, Ltech/ula/library/ServerService;
 
     invoke-direct {p2, p3, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1982,7 +1982,7 @@
 
     check-cast p3, Landroid/content/Context;
 
-    const-class v0, Ltech/ulo/library/ServerService;
+    const-class v0, Ltech/ula/library/ServerService;
 
     invoke-direct {p2, p3, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -6706,7 +6706,7 @@
 
     check-cast v1, Landroid/content/Context;
 
-    const-class v2, Ltech/ulo/library/ServerService;
+    const-class v2, Ltech/ula/library/ServerService;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -6874,7 +6874,7 @@
 
     check-cast v1, Landroid/content/Context;
 
-    const-class v2, Ltech/ulo/library/ServerService;
+    const-class v2, Ltech/ula/library/ServerService;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -7997,7 +7997,7 @@
 
     check-cast v1, Landroid/content/Context;
 
-    const-class v2, Ltech/ulo/library/ServerService;
+    const-class v2, Ltech/ula/library/ServerService;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -9333,7 +9333,7 @@
     .line 445
     new-instance v3, Landroid/content/IntentFilter;
 
-    const-string v4, "tech.ulo.library.ServerService.RESULT"
+    const-string v4, "tech.ula.library.ServerService.RESULT"
 
     invoke-direct {v3, v4}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
@@ -9389,7 +9389,7 @@
     .line 460
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Ltech/ulo/library/ServerService;
+    const-class v2, Ltech/ula/library/ServerService;
 
     invoke-direct {v1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

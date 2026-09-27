@@ -163,7 +163,7 @@
     .line 28
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Ltech/ulo/library/ServerService;
+    const-class v2, Ltech/ula/library/ServerService;
 
     invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

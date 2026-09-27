@@ -385,7 +385,7 @@
 
     check-cast v0, Landroid/content/Context;
 
-    const-class v1, Ltech/ulo/library/ServerService;
+    const-class v1, Ltech/ula/library/ServerService;
 
     invoke-direct {p1, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -636,7 +636,7 @@
 
     check-cast v1, Landroid/content/Context;
 
-    const-class v2, Ltech/ulo/library/ServerService;
+    const-class v2, Ltech/ula/library/ServerService;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

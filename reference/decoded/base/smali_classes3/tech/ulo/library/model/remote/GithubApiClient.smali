@@ -220,7 +220,7 @@
     .locals 13
 
     .line 35
-    const-string v0, "alpine:tags/Alpine-v0.0.9,arch:tags/Arch-v0.0.6,debian:tags/Debian-v0.0.15,ubuntu:tags/Ubuntu-v0.0.21,kali:tags/Kali-v0.0.10"
+    const-string v0, "alpine:tags/Alpine-v0.0.9,alpine_lxqt:tags/Alpine_LXQt-v0.0.9,alpine_xfce:tags/Alpine_XFCE-v0.0.9,arch:tags/Arch-v0.0.6,arch_lxde:tags/Arch_LXDE-v0.0.6,arch_xfce:tags/Arch_XFCE-v0.0.6,debian:tags/Debian-v0.0.15,debian_lxde:tags/Debian_LXDE-v0.0.15,debian_xfce:tags/Debian_XFCE-v0.0.15,ubuntu:tags/Ubuntu-v0.0.21,ubuntu_lxde:tags/Ubuntu_LXDE-v0.0.21,ubuntu_xfce:tags/Ubuntu_XFCE-v0.0.21,kali:tags/Kali-v0.0.10,kali_lxde:tags/Kali_LXDE-v0.0.10,kali_xfce:tags/Kali_XFCE-v0.0.10"
 
     move-object v1, v0
 

@@ -50,7 +50,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <service android:foregroundServiceType="specialUse" android:name="tech.ulo.library.ServerService" android:stopWithTask="true">
+        <service android:foregroundServiceType="specialUse" android:name="tech.ula.library.ServerService" android:stopWithTask="true">
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Long running Linux program."/>
         </service>
         <service android:exported="false" android:foregroundServiceType="specialUse" android:name="tech.ulo.library.ui.InstallWizardKeepAliveService" android:stopWithTask="true">
